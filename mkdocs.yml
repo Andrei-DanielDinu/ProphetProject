@@ -1,0 +1,17 @@
+site_name: The Prophet Project
+site_description: A systems-engineering playbook for accelerating civilization and sustaining its mission across generations.
+site_url: https://example.github.io/prophet-project/
+repo_name: prophet-project
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+nav:
+  - Home: index.md
+  - Uomo Universale: uomo-universale.md
+  - Technology Roadmap: technology-roadmap.md
+  - Civilization Playbook: civilization-playbook.md
