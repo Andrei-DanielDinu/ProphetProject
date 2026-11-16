@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RiskRecord",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "phase_relevance",
+    "potential_impact",
+    "early_warning_indicator",
+    "mitigation_direction"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^risk_[a-z0-9_]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "phase_relevance": {
+      "type": "array",
+      "items": { "type": "integer" }
+    },
+    "potential_impact": {
+      "type": "string"
+    },
+    "early_warning_indicator": {
+      "type": "string"
+    },
+    "mitigation_direction": {
+      "type": "string"
+    }
+  }
+}

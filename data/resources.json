@@ -1,0 +1,464 @@
+[
+  {
+    "id": "resource_flint_and_chert",
+    "name": "Flint and Chert Nodules",
+    "category": "mineral",
+    "material": "microcrystalline_quartz",
+    "coordinates": null,
+    "geological_context": "Sedimentary limestone strata and chalk beds across Eastern Desert and Nile valley margins",
+    "processing_chain": [
+      "quarrying_or_surface_collection",
+      "sorting_by_fracture_plane",
+      "percussion_flaking",
+      "pressure_flaking"
+    ],
+    "transport_constraints": [
+      "heavy_bulk_weight",
+      "local_quarry_transport_via_baskets_and_donkeys"
+    ],
+    "substitutes": [
+      "obsidian_volcanic_glass",
+      "quartzite",
+      "copper_and_bronze_blades"
+    ],
+    "environmental_and_health_risks": [
+      "sharp_laceration_hazards",
+      "silicosis_from_fine_airborne_silica_dust"
+    ],
+    "confidence": "verified",
+    "sources": ["Archaeological evidence of Predynastic Egyptian lithic industries at Hierakonpolis"]
+  },
+  {
+    "id": "resource_clay_and_silica",
+    "name": "Alluvial Silt, Kaolinite Clay, and Silica Sand",
+    "category": "mineral",
+    "material": "aluminosilicates_and_silica",
+    "coordinates": null,
+    "geological_context": "Nile river floodplains (alluvial clay) and desert wadi margins (kaolin and high-silica quartz sands)",
+    "processing_chain": [
+      "dredging_or_quarrying",
+      "levigation_and_sieving",
+      "kneading_and_tempering",
+      "firing_in_wood_or_charcoal_kilns"
+    ],
+    "transport_constraints": [
+      "river_barge_transit_is_ideal",
+      "fragile_post_firing"
+    ],
+    "substitutes": [
+      "carved_stone_vessels",
+      "woven_reed_baskets_lined_with_bitumen"
+    ],
+    "environmental_and_health_risks": [
+      "burns_from_open_kilns",
+      "chronic_inhalation_of_fine_dry_clay_dust"
+    ],
+    "confidence": "verified",
+    "sources": ["Arnold, D. (1993) Techniques and Traditions of Ancient Egyptian Ceramics"]
+  },
+  {
+    "id": "resource_copper_ore_malachite",
+    "name": "Malachite and Chrysocolla Copper Ores",
+    "category": "metal_ore",
+    "material": "copper",
+    "coordinates": null,
+    "geological_context": "Hydrothermal veins in Precambrian basement complex, Eastern Desert (Wadi Dara) and Sinai (Serabit el-Khadim, Timna)",
+    "processing_chain": [
+      "surface_vein_trenching",
+      "hand_cobbing_and_gravity_concentration",
+      "charcoal_reduction_smelting_in_crucible_or_shaft_furnace",
+      "ingot_casting"
+    ],
+    "transport_constraints": [
+      "arid_desert_donkey_caravans_requiring_water_and_fodder_caches",
+      "coastal_Red_Sea_shipping"
+    ],
+    "substitutes": [
+      "arsenical_copper",
+      "tin_bronze",
+      "hardened_chert_tools"
+    ],
+    "environmental_and_health_risks": [
+      "carbon_monoxide_poisoning_at_furnace",
+      "heavy_metal_fume_inhalation",
+      "heat_exhaustion"
+    ],
+    "confidence": "verified",
+    "sources": ["Rothenberg, B. (1990) The Ancient Metallurgy of Copper"]
+  },
+  {
+    "id": "resource_cassiterite_tin",
+    "name": "Cassiterite Tin Ore",
+    "category": "metal_ore",
+    "material": "tin",
+    "coordinates": null,
+    "geological_context": "Alluvial deposits derived from greisenized granite complexes in Cornwall, Brittany, Anatolia (Kestel), and Central Asia",
+    "processing_chain": [
+      "stream_panning_and_sluicing",
+      "roasting_and_reduction_smelting",
+      "alloying_with_molten_copper_at_8_to_12_percent"
+    ],
+    "transport_constraints": [
+      "long_distance_maritime_navigation",
+      "chokepoints_across_Mediterranean_and_Levantine_corridors"
+    ],
+    "substitutes": [
+      "arsenical_copper",
+      "leaded_bronze",
+      "wrought_iron_with_carburized_edges"
+    ],
+    "environmental_and_health_risks": [
+      "shipwreck_and_loss_at_sea",
+      "geopolitical_blackmail_and_piracy_interruption"
+    ],
+    "confidence": "verified",
+    "sources": ["Berger et al. (2019) Isotope data on Bronze Age tin sources, Antiquity"]
+  },
+  {
+    "id": "resource_iron_ore_hematite",
+    "name": "Hematite and Magnetite Iron Ores",
+    "category": "metal_ore",
+    "material": "iron",
+    "coordinates": null,
+    "geological_context": "Banded iron formations and oolitic sedimentary deposits in Aswan, Bahariya Oasis, and Taurus/Zagros mountains",
+    "processing_chain": [
+      "open_pit_quarrying",
+      "crushing_and_washing",
+      "solid_state_reduction_in_bloomery_furnace_at_1100_C",
+      "hammering_slag_from_hot_sponge_iron_bloom"
+    ],
+    "transport_constraints": [
+      "extreme_tonnage_requires_water_transit_or_rail_networks"
+    ],
+    "substitutes": [
+      "tin_bronze",
+      "cast_bronze"
+    ],
+    "environmental_and_health_risks": [
+      "forest_depletion_for_charcoal",
+      "blast_burns_and_crush_injuries_during_forge_hammering"
+    ],
+    "confidence": "verified",
+    "sources": ["Tylecote, R.F. (1992) A History of Metallurgy"]
+  },
+  {
+    "id": "resource_coal_and_coke",
+    "name": "Bituminous Coal and Metallurgical Coke",
+    "category": "fuel",
+    "material": "fixed_carbon",
+    "coordinates": null,
+    "geological_context": "Carboniferous sedimentary coal measures (Sinai Ayun Musa small deposits; regional imports from Anatolia, Levant, or Europe)",
+    "processing_chain": [
+      "underground_or_strip_mining",
+      "washing_to_reduce_ash_and_sulfur",
+      "destructive_distillation_in_coke_ovens_to_expel_volatiles"
+    ],
+    "transport_constraints": [
+      "bulk_freight_only_viable_via_canals_rivers_and_railways"
+    ],
+    "substitutes": [
+      "wood_charcoal",
+      "dry_biomass_briquettes",
+      "anthracite",
+      "electric_arc_reduction"
+    ],
+    "environmental_and_health_risks": [
+      "coal_dust_explosions_and_black_lung_disease",
+      "sulfur_dioxide_air_pollution",
+      "mine_roof_collapse_and_methane_explosions"
+    ],
+    "confidence": "verified",
+    "sources": ["Ashton, T.S. (1948) The Industrial Revolution"]
+  },
+  {
+    "id": "resource_limestone_calcium_carbonate",
+    "name": "Limestone (Calcium Carbonate)",
+    "category": "mineral",
+    "material": "calcium_carbonate",
+    "coordinates": null,
+    "geological_context": "Abundant marine sedimentary beds flanking both sides of the Nile Valley (e.g., Tura quarries)",
+    "processing_chain": [
+      "quarrying_blocks_via_wedges_and_saws",
+      "thermal_calcination_in_kilns_at_900_C_to_produce_quicklime",
+      "slaking_with_water_for_mortar_and_flux"
+    ],
+    "transport_constraints": [
+      "barge_transport_on_Nile"
+    ],
+    "substitutes": [
+      "gypsum_plaster",
+      "mud_mortar"
+    ],
+    "environmental_and_health_risks": [
+      "quicklime_chemical_eye_and_skin_caustic_burns",
+      "quarry_rockfall_injuries"
+    ],
+    "confidence": "verified",
+    "sources": ["Lucas, A. & Harris, J.R. (1962) Ancient Egyptian Materials and Industries"]
+  },
+  {
+    "id": "resource_sulfur_and_pyrite",
+    "name": "Elemental Sulfur and Iron Pyrite ($FeS_2$)",
+    "category": "chemical_feedstock",
+    "material": "sulfur",
+    "coordinates": null,
+    "geological_context": "Evaporite beds along Red Sea coast (Gemsa) and volcanic/hydrothermal sulfide deposits",
+    "processing_chain": [
+      "extraction",
+      "sublimation_refining_or_pyrite_roasting",
+      "burning_in_air_to_form_sulfur_dioxide_for_sulfuric_acid"
+    ],
+    "transport_constraints": [
+      "flammable_solid_and_toxic_fumes"
+    ],
+    "substitutes": [
+      "byproduct_sulfur_from_petroleum_hydrodesulfurization",
+      "gypsum_thermal_decomposition"
+    ],
+    "environmental_and_health_risks": [
+      "toxic_choking_$SO_2$_gas_inhalation",
+      "acid_burns_downstream"
+    ],
+    "confidence": "verified",
+    "sources": ["Greenwood, N.N. & Earnshaw, A. (1997) Chemistry of the Elements"]
+  },
+  {
+    "id": "resource_rock_salt_halite",
+    "name": "Rock Salt (Halite, $NaCl$) and Natron Deposits",
+    "category": "chemical_feedstock",
+    "material": "sodium_chloride_and_sodium_carbonate",
+    "coordinates": null,
+    "geological_context": "Wadi Natrun saline evaporite lakes and coastal Red Sea/Mediterranean salt pans",
+    "processing_chain": [
+      "solar_evaporation_harvesting",
+      "recrystallization_and_dissolution",
+      "chlor-alkali_membrane_electrolysis_or_Solvay_ammonia_process"
+    ],
+    "transport_constraints": [
+      "must_be_kept_dry_in_sealed_containers"
+    ],
+    "substitutes": [
+      "potash_from_wood_ashes"
+    ],
+    "environmental_and_health_risks": [
+      "chlorine_gas_leakage_during_electrolysis",
+      "soil_salinization_from_effluents"
+    ],
+    "confidence": "verified",
+    "sources": ["Lucas & Harris (1962) Ancient Egyptian Materials and Industries"]
+  },
+  {
+    "id": "resource_petroleum_crude",
+    "name": "Crude Petroleum Oil",
+    "category": "fuel",
+    "material": "hydrocarbons",
+    "coordinates": null,
+    "geological_context": "Gulf of Suez rift basin (Gebal Zeit surface seeps historically) and Western Desert basins",
+    "processing_chain": [
+      "rotary_drilling_and_casing",
+      "fractional_distillation_in_bubble_cap_towers",
+      "catalytic_cracking_and_hydrotreating"
+    ],
+    "transport_constraints": [
+      "requires_pipelines_or_double_hulled_tankers"
+    ],
+    "substitutes": [
+      "coal_liquefaction_Fischer_Tropsch",
+      "biofuels_and_fermentation_ethanol"
+    ],
+    "environmental_and_health_risks": [
+      "wellhead_blowout_and_fire",
+      "oil_spills_in_aquifers_and_marine_ecologies",
+      "carcinogenic_benzene_and_aromatic_vapors"
+    ],
+    "confidence": "verified",
+    "sources": ["Speight, J.G. (2014) The Chemistry and Technology of Petroleum"]
+  },
+  {
+    "id": "resource_natural_gas_methane",
+    "name": "Natural Gas (Methane, $CH_4$)",
+    "category": "chemical_feedstock",
+    "material": "methane",
+    "coordinates": null,
+    "geological_context": "Deep sedimentary basins (Nile Delta offshore and Western Desert reserves)",
+    "processing_chain": [
+      "wellhead_separation_of_condensate_and_sour_gases",
+      "amine_gas_treating_to_remove_$H_2S$_and_$CO_2$",
+      "steam_methane_reforming_over_nickel_catalyst_to_produce_hydrogen"
+    ],
+    "transport_constraints": [
+      "high_pressure_steel_pipelines_or_cryogenic_LNG_at_minus_162_C"
+    ],
+    "substitutes": [
+      "coal_gasification_syngas",
+      "water_electrolysis_using_renewable_or_nuclear_power"
+    ],
+    "environmental_and_health_risks": [
+      "methane_asphyxiation_and_explosive_fuel_air_mixtures",
+      "greenhouse_gas_warming_from_fugitive_leaks"
+    ],
+    "confidence": "verified",
+    "sources": ["Manning, F.S. & Thompson, R.E. (1991) Oilfield Processing of Petroleum: Natural Gas"]
+  },
+  {
+    "id": "resource_bauxite_aluminum",
+    "name": "Bauxite Ore",
+    "category": "metal_ore",
+    "material": "aluminum_hydroxide",
+    "coordinates": null,
+    "geological_context": "Tropical and subtropical lateritic weathering horizons",
+    "processing_chain": [
+      "Bayer_process_digestion_with_hot_caustic_soda_to_yield_pure_alumina",
+      "Hall_Heroult_electrolytic_reduction_in_molten_cryolite_at_950_C"
+    ],
+    "transport_constraints": [
+      "massive_electric_power_demand_requires_co_location_with_hydro_or_nuclear_plants"
+    ],
+    "substitutes": [
+      "titanium_alloys",
+      "carbon_fiber_composites",
+      "high_strength_steel"
+    ],
+    "environmental_and_health_risks": [
+      "caustic_red_mud_tailings_dam_failures",
+      "perfluorocarbon_greenhouse_emissions_during_anode_effects"
+    ],
+    "confidence": "verified",
+    "sources": ["Habashi, F. (2016) Extractive Metallurgy of Aluminum"]
+  },
+  {
+    "id": "resource_high_purity_quartz_silicon",
+    "name": "High-Purity Quartz and Silica Sand",
+    "category": "mineral",
+    "material": "silicon_dioxide",
+    "coordinates": null,
+    "geological_context": "High-purity quartz pegmatites and ultra-clean silica sandstones",
+    "processing_chain": [
+      "carbothermic_reduction_in_submerged_arc_furnace_to_metallurgical_silicon_98_percent",
+      "conversion_to_trichlorosilane_gas_$SiHCl_3$_and_fractional_distillation",
+      "Siemens_process_chemical_vapor_deposition_to_9N_polysilicon",
+      "Czochralski_crystal_growth_into_single_crystal_boule"
+    ],
+    "transport_constraints": [
+      "electronic_grade_silicon_requires_ultraclean_packaging_and_shock_absorbent_transport"
+    ],
+    "substitutes": [
+      "gallium_arsenide_for_specialized_RF",
+      "silicon_carbide_for_power_electronics"
+    ],
+    "environmental_and_health_risks": [
+      "pyrophoric_and_toxic_silane_and_chlorosilane_gas_leaks",
+      "hydrofluoric_acid_poisoning_during_wafer_etching"
+    ],
+    "confidence": "verified",
+    "sources": ["Sze, S.M. & Lee, M.K. (2012) Semiconductor Devices: Physics and Technology"]
+  },
+  {
+    "id": "resource_uranium_ore_pitchblende",
+    "name": "Pitchblende / Uraninite and Carnotite Ores",
+    "category": "metal_ore",
+    "material": "uranium",
+    "coordinates": null,
+    "geological_context": "Granite-hosted hydrothermal veins (e.g., Eastern Desert El Erediya / Gattar occurrences) and sandstone roll-front deposits",
+    "processing_chain": [
+      "radiological_radiometric_prospecting_and_mining",
+      "acid_or_alkaline_leaching_to_produce_yellowcake_diuranate",
+      "conversion_to_uranium_hexafluoride_gas_$UF_6$",
+      "gas_centrifuge_isotopic_enrichment_of_U235_from_0_7_percent_to_3_to_5_percent",
+      "sintering_into_uranium_dioxide_fuel_pellets_$UO_2$_inside_zircaloy_tubes"
+    ],
+    "transport_constraints": [
+      "heavily_armored_and_monitored_transport_casks_meeting_IAEA_radiation_standards"
+    ],
+    "substitutes": [
+      "thorium_232_breeder_cycles_with_uranium_233_fission"
+    ],
+    "environmental_and_health_risks": [
+      "radon_gas_inhalation_and_lung_cancer_in_underground_mines",
+      "criticality_accidents",
+      "ionizing_radiation_sickness",
+      "long_lived_transuranic_fission_product_radioactivity"
+    ],
+    "confidence": "verified",
+    "sources": ["Lamarsh, J.R. & Baratta, A.J. (2001) Introduction to Nuclear Engineering"]
+  },
+  {
+    "id": "resource_lithium_brine_spodumene",
+    "name": "Lithium Continental Brines and Spodumene Pegmatites",
+    "category": "mineral",
+    "material": "lithium",
+    "coordinates": null,
+    "geological_context": "High-altitude arid salar brines and lithium-cesium-tantalum (LCT) pegmatite dykes",
+    "processing_chain": [
+      "brine_pumping_and_solar_concentration_or_hard_rock_acid_roasting",
+      "precipitation_as_lithium_carbonate_or_hydroxide_monohydrate",
+      "synthesis_into_cathode_active_materials_NMC_or_LFP"
+    ],
+    "transport_constraints": [
+      "hazardous_battery_cell_transport_rules_to_prevent_thermal_runaway"
+    ],
+    "substitutes": [
+      "sodium_ion_batteries",
+      "flow_batteries_for_stationary_grids"
+    ],
+    "environmental_and_health_risks": [
+      "groundwater_depletion_in_arid_salar_regions",
+      "hydrofluoric_acid_generation_during_electrolyte_fires"
+    ],
+    "confidence": "verified",
+    "sources": ["Tarascon, J.M. & Armand, M. (2001) Issues and challenges facing rechargeable lithium batteries, Nature"]
+  },
+  {
+    "id": "resource_rare_earth_neodymium",
+    "name": "Bastnasite and Monazite Rare Earth Minerals",
+    "category": "mineral",
+    "material": "neodymium_and_dysprosium",
+    "coordinates": null,
+    "geological_context": "Carbonatite complexes and heavy mineral beach sands (monazite placer sands along Mediterranean coast)",
+    "processing_chain": [
+      "gravity_and_magnetic_separation",
+      "multistage_countercurrent_liquid_liquid_solvent_extraction_to_isolate_adjacent_lanthanides",
+      "electrowinning_to_metallic_neodymium",
+      "induction_alloying_with_iron_and_boron_to_sinter_Nd2Fe14B_magnets"
+    ],
+    "transport_constraints": [
+      "monazite_contains_thorium_requiring_radiological_clearance"
+    ],
+    "substitutes": [
+      "ferrite_ceramic_magnets_lower_energy_density",
+      "wound_rotor_synchronous_motors_no_permanent_magnets"
+    ],
+    "environmental_and_health_risks": [
+      "radioactive_thorium_tailings_management",
+      "massive_acidic_and_toxic_solvent_extraction_effluents"
+    ],
+    "confidence": "verified",
+    "sources": ["Gupta, C.K. & Krishnamurthy, N. (2004) Extractive Metallurgy of Rare Earths"]
+  },
+  {
+    "id": "resource_niobium_and_titanium",
+    "name": "Pyrochlore (Niobium) and Ilmenite/Rutile (Titanium)",
+    "category": "metal_ore",
+    "material": "niobium_and_titanium",
+    "coordinates": null,
+    "geological_context": "Carbonatite alkaline rocks (niobium) and black sand placer deposits (ilmenite in Rosetta and Damietta beaches)",
+    "processing_chain": [
+      "Kroll_process_reduction_of_$TiCl_4$_with_magnesium_to_titanium_sponge",
+      "aluminothermic_reduction_of_niobium_pentoxide",
+      "vacuum_arc_remelting_into_NbTi_superconducting_alloy_ingots",
+      "hot_extrusion_and_multi_filament_wire_drawing_inside_copper_stabilizing_matrix"
+    ],
+    "transport_constraints": [
+      "high_value_secure_cargo"
+    ],
+    "substitutes": [
+      "niobium_tin_Nb3Sn_for_higher_magnetic_fields",
+      "high_temperature_cuprate_superconductors_YBCO"
+    ],
+    "environmental_and_health_risks": [
+      "highly_reactive_molten_magnesium_and_toxic_titanium_tetrachloride_hazards"
+    ],
+    "confidence": "verified",
+    "sources": ["Wilson, M.N. (1983) Superconducting Magnets, Oxford University Press"]
+  }
+]

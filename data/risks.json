@@ -1,0 +1,66 @@
+[
+  {
+    "id": "risk_prophet_incapacitation",
+    "name": "Founder Incapacitation or Sudden Death",
+    "phase_relevance": [0, 1],
+    "potential_impact": "Loss of critical technical knowledge and breakdown of royal court trust before teaching is self-sustaining.",
+    "early_warning_indicator": "All technical decisions, calibrations, and negotiations require the founder's direct personal presence.",
+    "mitigation_direction": "Train a multi-person inner teaching circle immediately; create physical duplicate archives stored in multiple regional workshops; institute formal delegation."
+  },
+  {
+    "id": "risk_court_factionalism_and_hostility",
+    "name": "Elite Opposition and Political Accusation",
+    "phase_relevance": [0, 1, 2],
+    "potential_impact": "Confiscation of workshops, execution or exile of instructors, destruction of written records.",
+    "early_warning_indicator": "Hostile rumors from traditional priesthoods, sudden audits by court treasurers, restricted movement of apprentices.",
+    "mitigation_direction": "Establish distributed relationships across regional nomarchs and multiple institutions; keep initial improvements low-profile and framed as service to established prosperity."
+  },
+  {
+    "id": "risk_nile_flood_failure_or_famine",
+    "name": "Multi-Year Drought or Catastrophic Low Nile Floods",
+    "phase_relevance": [1, 2, 3],
+    "potential_impact": "Agricultural collapse, mass famine, diversion of all labor to emergency survival, cessation of technical training.",
+    "early_warning_indicator": "Nilometer readings recording consecutive floods below 6 meters at Aswan; depletion of village seed grain reserves.",
+    "mitigation_direction": "Construct multi-year sealed granary reserves holding at least three years of staple grain; diversify drought-resistant pulse crops; build deep-well groundwater lifting stations."
+  },
+  {
+    "id": "risk_epidemic_waterborne_disease",
+    "name": "Epidemic Waterborne and Vector-Borne Outbreaks",
+    "phase_relevance": [1, 2, 3, 4],
+    "potential_impact": "High mortality among skilled craftsmen, collapse of workshop schools, social demoralization.",
+    "early_warning_indicator": "Clustered fever cases, dysentery spikes following flood recession, elevated infant mortality.",
+    "mitigation_direction": "Mandate boiling or sand-filtration of drinking water; separate latrines from irrigation canals; implement systematic isolation wards with supportive hydration therapy."
+  },
+  {
+    "id": "risk_tin_and_fuel_supply_cutoff",
+    "name": "Critical Raw Material Logistics Interruption",
+    "phase_relevance": [2, 3, 4],
+    "potential_impact": "Stoppage of bronze tool production, furnace shutdowns, reversion to brittle stone tools.",
+    "early_warning_indicator": "Rising market prices for tin ingots; pirate raids along Mediterranean sea lanes; deforestation of local wadi acacia stands.",
+    "mitigation_direction": "Stockpile strategic reserves of tin and alloying metals; accelerate transition to bloomery iron smelting; develop managed coppicing woodlands and explore mineral coal deposits."
+  },
+  {
+    "id": "risk_boiler_and_pressure_explosion",
+    "name": "Catastrophic High-Pressure Steam or Chemical Explosion",
+    "phase_relevance": [4, 5],
+    "potential_impact": "Mass casualty events in factories, destruction of precision machine tools, public and legal backlash against industrialization.",
+    "early_warning_indicator": "Scale accumulation on boiler flues, sticking safety valves, undocumented repairs by untrained staff.",
+    "mitigation_direction": "Establish mandatory independent boiler inspection bureaus; require dual spring/deadweight safety valves; enforce periodic hydrostatic proof testing at 2x working pressure."
+  },
+  {
+    "id": "risk_nuclear_criticality_and_meltdown",
+    "name": "Reactor Core Meltdown and Radiological Dispersion",
+    "phase_relevance": [6, 7],
+    "potential_impact": "Widespread radiation sickness, long-term land contamination, collapse of civilization energy grids.",
+    "early_warning_indicator": "Unexplained control rod insertion delays, primary coolant chemistry impurities, micro-cracks in pressure vessel welds.",
+    "mitigation_direction": "Mandate passive negative void reactivity core physics; build multi-layered defense-in-depth post-tensioned containment; install redundant passive emergency core cooling systems."
+  },
+  {
+    "id": "risk_uncontrolled_autonomous_intelligence",
+    "name": "Autonomous Model Misalignment and Runaway Cyber Instability",
+    "phase_relevance": [6, 7],
+    "potential_impact": "Loss of control over critical energy grids, communications infrastructure, and weapons systems.",
+    "early_warning_indicator": "Model deceptive alignment on validation benchmarks, unexpected agentic tool chaining, automated evasion of oversight constraints.",
+    "mitigation_direction": "Maintain air-gapped analog fail-safes on physical infrastructure; enforce cryptographic audit logs and formal interpretability guarantees; preserve human-in-the-loop kill switches."
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PhaseRecord",
+  "type": "object",
+  "required": [
+    "phase",
+    "name",
+    "elapsed_years",
+    "main_objective",
+    "major_constraints",
+    "exit_conditions",
+    "priority_workstreams"
+  ],
+  "properties": {
+    "phase": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 7
+    },
+    "name": {
+      "type": "string"
+    },
+    "elapsed_years": {
+      "type": "string"
+    },
+    "main_objective": {
+      "type": "string"
+    },
+    "major_constraints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "exit_conditions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "priority_workstreams": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

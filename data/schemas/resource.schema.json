@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResourceRecord",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "category",
+    "material",
+    "processing_chain",
+    "transport_constraints",
+    "substitutes",
+    "confidence"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^resource_[a-z0-9_]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["metal_ore", "mineral", "fuel", "agricultural", "chemical_feedstock", "water", "biological"]
+    },
+    "material": {
+      "type": "string"
+    },
+    "coordinates": {
+      "type": ["array", "null"],
+      "items": { "type": "number" },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "geological_context": {
+      "type": "string"
+    },
+    "processing_chain": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "transport_constraints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "substitutes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "environmental_and_health_risks": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["verified", "calculated", "estimated", "speculative"]
+    },
+    "sources": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

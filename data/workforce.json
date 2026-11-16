@@ -1,0 +1,155 @@
+[
+  {
+    "id": "skill_stone_and_wood_worker",
+    "name": "Lithic and Wood Artisan",
+    "domain": "craft_foundations",
+    "training_time_months": 6.0,
+    "prerequisite_skills": [],
+    "core_tasks": [
+      "Flint percussion and pressure knapping",
+      "Shaping handles and hafting adzes and chisels",
+      "Building timber sledges and levers"
+    ],
+    "ethical_protection_standards": [
+      "Mandatory eye protection against flying stone chips",
+      "Rotational shifts to prevent repetitive strain injuries",
+      "Dust mitigation during dry stone grinding"
+    ]
+  },
+  {
+    "id": "skill_scribe_and_surveyor",
+    "name": "Scribe, Accountant, and Field Surveyor",
+    "domain": "administration_and_metrology",
+    "training_time_months": 18.0,
+    "prerequisite_skills": [],
+    "core_tasks": [
+      "Calculating field areas and grain volumes",
+      "Surveying dyke and canal gradients with plumb-bobs and water levels",
+      "Maintaining double-entry inventory and calibration ledgers"
+    ],
+    "ethical_protection_standards": [
+      "Protection from political retaliation for reporting true accounting figures",
+      "Clear transparent audit procedures",
+      "Adequate lighting to prevent ocular fatigue"
+    ]
+  },
+  {
+    "id": "skill_smelter_and_foundryman",
+    "name": "Furnace Master and Foundryman",
+    "domain": "metallurgy",
+    "training_time_months": 24.0,
+    "prerequisite_skills": ["skill_stone_and_wood_worker"],
+    "core_tasks": [
+      "Operating reduction furnaces and controlling draft tuyeres",
+      "Preparing refractory crucibles and lost-wax molds",
+      "Assaying metal ores and controlling alloy proportions"
+    ],
+    "ethical_protection_standards": [
+      "Furnace ventilation to prevent carbon monoxide poisoning",
+      "Thermal protective aprons and face shields",
+      "Strict ban on handling toxic arsenical dust without water-scrubbed hoods"
+    ]
+  },
+  {
+    "id": "skill_precision_machinist",
+    "name": "Toolmaker and Precision Machinist",
+    "domain": "mechanical_engineering",
+    "training_time_months": 36.0,
+    "prerequisite_skills": ["skill_smelter_and_foundryman", "skill_scribe_and_surveyor"],
+    "core_tasks": [
+      "Scraping precision surface plates to within optical flatness",
+      "Cutting accurate lead screws and slide-rest ways on lathes",
+      "Boring steam and pump cylinders to tight tolerances"
+    ],
+    "ethical_protection_standards": [
+      "Machine guards on exposed gear trains and belts",
+      "Noise dampening and ear protection in hammer and machine shops",
+      "Fair apprenticeship wages and intellectual property attribution"
+    ]
+  },
+  {
+    "id": "skill_electrical_power_technician",
+    "name": "Electrical Systems and Grid Lineman",
+    "domain": "electromagnetics",
+    "training_time_months": 24.0,
+    "prerequisite_skills": ["skill_precision_machinist"],
+    "core_tasks": [
+      "Winding motor armatures and transformer coils",
+      "Testing dielectric insulation with high-voltage megohmmeters",
+      "Erecting high-voltage transmission lines and substation breakers"
+    ],
+    "ethical_protection_standards": [
+      "Lockout-tagout procedures prior to any maintenance",
+      "Mandatory insulated arc-flash suits and gloves",
+      "Fall-arrest harnesses for high-altitude transmission tower climbing"
+    ]
+  },
+  {
+    "id": "skill_semiconductor_process_engineer",
+    "name": "Semiconductor Photolithography and Cleanroom Specialist",
+    "domain": "microelectronics",
+    "training_time_months": 48.0,
+    "prerequisite_skills": ["skill_precision_machinist", "skill_electrical_power_technician"],
+    "core_tasks": [
+      "Operating high-resolution optical mask aligners and steppers",
+      "Managing chemical vapor deposition and plasma etching chambers",
+      "Analyzing wafer defect density and four-point probe resistivity"
+    ],
+    "ethical_protection_standards": [
+      "Positive-pressure cleanroom air scrubbing to filter toxic gases (silane, arsine)",
+      "Strict hydrofluoric acid emergency antidote protocols (calcium gluconate gel)",
+      "Continuous atmospheric chemical monitoring and alarms"
+    ]
+  },
+  {
+    "id": "skill_nuclear_reactor_operator",
+    "name": "Licensed Nuclear Operations Engineer",
+    "domain": "nuclear_engineering",
+    "training_time_months": 60.0,
+    "prerequisite_skills": ["skill_electrical_power_technician"],
+    "core_tasks": [
+      "Monitoring core reactivity balance and thermal-hydraulic margins",
+      "Managing control rod maneuvering and scram systems",
+      "Supervising spent fuel pool cooling and radiation containment"
+    ],
+    "ethical_protection_standards": [
+      "Personal thermoluminescent dosimeter (TLD) tracking with strict annual dose limits",
+      "Whistleblower legal protection for safety shutdowns",
+      "Psychological fitness monitoring and fatigue-limiting shift scheduling"
+    ]
+  },
+  {
+    "id": "skill_aerospace_propulsion_specialist",
+    "name": "Cryogenic Propulsion and Orbital Dynamics Engineer",
+    "domain": "aerospace",
+    "training_time_months": 48.0,
+    "prerequisite_skills": ["skill_precision_machinist"],
+    "core_tasks": [
+      "Assembling and testing high-pressure cryogenic rocket turbopumps",
+      "Conducting hot-fire static tests of regeneratively cooled engines",
+      "Programming inertial guidance algorithms and orbital trajectory calculations"
+    ],
+    "ethical_protection_standards": [
+      "Blast-bunker remote test operations with redundant exclusion perimeters",
+      "Cryogenic burn personal protective gear (cryo-gloves, face shields)",
+      "Strict launch abort safety authority granted to range safety officer"
+    ]
+  },
+  {
+    "id": "skill_robotics_and_ai_systems_engineer",
+    "name": "Robotics Mechatronics and AI Systems Architect",
+    "domain": "autonomous_systems",
+    "training_time_months": 48.0,
+    "prerequisite_skills": ["skill_semiconductor_process_engineer"],
+    "core_tasks": [
+      "Tuning real-time closed-loop inverse kinematics and PID servo loops",
+      "Integrating LiDAR, stereoscopic vision, and SLAM pipelines",
+      "Deploying and fine-tuning deep neural network transformer architectures"
+    ],
+    "ethical_protection_standards": [
+      "Physical emergency stop buttons within reach of all robotic test cells",
+      "Formal ethics board review for any high-autonomy decision system",
+      "Transparent auditability of AI inference pipelines"
+    ]
+  }
+]

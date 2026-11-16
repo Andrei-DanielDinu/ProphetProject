@@ -1,0 +1,186 @@
+[
+  {
+    "phase": 0,
+    "name": "Arrival and Legitimacy",
+    "elapsed_years": "0-5",
+    "main_objective": "Survival, language acquisition, establishing social trust, and seeding the first reproducible workshop-school.",
+    "major_constraints": [
+      "Physical vulnerability and zero modern tools",
+      "Language and cultural barriers",
+      "Risk of political or religious persecution"
+    ],
+    "exit_conditions": [
+      "Protected workshop-school under local community trust",
+      "Stable food and shelter security",
+      "First cohort of apprentices capable of replicating basic techniques",
+      "Durable duplicate documentation established"
+    ],
+    "priority_workstreams": [
+      "Linguistic and ethnographic immersion",
+      "Modest, verifiable technical demonstrations (surveying, measurement, hygiene)",
+      "Multi-institutional relationship building",
+      "Apprentice selection and training"
+    ]
+  },
+  {
+    "phase": 1,
+    "name": "Food, Health, Measurement, and Records",
+    "elapsed_years": "5-100",
+    "main_objective": "Systematize food surplus, public health, metrology, and administrative literacy to sustain specialized craftsmen.",
+    "major_constraints": [
+      "Flood variability and drought vulnerabilities",
+      "High infant and maternal mortality",
+      "Post-harvest storage pests and spoilage"
+    ],
+    "exit_conditions": [
+      "Multi-year grain storage reserves with under 5% annual spoilage",
+      "Standardized system of weights, measures, and land surveying",
+      "Basic public health practices (potable water, waste separation) widely adopted",
+      "Scribal schools generating self-replicating technical records"
+    ],
+    "priority_workstreams": [
+      "Basin irrigation, canal maintenance, and nilometer tracking",
+      "Selective crop breeding and legume crop rotations",
+      "Ceramic sealed granaries with pest-resistant aeration",
+      "Calibration standards for mass, length, volume, and time"
+    ]
+  },
+  {
+    "phase": 2,
+    "name": "Materials, Trade, Law, and Infrastructure",
+    "elapsed_years": "100-500",
+    "main_objective": "Establish regional trade corridors, extractive metallurgy, civil engineering, and durable legal institutions.",
+    "major_constraints": [
+      "Tin scarcity for bronze metallurgy",
+      "High overland transport energy costs",
+      "Political instability across dynastic successions"
+    ],
+    "exit_conditions": [
+      "Redundant regional supply chains for copper, tin, and timber",
+      "Standardized contract law, weight standards, and dispute resolution courts",
+      "Permanent road and canal networks with engineered maintenance schedules",
+      "Autonomous technical guilds independent of single royal dynasties"
+    ],
+    "priority_workstreams": [
+      "Copper smelting optimization, tuyeres, and crucible development",
+      "Long-distance maritime and pack-caravan logistics networks",
+      "Surveying instruments, paved causeways, and canal locks",
+      "Contractual property rights and worker compensation codes"
+    ]
+  },
+  {
+    "phase": 3,
+    "name": "Mechanical Power, Iron, Optics, and Reproducible Knowledge",
+    "elapsed_years": "500-1200",
+    "main_objective": "Harness non-muscular mechanical energy (water/wind), bloomery and cast iron, precision optics, and movable-type printing.",
+    "major_constraints": [
+      "Refractory furnace materials for iron smelting temperatures (>1200 C)",
+      "Charcoal and timber depletion limits",
+      "Glass purity and grinding tolerances for scientific optics"
+    ],
+    "exit_conditions": [
+      "Waterwheels and windmills performing staple milling and forge work",
+      "Systematic bloomery iron and quench-tempered steel tool production",
+      "Movable type printing presses disseminating standardized technical manuals",
+      "Microscopes and astronomical instruments enabling empirical natural science"
+    ],
+    "priority_workstreams": [
+      "Bellows-driven bloomery and blast furnaces with lime fluxes",
+      "Undershot, overshot, and breastshot waterwheel mechanical drive trains",
+      "Optical glass annealing, lens grinding, and compound microscope construction",
+      "Rags-to-paper pulping mills and movable metal alloy type casting"
+    ]
+  },
+  {
+    "phase": 4,
+    "name": "Industrial Chemistry, Steam, and Precision Manufacturing",
+    "elapsed_years": "1200-2200",
+    "main_objective": "Create self-reproducing machine tools, thermal steam engines, mineral coal-coke metallurgy, and heavy chemical synthesis.",
+    "major_constraints": [
+      "Cylinder boring precision tolerances (preventing steam blow-by)",
+      "Boiler explosion hazards under elevated steam pressures",
+      "Corrosion from concentrated industrial acids and alkalis"
+    ],
+    "exit_conditions": [
+      "Wilkinson-style boring mills and slide-rest screw-cutting lathes",
+      "High-pressure condensing steam engines powering factories and locomotives",
+      "Continuous chamber sulfuric acid and Solvay soda ash manufacturing",
+      "Bessemer and open-hearth mass steel production"
+    ],
+    "priority_workstreams": [
+      "Precision lead screw generation and optical flat surface plates",
+      "Atmospheric Newcomen progressing to Watt condensing steam engines",
+      "Lead-chamber sulfuric acid and alkali industrial production",
+      "Coke-fueled blast furnaces and puddling/Bessemer steelmaking"
+    ]
+  },
+  {
+    "phase": 5,
+    "name": "Electricity, Communications, Modern Industry, and Computing",
+    "elapsed_years": "2200-3200",
+    "main_objective": "Harness electromagnetism for energy distribution and telecommunications, synthesize ammonia, and construct early digital computing.",
+    "major_constraints": [
+      "High-conductivity copper wire drawing and dielectric insulation",
+      "Extreme high-pressure/temperature catalytic vessels for Haber-Bosch",
+      "Vacuum tube and electromechanical relay reliability limits"
+    ],
+    "exit_conditions": [
+      "Regional high-voltage alternating current (AC) electrical transmission grids",
+      "Global undersea telegraphy and transoceanic radio communication networks",
+      "Synthetic Haber-Bosch ammonia fertilizer feeding expanded populations",
+      "Stored-program electronic digital computers with high-level compilers"
+    ],
+    "priority_workstreams": [
+      "Electromagnetic dynamos, induction motors, and step-up transformers",
+      "Petroleum refining, fractional distillation, and synthetic polymers",
+      "Haber-Bosch catalytic ammonia synthesis at 200 atm and 450 C",
+      "Thermionic vacuum tubes, binary logic gates, and magnetic core memory"
+    ]
+  },
+  {
+    "phase": 6,
+    "name": "Information, Space, Nuclear Energy, and Advanced Frontier",
+    "elapsed_years": "3200-4500",
+    "main_objective": "Master subatomic physics, microelectronics photolithography, multi-stage orbital spaceflight, and distributed artificial intelligence.",
+    "major_constraints": [
+      "Sub-micron semiconductor purity, cleanrooms, and photolithography masks",
+      "Uranium isotope enrichment ($^{235}U$) and radiation containment",
+      "Extreme cryogenic fuels and high-temperature supersonic gas dynamics"
+    ],
+    "exit_conditions": [
+      "Deep sub-micron CMOS microprocessors and global interconnected internet",
+      "Controlled nuclear fission reactors producing base-load zero-carbon electricity",
+      "Orbital launch vehicles deploying communication and observation satellites",
+      "High-energy particle accelerators probing fundamental physics (CERN-scale)"
+    ],
+    "priority_workstreams": [
+      "Czochralski single-crystal silicon boule pulling and photolithography",
+      "Nuclear fuel cycle: uranium enrichment, zirconium cladding, PWR safety loops",
+      "Staged combustion cryogenic rocket engines and orbital space stations (ISS)",
+      "High-performance compute clusters, deep neural networks, and LLM systems"
+    ]
+  },
+  {
+    "phase": 7,
+    "name": "Consolidation and Planetary Resilience",
+    "elapsed_years": "4500-5000",
+    "main_objective": "Build redundant planetary survival infrastructure, asteroid deflection / planetary defense systems, and decentralized technological autonomy.",
+    "major_constraints": [
+      "Single-point-of-failure vulnerabilities in global infrastructure",
+      "Long-term nuclear and ecological waste stewardship",
+      "Geopolitical coordination under existential stress"
+    ],
+    "exit_conditions": [
+      "Fully diversified off-grid redundant manufacturing and agricultural domes",
+      "Early warning space telescope arrays and kinetic impactor planetary defense",
+      "Permanent off-world self-sustaining scientific habitats",
+      "Complete decentralized open-source technological archives replicated globally"
+    ],
+    "priority_workstreams": [
+      "Deep-space asteroid and comet infrared tracking arrays",
+      "Automated robotic manufacturing and closed-loop ECLSS life support",
+      "Underground and orbital seed/knowledge seed vaults",
+      "Autonomous fault-tolerant robotic repair and resource extraction"
+    ]
+  }
+]

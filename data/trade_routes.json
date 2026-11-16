@@ -1,0 +1,76 @@
+[
+  {
+    "id": "route_nile_river_highway",
+    "name": "Nile River Fluvial Trunk Route",
+    "era": "Phase 0 through Phase 4",
+    "origin": "First Cataract (Aswan)",
+    "destination": "Mediterranean Delta Coast (Pelusium/Alexandria)",
+    "primary_mode": "Fluvial reed boats, wooden river barges, and sailboats",
+    "seasonality": "Northbound drift with current year-round; southbound return powered by prevailing northern Mediterranean winds",
+    "critical_cargo": [
+      "Basalt and granite building blocks from Aswan",
+      "Bulk agricultural grain from Upper Egypt",
+      "Fine ceramic wares and limestone masonry from Memphis"
+    ],
+    "chokepoints": [
+      "Cataracts of the Nile",
+      "Low water seasonal shoals in spring prior to the summer flood"
+    ]
+  },
+  {
+    "id": "route_wadi_hammamat_red_sea",
+    "name": "Wadi Hammamat Desert Caravan Corridor",
+    "era": "Phase 1 through Phase 3",
+    "origin": "Koptos (Nile Valley)",
+    "destination": "Quseir / Red Sea Coast",
+    "primary_mode": "Donkey pack caravans and sledges",
+    "seasonality": "Winter and autumn; avoid extreme midsummer desert heat",
+    "critical_cargo": [
+      "Bekhen-stone (greywacke) for carved statuary and cosmetic palettes",
+      "Alluvial gold and copper ingots from Eastern Desert veins",
+      "Frankincense and myrrh imported from Punt via Red Sea maritime landing"
+    ],
+    "chokepoints": [
+      "Desert well spacing requiring continuous water supply maintenance",
+      "Vulnerability to nomadic raiders along isolated wadi gorges"
+    ]
+  },
+  {
+    "id": "route_eastern_mediterranean_maritime",
+    "name": "Levantine and Eastern Mediterranean Maritime Circuit",
+    "era": "Phase 2 through Phase 4",
+    "origin": "Nile Delta Ports (Tanis, Avaris, Alexandria)",
+    "destination": "Byblos (Lebanon), Cyprus, Aegean, Anatolia",
+    "primary_mode": "Cedar-planked sailing merchant ships",
+    "seasonality": "April to October; winter Mediterranean storms prevent safe navigation",
+    "critical_cargo": [
+      "Cedar and fir structural timber from Mount Lebanon",
+      "Copper ingots (oxhide type) from Cyprus",
+      "Cassiterite tin ingots and silver from Anatolia and Mediterranean intermediaries",
+      "Olive oil and wine in sealed amphorae"
+    ],
+    "chokepoints": [
+      "Cypriot coastal channels",
+      "Delta river mouth silting and sandbars"
+    ]
+  },
+  {
+    "id": "route_global_maritime_container_and_bulk",
+    "name": "Modern Transoceanic Maritime and Air Freight Network",
+    "era": "Phase 5 through Phase 6",
+    "origin": "Global extraction hubs and mega-refineries",
+    "destination": "Industrial semiconductor and aerospace fabrication clusters",
+    "primary_mode": "Container vessels, ultra-large crude carriers (ULCC), and cargo jetliners",
+    "seasonality": "Continuous 24/7 all-weather operations via GPS and radar navigation",
+    "critical_cargo": [
+      "Petroleum and liquefied natural gas",
+      "Electronic-grade silicon ingots and processed semiconductor wafers",
+      "Lithium battery cathode powders and rare earth magnets",
+      "Precision CNC machine tools and optics"
+    ],
+    "chokepoints": [
+      "Suez Canal, Strait of Malacca, Strait of Hormuz, Panama Canal",
+      "Geopolitical export controls on dual-use aerospace and semiconductor technology"
+    ]
+  }
+]

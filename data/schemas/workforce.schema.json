@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WorkforceRecord",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "domain",
+    "training_time_months",
+    "prerequisite_skills",
+    "core_tasks",
+    "ethical_protection_standards"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^skill_[a-z0-9_]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "training_time_months": {
+      "type": "number",
+      "minimum": 0
+    },
+    "prerequisite_skills": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "core_tasks": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "ethical_protection_standards": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

@@ -1,17 +1,114 @@
 site_name: The Prophet Project
-site_description: A systems-engineering playbook for accelerating civilization and sustaining its mission across generations.
+site_description: A systems-engineering playbook for accelerating civilization from sticks and stones to advanced technology.
 site_url: https://example.github.io/prophet-project/
-repo_name: prophet-project
+repo_name: Andrei-DanielDinu/ProphetProject
+repo_url: https://github.com/Andrei-DanielDinu/ProphetProject
+
 theme:
   name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.expand
+    - navigation.top
     - content.code.copy
     - search.suggest
     - search.highlight
+
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 nav:
-  - Home: index.md
-  - Uomo Universale: uomo-universale.md
-  - Technology Roadmap: technology-roadmap.md
-  - Civilization Playbook: civilization-playbook.md
+  - Overview:
+      - Home: index.md
+      - Uomo Universale: uomo-universale.md
+      - Technology Roadmap: technology-roadmap.md
+      - Civilization Playbook: civilization-playbook.md
+  - Lore & Narrative:
+      - The Prophet: lore/the-prophet.md
+      - The Machine: lore/the-machine.md
+      - The Threat: lore/the-danger.md
+      - Temporal Assumptions: lore/temporal-assumptions.md
+  - Methodology:
+      - Dependency Model: methodology/dependency-model.md
+      - Evidence Standard: methodology/evidence-standard.md
+      - Resource Accounting: methodology/resource-accounting.md
+      - Manpower & Caloric Model: methodology/manpower-model.md
+      - Knowledge Transfer: methodology/knowledge-transfer.md
+      - Ethics & Governance: methodology/ethics-and-governance.md
+  - Baseline (c. 2975 BCE):
+      - Egypt c. 2975 BCE: baseline/egypt-c2975-bce.md
+      - Ancient Near East: baseline/ancient-near-east.md
+      - Baseline Uncertainties: baseline/baseline-uncertainties.md
+  - Master Roadmap Phases:
+      - Phase 0 - Arrival: phases/phase-0-arrival.md
+      - Phase 1 - Food & Health: phases/phase-1-food-health-records.md
+      - Phase 2 - Materials & Trade: phases/phase-2-materials-trade-law.md
+      - Phase 3 - Mechanics & Iron: phases/phase-3-mechanics-iron-print.md
+      - Phase 4 - Chemistry & Steam: phases/phase-4-chemistry-steam-machines.md
+      - Phase 5 - Electricity & Computing: phases/phase-5-electricity-industry-computing.md
+      - Phase 6 - Space, Nuclear & Frontier: phases/phase-6-information-space-biotech.md
+      - Phase 7 - Threat Readiness: phases/consolidation-and-threat-readiness.md
+  - Technology Stack:
+      - Primordial & Stone Tools: technologies/primordial-and-stone-tools.md
+      - Agriculture & Hydrology: technologies/agriculture-and-hydrology.md
+      - Metallurgy: technologies/metallurgy.md
+      - Mechanics & Machine Tools: technologies/mechanics-and-machine-tools.md
+      - Industrial Chemistry: technologies/industrial-chemistry.md
+      - Electricity & Power Grid: technologies/electricity-and-grid.md
+      - Computing & Microelectronics: technologies/computing-and-microelectronics.md
+      - Smartphones & Mobile Ecosystems: technologies/smartphones.md
+      - Large Language Models & AI: technologies/large-language-models.md
+      - Nuclear Fission Power: technologies/nuclear-reactors.md
+      - Particle Accelerators (CERN): technologies/particle-accelerators-cern.md
+      - Rocketry & Spacecraft: technologies/rocketry-and-spacecraft.md
+      - Orbital Space Stations (ISS): technologies/orbital-stations-iss.md
+      - Robotics & Autonomous Systems: technologies/robotics-and-automation.md
+      - Public Health & Medicine: technologies/public-health.md
+  - Geography & Logistics:
+      - Egypt and the Nile: geography/egypt-and-the-nile.md
+      - Resource Atlas: geography/resource-atlas.md
+      - Routes and Ports: geography/routes-and-ports.md
+      - Transport Economics: geography/logistics.md
+  - Institutions:
+      - Governance & Succession: institutions/governance.md
+      - Education & Apprenticeship: institutions/education.md
+      - Workshops & Guilds: institutions/workshops-and-guilds.md
+      - Public Health Service: institutions/public-health-service.md
+      - Standards & Inspection: institutions/standards-and-inspection.md
+  - Risk & Resilience:
+      - Failure Modes: risk/failure-modes.md
+      - Early Warning Indicators: risk/early-warning-indicators.md
+      - Contingency Plans: risk/contingency-plans.md
+  - References:
+      - Foundational Research: references/bibliography.md

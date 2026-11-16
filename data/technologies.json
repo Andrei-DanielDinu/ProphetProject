@@ -1,0 +1,1313 @@
+[
+  {
+    "id": "tech_flint_knapping",
+    "name": "Flint and Stone Knapping",
+    "phase_window": [0, 1],
+    "capability_level": "T5",
+    "prerequisites_all": [],
+    "prerequisites_any": [],
+    "inputs": [
+      {"id": "resource_flint_and_chert", "quantity": 5.0, "unit": "kg"},
+      {"id": "labour_stone_worker", "quantity": 1.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_handaxe",
+      "artifact_scraper",
+      "artifact_flint_blades"
+    ],
+    "process_summary": "Direct hard-hammer percussion followed by soft antler/wood percussion and pressure flaking along conchoidal fracture planes to yield razor-sharp bifacial edges.",
+    "quality_tests": [
+      "edge_sharpness_test",
+      "fracture_angle_inspection",
+      "durability_under_woodworking_impact"
+    ],
+    "failure_modes": [
+      "hinge_fractures_ruining_core",
+      "internal_flaws_shattering_blank",
+      "lacerations_to_knapper"
+    ],
+    "fallbacks": [
+      "obsidian_or_quartz_flaking",
+      "ground_stone_basalt_axes"
+    ],
+    "confidence": "verified",
+    "sources": ["Whittaker, J.C. (1994) Flintknapping: Making and Understanding Stone Tools"],
+    "notes": "Foundational lithic skill required to shape wood, bone, and butchery products prior to metal availability."
+  },
+  {
+    "id": "tech_controlled_friction_fire",
+    "name": "Controlled Friction Pyrotechnology",
+    "phase_window": [0, 1],
+    "capability_level": "T5",
+    "prerequisites_all": [],
+    "prerequisites_any": [],
+    "inputs": [
+      {"id": "resource_dry_hardwood_and_softwood", "quantity": 1.0, "unit": "kg"},
+      {"id": "dry_tinder_punk_wood_or_flax", "quantity": 0.1, "unit": "kg"},
+      {"id": "labour_unskilled", "quantity": 0.1, "unit": "person_days"}
+    ],
+    "outputs": [
+      "capability_sustained_combustion",
+      "thermal_heat_for_cooking_and_ceramics"
+    ],
+    "process_summary": "Rotational friction using a hand drill or bow drill spindle pressed against a wooden hearthboard with a V-notch to accumulate glowing charcoal dust, transferred to tinder nest.",
+    "quality_tests": [
+      "time_to_ember_generation",
+      "ember_longevity_in_tinder_bundle"
+    ],
+    "failure_modes": [
+      "moisture_in_spindle_or_hearth",
+      "insufficient_rotational_speed",
+      "glazing_of_friction_socket"
+    ],
+    "fallbacks": [
+      "percussion_sparks_from_pyrite_against_flint",
+      "preserving_continuous_hearth_coals"
+    ],
+    "confidence": "verified",
+    "sources": ["Pyne, S.J. (2001) Fire: A Brief History"],
+    "notes": "Essential ancestor capability for pottery, charcoal burning, and metallurgy."
+  },
+  {
+    "id": "tech_cordage_and_hafting",
+    "name": "Fiber Cordage and Tool Hafting",
+    "phase_window": [0, 1],
+    "capability_level": "T5",
+    "prerequisites_all": ["tech_flint_knapping"],
+    "prerequisites_any": [],
+    "inputs": [
+      {"id": "plant_bast_fibers_flax_or_palm", "quantity": 1.0, "unit": "kg"},
+      {"id": "pine_resin_or_bitumen", "quantity": 0.2, "unit": "kg"},
+      {"id": "labour_general", "quantity": 0.5, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_hafted_axe",
+      "artifact_composite_spear",
+      "tensile_cordage_and_twine"
+    ],
+    "process_summary": "Retting and spinning bast fibers into multi-ply twine; binding stone or bone bits onto shaped wooden handles using pitch adhesive, rawhide lashing, and fiber cord.",
+    "quality_tests": [
+      "tensile_break_strength_of_rope",
+      "haft_joint_rigidity_under_shear_load"
+    ],
+    "failure_modes": [
+      "moisture_rot_of_plant_fibers",
+      "brittle_fracture_of_resin_mastic_shock"
+    ],
+    "fallbacks": [
+      "rawhide_and_animal_sinew_lashings",
+      "single_piece_carved_wooden_clubs"
+    ],
+    "confidence": "verified",
+    "sources": ["Hurcombe, L. (2014) Perishable Material Culture in Prehistory"],
+    "notes": "Multiplies mechanical advantage of hand tools by providing leverage arms."
+  },
+  {
+    "id": "tech_basin_irrigation",
+    "name": "Basin Irrigation and Flood Control",
+    "phase_window": [1, 2],
+    "capability_level": "T5",
+    "prerequisites_all": ["tech_cordage_and_hafting", "tech_controlled_friction_fire"],
+    "prerequisites_any": [],
+    "inputs": [
+      {"id": "labour_agricultural_levy", "quantity": 500.0, "unit": "person_days"},
+      {"id": "artifact_digging_sticks_and_baskets", "quantity": 50.0, "unit": "units"}
+    ],
+    "outputs": [
+      "capability_predictable_crop_yields",
+      "soil_silt_replenishment",
+      "food_grain_surplus"
+    ],
+    "process_summary": "Excavating longitudinal and transverse earthen dykes dividing the floodplain into basins of 1,000-40,000 feddans, admitting floodwaters for 40-60 days to saturate soil and deposit mineral silt.",
+    "quality_tests": [
+      "water_depth_uniformity_across_basin",
+      "dyke_stability_against_erosion"
+    ],
+    "failure_modes": [
+      "catastrophic_dyke_breach_scouring_crops",
+      "stagnant_water_salinization",
+      "schistosomiasis_transmission_in_standing_canals"
+    ],
+    "fallbacks": [
+      "receding_floodwater_farming_natural_depressions",
+      "shaduf_manual_pot_irrigation"
+    ],
+    "confidence": "verified",
+    "sources": ["Butzer, K.W. (1976) Early Hydraulic Civilization in Egypt"],
+    "notes": "Creates the caloric foundation for all subsequent specialist labor."
+  },
+  {
+    "id": "tech_earthenware_pottery",
+    "name": "Kiln-Fired Earthenware and Refractory Ceramics",
+    "phase_window": [1, 2],
+    "capability_level": "T5",
+    "prerequisites_all": ["tech_controlled_friction_fire"],
+    "prerequisites_any": [],
+    "inputs": [
+      {"id": "resource_clay_and_silica", "quantity": 20.0, "unit": "kg"},
+      {"id": "resource_dry_fuel", "quantity": 50.0, "unit": "kg"},
+      {"id": "labour_potter", "quantity": 2.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_sealed_storage_vessels",
+      "artifact_refractory_crucibles_and_tuyeres"
+    ],
+    "process_summary": "Levigating clay, tempering with sand or crushed pottery grog, shaping on slow or fast wheel, drying slowly, and firing to 800-1050 C in an updraft kiln to achieve vitrification.",
+    "quality_tests": [
+      "water_permeability_and_slaking_resistance",
+      "thermal_shock_endurance_under_torch_flame"
+    ],
+    "failure_modes": [
+      "explosive_spalling_from_residual_moisture",
+      "warping_from_uneven_firing_temperatures"
+    ],
+    "fallbacks": [
+      "pit_firing_with_dung_fuel",
+      "carved_alabaster_and_limestone_jars"
+    ],
+    "confidence": "verified",
+    "sources": ["Rice, P.M. (2015) Pottery Analysis: A Sourcebook"],
+    "notes": "Supplies vermin-proof grain storage jars and thermal crucibles required for smelting metals."
+  },
+  {
+    "id": "tech_standard_metrology",
+    "name": "Standardized Metrology and Balances",
+    "phase_window": [1, 2],
+    "capability_level": "T5",
+    "prerequisites_all": ["tech_cordage_and_hafting"],
+    "prerequisites_any": [],
+    "inputs": [
+      {"id": "hardwood_or_diorite_reference_bars", "quantity": 2.0, "unit": "units"},
+      {"id": "cordage_and_copper_pans", "quantity": 1.0, "unit": "units"},
+      {"id": "labour_scribe_surveyor", "quantity": 5.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "capability_calibrated_mass_and_length",
+      "artifact_equal_arm_balance",
+      "artifact_standard_cubit_rod"
+    ],
+    "process_summary": "Establishing physical master standards for length (Royal Cubit ~52.4 cm) and mass (Deben ~91 g); constructing equal-arm beam balances suspended by central cord with knife-edge or string pivots.",
+    "quality_tests": [
+      "beam_equilibrium_under_reversed_loads",
+      "length_reproducibility_against_master_rod"
+    ],
+    "failure_modes": [
+      "thermal_expansion_and_warping_of_standards",
+      "unequal_arm_length_systematic_fraud"
+    ],
+    "fallbacks": [
+      "body_based_measurements_finger_palm_span",
+      "volume_counting_of_standard_grain_baskets"
+    ],
+    "confidence": "verified",
+    "sources": ["Petrie, W.M.F. (1926) Ancient Weights and Measures"],
+    "notes": "Metrology is the core prerequisite for repeatable architecture, metallurgy, and physics."
+  },
+  {
+    "id": "tech_copper_smelting",
+    "name": "Copper Extraction and Crucible Smelting",
+    "phase_window": [1, 2],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_controlled_friction_fire",
+      "tech_earthenware_pottery",
+      "tech_standard_metrology"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {"id": "resource_copper_ore_malachite", "quantity": 10.0, "unit": "kg"},
+      {"id": "resource_charcoal", "quantity": 30.0, "unit": "kg"},
+      {"id": "labour_metallurgist", "quantity": 3.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_cast_copper_ingots",
+      "artifact_hammered_copper_chisels_and_saws"
+    ],
+    "process_summary": "Crushing malachite oxide ore, charging into refractory ceramic crucibles with charcoal, blowing air with reed blowpipes or pot bellows to reach 1100 C ($2CuO + C \\to 2Cu + CO_2$), coalescing molten copper prills.",
+    "quality_tests": [
+      "ingot_density_and_malleability_under_hammer",
+      "slag_copper_content_loss_analysis"
+    ],
+    "failure_modes": [
+      "crucible_thermal_failure_spilling_metal",
+      "insufficient_temperature_leaving_unsmelted_prills",
+      "carbon_monoxide_intoxication"
+    ],
+    "fallbacks": [
+      "native_cold_hammered_copper",
+      "arsenical_copper_smelting"
+    ],
+    "confidence": "verified",
+    "sources": ["Rothenberg, B. (1990) The Ancient Metallurgy of Copper"],
+    "notes": "Initial transition from lithic to metallic tools. Enables superior woodworking and stoneworking."
+  },
+  {
+    "id": "tech_tin_bronze_alloying",
+    "name": "Tin-Bronze Smelting and Lost-Wax Casting",
+    "phase_window": [2, 3],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_copper_smelting"
+    ],
+    "prerequisites_any": [
+      ["resource_cassiterite_tin"]
+    ],
+    "inputs": [
+      {"id": "resource_copper", "quantity": 9.0, "unit": "kg"},
+      {"id": "resource_cassiterite_tin", "quantity": 1.0, "unit": "kg"},
+      {"id": "resource_charcoal", "quantity": 15.0, "unit": "kg"},
+      {"id": "labour_bronze_caster", "quantity": 2.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_hardened_bronze_cutting_tools",
+      "artifact_bronze_castings_and_weapons"
+    ],
+    "process_summary": "Co-smelting or crucible melting of 88-90% copper with 10-12% tin; pouring into two-piece stone molds or investment lost-wax clay molds; work-hardening cutting edges by cold hammering and low-temp annealing.",
+    "quality_tests": [
+      "Brinell_or_Vickers_hardness_comparison",
+      "casting_porosity_and_bubble_inspection",
+      "flexural_yield_strength"
+    ],
+    "failure_modes": [
+      "tin_sweat_and_segregation_in_mold",
+      "brittleness_from_excess_tin_over_15_percent",
+      "interruption_of_tin_maritime_supply"
+    ],
+    "fallbacks": [
+      "arsenical_copper_alloying",
+      "work_hardened_pure_copper"
+    ],
+    "confidence": "verified",
+    "sources": ["Coghlan, H.H. (1975) Notes on the Prehistoric Metallurgy of Copper and Bronze"],
+    "notes": "Major material leap: bronze holds sharp cutting edges, resists corrosion, and enables precision mechanical bearings."
+  },
+  {
+    "id": "tech_rotary_motion_and_wheels",
+    "name": "Wheel, Axle, and Rotary Transmission",
+    "phase_window": [2, 3],
+    "capability_level": "T5",
+    "prerequisites_all": [
+      "tech_tin_bronze_alloying",
+      "tech_standard_metrology"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {"id": "seasoned_timber_acacia_or_cedar", "quantity": 50.0, "unit": "kg"},
+      {"id": "bronze_bushings_and_nails", "quantity": 3.0, "unit": "kg"},
+      {"id": "labour_wheelwright", "quantity": 10.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_spoked_and_solid_wheels",
+      "artifact_rotary_pulleys_and_winches",
+      "capability_reduced_rolling_friction"
+    ],
+    "process_summary": "Crafting circular wooden wheel segments, mortise-and-tenon joints, fitting hard bronze sleeve bushings over stationary hardwood or bronze axles, lubricated with animal tallow.",
+    "quality_tests": [
+      "radial_runout_and_eccentricity_tolerance",
+      "frictional_drag_under_ton_load"
+    ],
+    "failure_modes": [
+      "wheel_hub_seizure_from_lubrication_breakdown",
+      "splitting_under_axial_shock_loading"
+    ],
+    "fallbacks": [
+      "wooden_log_rollers",
+      "sledge_drags_lubricated_with_water_silt"
+    ],
+    "confidence": "verified",
+    "sources": ["Piggott, S. (1983) The Earliest Wheeled Transport"],
+    "notes": "Dramatically reduces transport energy and creates the basis for pulley tackle and gear trains."
+  },
+  {
+    "id": "tech_bloomery_iron_smelting",
+    "name": "Bloomery Direct Iron Smelting and Forging",
+    "phase_window": [3, 4],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_tin_bronze_alloying",
+      "tech_earthenware_pottery"
+    ],
+    "prerequisites_any": [
+      ["resource_iron_ore_hematite"]
+    ],
+    "inputs": [
+      {"id": "resource_iron_ore_hematite", "quantity": 25.0, "unit": "kg"},
+      {"id": "resource_charcoal", "quantity": 75.0, "unit": "kg"},
+      {"id": "labour_blacksmith", "quantity": 5.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_wrought_iron_billets",
+      "artifact_blacksmith_tongs_anvils_and_hammers"
+    ],
+    "process_summary": "Solid-state carbon monoxide reduction of iron oxides inside clay shaft furnace at 1100-1250 C ($Fe_2O_3 + 3CO \\to 2Fe + 3CO_2$), tapping liquid fayalite slag ($2FeO \\cdot SiO_2$), repeatedly consolidating the red-hot spongy iron bloom under heavy hammer blows.",
+    "quality_tests": [
+      "slag_inclusion_fraction_microscopy",
+      "fracture_grain_ductility",
+      "cold_bend_test_without_cracking"
+    ],
+    "failure_modes": [
+      "premature_melting_into_unforgeable_cast_iron",
+      "excessive_oxidation_burning_the_iron",
+      "furnace_wall_slag_collapse"
+    ],
+    "fallbacks": [
+      "tin_bronze_heavy_forgings",
+      "meteoritic_nickel_iron"
+    ],
+    "confidence": "verified",
+    "sources": ["Pleiner, R. (2000) Iron in Archaeology: The European Bloomery Smelters"],
+    "notes": "Breaks the geographic tin bottleneck by unlocking ubiquitous iron ore reserves."
+  },
+  {
+    "id": "tech_quenched_and_tempered_steel",
+    "name": "Carburization, Quenching, and Tempering of Steel",
+    "phase_window": [3, 4],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_bloomery_iron_smelting"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {"id": "wrought_iron_bars", "quantity": 5.0, "unit": "kg"},
+      {"id": "charcoal_and_bone_dust_pack", "quantity": 2.0, "unit": "kg"},
+      {"id": "labour_master_smith", "quantity": 3.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_high_carbon_steel_tools",
+      "artifact_metalworking_files_chisels_and_springs"
+    ],
+    "process_summary": "Pack-carburizing wrought iron bars in sealed clay boxes packed with carbonaceous powder at 900 C for 12 hours (diffusion of carbon to 0.6-0.9%); heating to cherry red (austenite phase) and quenching in water/oil (forming hard martensite); reheating to 250-300 C (tempering) to relieve stress and restore toughness.",
+    "quality_tests": [
+      "file_cut_scratch_hardness_test",
+      "spring_elastic_deflection_recovery",
+      "chisel_edge_retention_cutting_cold_iron"
+    ],
+    "failure_modes": [
+      "quench_cracking_from_thermal_shock",
+      "decarburization_in_oxidizing_furnace_atmosphere",
+      "over_tempering_loss_of_cutting_hardness"
+    ],
+    "fallbacks": [
+      "work_hardened_tin_bronze",
+      "unhardened_wrought_iron"
+    ],
+    "confidence": "verified",
+    "sources": ["Verhoeven, J.D. (2007) Steel Metallurgy for the Non-Metallurgist"],
+    "notes": "Essential prerequisite for cutting metals, files, springs, and precision machine-tool components."
+  },
+  {
+    "id": "tech_waterwheel_and_millwork",
+    "name": "Waterwheel and Mechanical Power Transmission",
+    "phase_window": [3, 4],
+    "capability_level": "T5",
+    "prerequisites_all": [
+      "tech_rotary_motion_and_wheels",
+      "tech_quenched_and_tempered_steel"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {"id": "heavy_timber_beams", "quantity": 500.0, "unit": "kg"},
+      {"id": "iron_gudgeons_and_iron_bands", "quantity": 50.0, "unit": "kg"},
+      {"id": "labour_millwright", "quantity": 20.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "capability_continuous_mechanical_work",
+      "artifact_overshot_waterwheel",
+      "artifact_trip_hammer_forge_and_flour_mill"
+    ],
+    "process_summary": "Constructing overshot or breastshot wooden waterwheels converting hydrostatic head into continuous shaft rotation; transmitting torque via right-angle wooden crown and lantern gears; driving trip-hammers, bellows, and grain mills.",
+    "quality_tests": [
+      "continuous_operating_rpm_under_load",
+      "gear_tooth_wear_rate_and_backlash",
+      "bearing_friction_temperature"
+    ],
+    "failure_modes": [
+      "flooding_drowning_wheel_tailrace",
+      "timber_rot_and_algae_fouling",
+      "gear_tooth_shearing_under_hammer_impact"
+    ],
+    "fallbacks": [
+      "animal_driven_rotary_capstans",
+      "post_and_tower_windmills"
+    ],
+    "confidence": "verified",
+    "sources": ["Reynolds, T.S. (1983) Stronger Than a Hundred Men: A History of the Vertical Water Wheel"],
+    "notes": "Replaces human muscular exhaustion with kinetic stream power, accelerating industrial scaling."
+  },
+  {
+    "id": "tech_optical_glass_and_instruments",
+    "name": "Optical Glass Grinding and Scientific Lenses",
+    "phase_window": [3, 4],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_earthenware_pottery",
+      "tech_standard_metrology",
+      "tech_quenched_and_tempered_steel"
+    ],
+    "prerequisites_any": [
+      ["resource_clay_and_silica"]
+    ],
+    "inputs": [
+      {"id": "high_purity_silica_sand", "quantity": 5.0, "unit": "kg"},
+      {"id": "potash_or_natron_flux", "quantity": 2.0, "unit": "kg"},
+      {"id": "emery_or_silicon_carbide_abrasive", "quantity": 1.0, "unit": "kg"},
+      {"id": "labour_lens_grinder", "quantity": 5.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_convex_concave_lenses",
+      "artifact_compound_microscope",
+      "artifact_refracting_telescope"
+    ],
+    "process_summary": "Fusing silica with soda/lime flux in clay crucibles, annealing glass over weeks to remove thermal stress; grinding glass blanks against iron cast laps using progressively finer emery grit; polishing with tin oxide/cerium oxide on pitch laps to spherical accuracy.",
+    "quality_tests": [
+      "optical_clarity_and_bubble_count",
+      "focal_length_consistency",
+      "Newtonian_interference_fringe_test_against_master_glass"
+    ],
+    "failure_modes": [
+      "internal_strain_causing_spontaneous_shattering",
+      "scratches_and_spherical_aberration_ruining_image",
+      "cloudiness_from_crystallization_devitrification"
+    ],
+    "fallbacks": [
+      "water_filled_glass_spheres",
+      "single_drop_van_Leeuwenhoek_bead_microscopes"
+    ],
+    "confidence": "verified",
+    "sources": ["King, H.C. (1955) The History of the Telescope"],
+    "notes": "Unlocks microbiological observation (microbes, cellular pathology) and astronomical navigation."
+  },
+  {
+    "id": "tech_movable_type_printing",
+    "name": "Movable Type Printing and Rags-to-Paper Mill",
+    "phase_window": [3, 4],
+    "capability_level": "T5",
+    "prerequisites_all": [
+      "tech_waterwheel_and_millwork",
+      "tech_quenched_and_tempered_steel",
+      "tech_tin_bronze_alloying"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {"id": "linen_and_cotton_rags", "quantity": 50.0, "unit": "kg"},
+      {"id": "lead_tin_antimony_type_alloy", "quantity": 20.0, "unit": "kg"},
+      {"id": "linseed_oil_and_lampblack_ink", "quantity": 5.0, "unit": "kg"},
+      {"id": "labour_printer_and_typographer", "quantity": 10.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_movable_type_screw_press",
+      "artifact_standardized_technical_manuals_and_drawings",
+      "capability_exponential_knowledge_distribution"
+    ],
+    "process_summary": "Stamping steel punches into copper matrices; casting reusable alloy type (lead-tin-antimony that expands upon cooling to fill sharp edges); beating soaked cloth rags into pulp with water-powered stampers; couching paper sheets onto felt; printing with thick oil-based ink on wooden screw presses.",
+    "quality_tests": [
+      "letter_impression_uniformity",
+      "paper_tear_resistance_and_ink_bleed",
+      "typesetting_accuracy_proofreading"
+    ],
+    "failure_modes": [
+      "type_face_wear_and_lead_fume_toxicity",
+      "paper_acidic_degradation",
+      "ink_smearing_and_slow_drying"
+    ],
+    "fallbacks": [
+      "woodblock_xylographic_printing",
+      "scriptorium_manual_copyists"
+    ],
+    "confidence": "verified",
+    "sources": ["Eisenstein, E.L. (1979) The Printing Press as an Agent of Change"],
+    "notes": "Guarantees that engineering documentation cannot be lost in a single library fire or dynastic collapse."
+  },
+  {
+    "id": "tech_precision_lead_screw_and_lathe",
+    "name": "Slide-Rest Lathe and Precision Lead Screw",
+    "phase_window": [4, 5],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_quenched_and_tempered_steel",
+      "tech_waterwheel_and_millwork"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {"id": "cast_iron_and_steel_bars", "quantity": 100.0, "unit": "kg"},
+      {"id": "brass_bushings", "quantity": 5.0, "unit": "kg"},
+      {"id": "labour_master_machinist", "quantity": 25.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_screw_cutting_engine_lathe",
+      "artifact_interchangeable_standard_threaded_fasteners",
+      "capability_self_replicating_machine_precision"
+    ],
+    "process_summary": "Generating three optical flat surface plates by mutual hand scraping (Whitworth method); using slide-rest toolholders to eliminate human hand tremor; generating a master lead screw by splitting the nut and correcting pitch errors; cutting precise matching threads and cylinders.",
+    "quality_tests": [
+      "lead_screw_pitch_error_per_foot_under_micrometer",
+      "runout_concentricity_of_turned_shafts",
+      "surface_flatness_blueing_transfer_test"
+    ],
+    "failure_modes": [
+      "thermal_drift_during_lead_screw_cutting",
+      "tool_chatter_leaving_rippled_surfaces",
+      "lead_screw_backlash_in_split_nut"
+    ],
+    "fallbacks": [
+      "treadle_pole_lathes_with_hand_held_chisels",
+      "manual_filing_to_template_gauges"
+    ],
+    "confidence": "verified",
+    "sources": ["Rolt, L.T.C. (1965) Tools for the Job: A History of Machine Tools"],
+    "notes": "The linchpin of industrialization: machines that build other machines with higher precision."
+  },
+  {
+    "id": "tech_cylinder_boring_mill",
+    "name": "Heavy Cylinder Boring Mill",
+    "phase_window": [4, 5],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_precision_lead_screw_and_lathe",
+      "tech_waterwheel_and_millwork"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {"id": "cast_iron_machine_bed_and_boring_bar", "quantity": 500.0, "unit": "kg"},
+      {"id": "tool_steel_cutting_bits", "quantity": 10.0, "unit": "kg"},
+      {"id": "labour_machinist", "quantity": 15.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "capability_steam_tight_cylinder_boring",
+      "artifact_bored_cast_iron_steam_cylinder"
+    ],
+    "process_summary": "Mounting a massive rigid boring bar supported by bearings on both ends passing through a hollow rough-cast cylinder; rotating the bar while feeding cutter heads along its length via internal rack-and-pinion, producing cylinders true to within the thickness of an old shilling (Wilkinson principle).",
+    "quality_tests": [
+      "cylinder_bore_circularity_feeler_gauge",
+      "axial_taper_and_straightness_along_stroke"
+    ],
+    "failure_modes": [
+      "boring_bar_deflection_causing_hourglass_cylinder",
+      "cutter_edge_dulling_mid_pass_creating_steps"
+    ],
+    "fallbacks": [
+      "hand_hammering_sheet_copper_cylinders_leaky",
+      "manual_grinding_with_lead_laps_and_emery"
+    ],
+    "confidence": "verified",
+    "sources": ["Dickinson, H.W. (1936) Matthew Boulton and James Watt"],
+    "notes": "Unlocks functional steam engines by eliminating massive steam blow-by around piston rings."
+  },
+  {
+    "id": "tech_condensing_steam_engine",
+    "name": "Condensing Steam Engine and Pressure Boiler",
+    "phase_window": [4, 5],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_cylinder_boring_mill",
+      "tech_precision_lead_screw_and_lathe"
+    ],
+    "prerequisites_any": [
+      ["resource_coal_and_coke"]
+    ],
+    "inputs": [
+      {"id": "bored_cast_iron_cylinder_and_piston", "quantity": 1.0, "unit": "units"},
+      {"id": "riveted_wrought_iron_boiler_plate", "quantity": 1000.0, "unit": "kg"},
+      {"id": "lubricating_oil_and_hemp_packing", "quantity": 10.0, "unit": "kg"},
+      {"id": "labour_engine_builders", "quantity": 40.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "capability_mobile_and_factory_rotary_power",
+      "artifact_double_acting_condensing_steam_engine",
+      "artifact_deadweight_safety_valve"
+    ],
+    "process_summary": "Boiling water in riveted cylindrical boiler; routing steam through valves into double-acting cylinder; exhausting steam into a separate water-cooled condenser; driving beam or crankshaft with centrifugal flyball governor for automatic throttle regulation.",
+    "quality_tests": [
+      "hydrostatic_boiler_proof_pressure_test_at_2x_working_pressure",
+      "indicated_horsepower_and_fuel_consumption_rate",
+      "safety_valve_lift_and_reseat_reproducibility"
+    ],
+    "failure_modes": [
+      "catastrophic_boiler_explosion_from_scale_or_low_water",
+      "piston_packing_burnout_and_seizure",
+      "flyball_governor_linkage_failure_runaway"
+    ],
+    "fallbacks": [
+      "atmospheric_Newcomen_mine_pumps",
+      "waterwheel_battery_cascades"
+    ],
+    "confidence": "verified",
+    "sources": ["Hills, R.L. (1989) Power from Steam: A History of the Stationary Steam Engine"],
+    "notes": "Decouples industrial energy from geography; factories no longer need fast-flowing rivers."
+  },
+  {
+    "id": "tech_lead_chamber_sulfuric_acid",
+    "name": "Lead-Chamber Sulfuric Acid Synthesis",
+    "phase_window": [4, 5],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_earthenware_pottery",
+      "tech_quenched_and_tempered_steel"
+    ],
+    "prerequisites_any": [
+      ["resource_sulfur_and_pyrite"]
+    ],
+    "inputs": [
+      {"id": "resource_sulfur_or_roasted_pyrites", "quantity": 50.0, "unit": "kg"},
+      {"id": "potassium_nitrate_saltpeter", "quantity": 5.0, "unit": "kg"},
+      {"id": "lead_sheet_lining", "quantity": 200.0, "unit": "kg"},
+      {"id": "water_steam", "quantity": 100.0, "unit": "kg"},
+      {"id": "labour_chemical_worker", "quantity": 10.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_concentrated_sulfuric_acid_65_to_78_percent",
+      "capability_industrial_chemical_leaching_and_digestion"
+    ],
+    "process_summary": "Burning sulfur to sulfur dioxide ($SO_2$); oxidizing in large lead-lined wooden chambers with steam and catalytic nitric oxide gases ($NO, NO_2$ from decomposing saltpeter): $SO_2 + NO_2 + H_2O \\to H_2SO_4 + NO$; regenerating $NO$ with atmospheric oxygen; concentrating acid in glass or platinum retorts.",
+    "quality_tests": [
+      "acid_specific_gravity_hydrometer_Beaume",
+      "titration_against_standardized_sodium_carbonate"
+    ],
+    "failure_modes": [
+      "chamber_lead_corrosion_and_catastrophic_acid_leakage",
+      "lethal_toxic_nitrous_fume_inhalation",
+      "violent_steam_acid_eruptions_during_dilution"
+    ],
+    "fallbacks": [
+      "alunite_or_iron_sulfate_thermal_distillation_Nordhausen_acid",
+      "vinegar_acetic_acid_concentration"
+    ],
+    "confidence": "verified",
+    "sources": ["Taylor, F.S. (1957) A History of Industrial Chemistry"],
+    "notes": "Sulfuric acid is the 'king of chemicals'—required for metal pickling, chemical fertilizers, soda, and batteries."
+  },
+  {
+    "id": "tech_solvay_soda_ash_process",
+    "name": "Solvay Ammonia-Soda Process",
+    "phase_window": [4, 5],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_lead_chamber_sulfuric_acid",
+      "tech_condensing_steam_engine"
+    ],
+    "prerequisites_any": [
+      ["resource_rock_salt_halite", "resource_limestone_calcium_carbonate"]
+    ],
+    "inputs": [
+      {"id": "saturated_sodium_chloride_brine", "quantity": 200.0, "unit": "liters"},
+      {"id": "resource_limestone_calcium_carbonate", "quantity": 100.0, "unit": "kg"},
+      {"id": "ammonia_gas_recycled", "quantity": 5.0, "unit": "kg"},
+      {"id": "coke_fuel", "quantity": 50.0, "unit": "kg"},
+      {"id": "labour_chemical_operator", "quantity": 8.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_sodium_carbonate_soda_ash_purity_99_percent",
+      "capability_mass_soap_glass_and_paper_manufacture"
+    ],
+    "process_summary": "Passing carbon dioxide from limestone kilning through ammoniated brine in absorption towers to precipitate sodium bicarbonate: $NaCl + NH_3 + CO_2 + H_2O \\to NaHCO_3 \\downarrow + NH_4Cl$; filtering and calcining bicarbonate to pure soda ash ($2NaHCO_3 \\to Na_2CO_3 + H_2O + CO_2$); regenerating ammonia with quicklime.",
+    "quality_tests": [
+      "acid_base_titration_purity_percentage",
+      "ammonia_recycle_recovery_efficiency"
+    ],
+    "failure_modes": [
+      "ammonia_gas_leakage_asphyxiating_plant_workers",
+      "precipitation_tower_clogging_with_bicarbonate_crusts"
+    ],
+    "fallbacks": [
+      "Leblanc_process_high_pollution_sulfate_black_ash",
+      "kelp_and_wood_ash_leaching"
+    ],
+    "confidence": "verified",
+    "sources": ["Hou, T.P. (1942) Manufacture of Soda: With Special Reference to the Ammonia Process"],
+    "notes": "Drives sanitary soap production, textile bleaching, and high-volume glassmaking."
+  },
+  {
+    "id": "tech_bessemer_and_open_hearth_steel",
+    "name": "Pneumatic Bessemer and Open-Hearth Mass Steelmaking",
+    "phase_window": [4, 5],
+    "capability_level": "T5",
+    "prerequisites_all": [
+      "tech_condensing_steam_engine",
+      "tech_cylinder_boring_mill"
+    ],
+    "prerequisites_any": [
+      ["resource_iron_ore_hematite"]
+    ],
+    "inputs": [
+      {"id": "molten_blast_furnace_pig_iron", "quantity": 5000.0, "unit": "kg"},
+      {"id": "compressed_air_blast", "quantity": 1000.0, "unit": "m3"},
+      {"id": "spiegeleisen_manganese_iron_deoxidizer", "quantity": 100.0, "unit": "kg"},
+      {"id": "labour_steel_foundry_gang", "quantity": 15.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_bulk_mild_steel_ingots",
+      "capability_steel_railways_bridges_and_high_pressure_vessels"
+    ],
+    "process_summary": "Pouring molten iron into pear-shaped refractory lined Bessemer converter; blowing high-pressure air through bottom tuyeres; exothermic oxidation of silicon and carbon raises temperature without extra fuel; recarburizing with manganese spiegeleisen to control exact carbon content (0.2-0.5%).",
+    "quality_tests": [
+      "spectroscopic_or_spark_testing_carbon_estimation",
+      "tensile_yield_and_elongation_test",
+      "Charpy_V_notch_impact_fracture_toughness"
+    ],
+    "failure_modes": [
+      "converter_slop_and_volcano_like_steel_ejections",
+      "cold_shortness_from_excess_residual_phosphorus",
+      "tuyere_burnout_during_air_blow"
+    ],
+    "fallbacks": [
+      "puddling_furnace_wrought_iron_smaller_batches",
+      "Huntsman_crucible_steel_expensive"
+    ],
+    "confidence": "verified",
+    "sources": ["Misa, T.J. (1995) A Nation of Steel: The Making of Modern America"],
+    "notes": "Reduces steel production time from weeks to 20 minutes; enables transcontinental railways and skyscraper construction."
+  },
+  {
+    "id": "tech_electromagnetic_dynamo_and_motor",
+    "name": "Electromagnetic Induction, Dynamo, and Electric Motors",
+    "phase_window": [5, 6],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_bessemer_and_open_hearth_steel",
+      "tech_precision_lead_screw_and_lathe"
+    ],
+    "prerequisites_any": [
+      ["resource_copper_ore_malachite"]
+    ],
+    "inputs": [
+      {"id": "drawn_electrolytic_copper_wire", "quantity": 50.0, "unit": "kg"},
+      {"id": "shellac_and_cotton_insulation", "quantity": 5.0, "unit": "kg"},
+      {"id": "silicon_steel_laminations_and_cast_iron", "quantity": 150.0, "unit": "kg"},
+      {"id": "labour_electrical_mechanic", "quantity": 12.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_dc_generator_and_induction_motor",
+      "capability_electrical_power_generation_and_rotary_work"
+    ],
+    "process_summary": "Drawing refined copper into continuous insulated wire; winding field coils and armature coils onto laminated low-hysteresis iron cores; rotating armature through magnetic fields (Faraday-Lenz induction $V = -N \\frac{d\\Phi}{dt}$); rectifying via commutator or harnessing rotating magnetic fields for AC induction motors.",
+    "quality_tests": [
+      "insulation_megohmmeter_dielectric_breakdown_test",
+      "no_load_and_full_load_efficiency_curves",
+      "armature_temperature_rise_under_continuous_load"
+    ],
+    "failure_modes": [
+      "insulation_thermal_carbonization_and_short_circuits",
+      "commutator_brush_arcing_and_copper_pitting",
+      "centrifugal_rotor_bursting_at_overspeed"
+    ],
+    "fallbacks": [
+      "chemical_galvanic_cells_Volta_Bunsen_short_lifespan",
+      "direct_steam_line_shaft_pulleys"
+    ],
+    "confidence": "verified",
+    "sources": ["Hughes, T.P. (1983) Networks of Power: Electrification in Western Society"],
+    "notes": "Replaces messy mechanical belt systems in factories with quiet, instantly switchable, clean electric drive."
+  },
+  {
+    "id": "tech_ac_transformer_and_power_grid",
+    "name": "Polyphase AC Transformer and Regional Transmission Grid",
+    "phase_window": [5, 6],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_electromagnetic_dynamo_and_motor"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {"id": "grain_oriented_silicon_steel_cores", "quantity": 1000.0, "unit": "kg"},
+      {"id": "copper_conductors_and_mineral_oil_coolant", "quantity": 500.0, "unit": "kg"},
+      {"id": "glazed_porcelain_high_voltage_insulators", "quantity": 200.0, "unit": "units"},
+      {"id": "labour_grid_lineman_and_engineer", "quantity": 30.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_step_up_step_down_transformers",
+      "capability_long_distance_low_loss_high_voltage_power_transmission"
+    ],
+    "process_summary": "Winding primary and secondary coils around closed laminated ferromagnetic cores; stepping up alternating voltages to 10-110 kV ($P_{loss} = I^2 R$, reducing current by $1/N$ drops transmission $I^2R$ resistive heating by $1/N^2$); transmitting over high-voltage towers with porcelain suspension insulators; stepping down at municipal substations to safe 120/240 V.",
+    "quality_tests": [
+      "transformer_turns_ratio_and_phase_angle_verification",
+      "dielectric_oil_spark_breakdown_voltage",
+      "grid_frequency_stability_under_step_load_changes"
+    ],
+    "failure_modes": [
+      "catastrophic_arc_flash_and_oil_transformer_explosions",
+      "lightning_surge_insulator_flashovers",
+      "cascading_grid_blackouts_from_unscheduled_overloads"
+    ],
+    "fallbacks": [
+      "low_voltage_DC_distribution_limited_to_1_km_radius",
+      "isolated_steam_engine_per_facility"
+    ],
+    "confidence": "verified",
+    "sources": ["Tesla, N. (1888) A New System of Alternating Current Motors and Transformers"],
+    "notes": "Allows centralized power stations (hydro, thermal, nuclear) to energize millions of homes and factories hundreds of miles away."
+  },
+  {
+    "id": "tech_haber_bosch_ammonia_synthesis",
+    "name": "Haber-Bosch High-Pressure Catalytic Ammonia Synthesis",
+    "phase_window": [5, 6],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_bessemer_and_open_hearth_steel",
+      "tech_condensing_steam_engine",
+      "tech_lead_chamber_sulfuric_acid"
+    ],
+    "prerequisites_any": [
+      ["resource_natural_gas_methane", "resource_coal_and_coke"]
+    ],
+    "inputs": [
+      {"id": "nitrogen_gas_fractionated_from_air", "quantity": 100.0, "unit": "m3"},
+      {"id": "hydrogen_gas_from_steam_methane_reforming", "quantity": 300.0, "unit": "m3"},
+      {"id": "promoted_magnetite_iron_catalyst", "quantity": 10.0, "unit": "kg"},
+      {"id": "high_pressure_alloy_forged_reactor_vessel", "quantity": 1.0, "unit": "units"},
+      {"id": "labour_process_engineer", "quantity": 20.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_anhydrous_liquid_ammonia_and_ammonium_nitrate",
+      "capability_synthetic_nitrogen_fertilizer_eliminating_famine"
+    ],
+    "process_summary": "Purifying and mixing stoichiometric 1:3 $N_2$ and $H_2$; compressing to 150-250 atmospheres; passing over potassium/alumina-promoted alpha-iron catalyst at 400-500 C ($N_2 + 3H_2 \\rightleftharpoons 2NH_3, \\Delta H = -92.4 \\text{ kJ/mol}$); condensing liquid ammonia via refrigeration; recycling unreacted gases continuously.",
+    "quality_tests": [
+      "reactor_effluent_ammonia_percentage",
+      "catalyst_poisoning_sulfur_and_oxygen_ppm_spectrometry",
+      "reactor_wall_hydrogen_embrittlement_ultrasonic_inspection"
+    ],
+    "failure_modes": [
+      "hydrogen_embrittlement_and_explosive_reactor_vessel_rupture",
+      "catalyst_deactivation_by_trace_carbon_monoxide",
+      "toxic_ammonia_plume_release_endangering_communities"
+    ],
+    "fallbacks": [
+      "Birkeland_Eyde_electric_arc_process_extremely_inefficient",
+      "natural_Chilean_guano_and_caliche_deposits",
+      "leguminous_crop_rotation_alone"
+    ],
+    "confidence": "verified",
+    "sources": ["Smil, V. (2001) Enriching the Earth: Fritz Haber, Carl Bosch, and the Transformation of World Food Production"],
+    "notes": "Directly feeds nearly half the modern global human population by synthesizing reactive nitrogen from air."
+  },
+  {
+    "id": "tech_thermionic_vacuum_tube",
+    "name": "Thermionic Vacuum Tube and Electronic Amplification",
+    "phase_window": [5, 6],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_optical_glass_and_instruments",
+      "tech_electromagnetic_dynamo_and_motor"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {"id": "borosilicate_glass_envelopes", "quantity": 100.0, "unit": "units"},
+      {"id": "tungsten_and_nickel_filaments_and_grids", "quantity": 2.0, "unit": "kg"},
+      {"id": "barium_strontium_oxide_emission_coating", "quantity": 0.1, "unit": "kg"},
+      {"id": "mercury_diffusion_high_vacuum_pump", "quantity": 1.0, "unit": "units"},
+      {"id": "labour_tube_fabricator", "quantity": 15.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_triode_and_pentode_vacuum_tubes",
+      "capability_signal_amplification_and_high_frequency_oscillation",
+      "artifact_electronic_binary_logic_gates"
+    ],
+    "process_summary": "Sealing tungsten cathode, control grid, and nickel anode inside evacuated glass bulbs ($< 10^{-6}$ Torr); flashing barium getter to absorb residual gas; heating cathode to emit electrons; modulating plate current with small negative grid voltages ($I_p = f(V_g)$); constructing flip-flop bistable multivibrators for digital switching.",
+    "quality_tests": [
+      "transconductance_and_amplification_factor_curve_tracer",
+      "envelope_vacuum_leakage_getter_mirror_inspection",
+      "cathode_emission_current_at_rated_filament_voltage"
+    ],
+    "failure_modes": [
+      "filament_burnout_from_thermal_evaporation",
+      "vacuum_loss_and_blue_glow_gas_discharge",
+      "inter_electrode_capacitive_parasitic_oscillations"
+    ],
+    "fallbacks": [
+      "electromechanical_telephone_relays_slow_and_mechanical",
+      "carbon_microphone_amplifiers"
+    ],
+    "confidence": "verified",
+    "sources": ["Spangenberg, K.R. (1948) Vacuum Tubes, McGraw-Hill"],
+    "notes": "Enabled the first electronic radio transmitters, radar, long-distance telephony, and ENIAC-era electronic computing."
+  },
+  {
+    "id": "tech_semiconductor_photolithography",
+    "name": "Semiconductor Silicon Photolithography and Planar Process",
+    "phase_window": [6, 6],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_optical_glass_and_instruments",
+      "tech_thermionic_vacuum_tube",
+      "tech_solvay_soda_ash_process"
+    ],
+    "prerequisites_any": [
+      ["resource_high_purity_quartz_silicon"]
+    ],
+    "inputs": [
+      {"id": "single_crystal_czochralski_silicon_wafers_9N", "quantity": 25.0, "unit": "units"},
+      {"id": "ultraviolet_photoresist_and_optical_reticles", "quantity": 5.0, "unit": "liters"},
+      {"id": "boron_and_phosphorus_dopant_gases", "quantity": 1.0, "unit": "cylinders"},
+      {"id": "class_10_cleanroom_facility", "quantity": 1.0, "unit": "units"},
+      {"id": "labour_semiconductor_process_engineer", "quantity": 30.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_silicon_planar_wafers",
+      "artifact_n_channel_and_p_channel_mosfet_transistors",
+      "capability_monolithic_integrated_circuit_fabrication"
+    ],
+    "process_summary": "Thermal oxidation of silicon wafer to grow insulating $SiO_2$; spin-coating photoresist; exposing to UV light through chrome photomasks; dissolving exposed resist; wet/dry chemical etching of oxide windows; diffusing dopants ($B, P$) into silicon lattice at 1000 C; vacuum sputtering aluminum/copper interconnect tracks; chemical-mechanical polishing (CMP) for multi-layer stacking.",
+    "quality_tests": [
+      "ellipsometric_oxide_thickness_measurement",
+      "four_point_probe_sheet_resistance",
+      "wafer_defect_density_and_die_yield_analysis"
+    ],
+    "failure_modes": [
+      "airborne_particulate_contamination_killing_dies",
+      "photomask_misalignment_causing_layer_shorts",
+      "pinhole_dielectric_breakdown_in_thin_gate_oxides"
+    ],
+    "fallbacks": [
+      "discrete_germanium_point_contact_transistors",
+      "hybrid_thick_film_ceramic_circuits"
+    ],
+    "confidence": "verified",
+    "sources": ["Plummer, J.D., Deal, M.D., & Griffin, P.B. (2000) Silicon VLSI Technology: Fundamentals, Practice, and Modeling"],
+    "notes": "Foundational manufacturing technique for all microprocessors, memory chips, and computer vision sensors."
+  },
+  {
+    "id": "tech_cmos_microprocessors",
+    "name": "CMOS VLSI Microprocessors and System Architecture",
+    "phase_window": [6, 6],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_semiconductor_photolithography"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {"id": "processed_silicon_wafers_with_millions_of_gates", "quantity": 10.0, "unit": "units"},
+      {"id": "ball_grid_array_ceramic_packages_and_gold_wire", "quantity": 1000.0, "unit": "units"},
+      {"id": "automated_wafer_probe_and_tester", "quantity": 1.0, "unit": "units"},
+      {"id": "labour_computer_architect_and_vlsi_engineer", "quantity": 40.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_32_and_64_bit_cmos_microprocessors",
+      "artifact_dynamic_random_access_memory_dram",
+      "capability_gigahertz_scale_programmable_computation"
+    ],
+    "process_summary": "Integrating complementary n-MOS and p-MOS transistors on silicon dies with near-zero static power draw; structuring into arithmetic logic units (ALUs), multi-level instruction caches (L1/L2/L3), out-of-order execution pipelines, and memory management units (MMUs); dicing wafers with diamond saws; wire bonding to carrier substrates.",
+    "quality_tests": [
+      "automated_test_pattern_generation_stuck_at_fault_coverage",
+      "clock_frequency_fmax_and_thermal_throttling_validation",
+      "instruction_set_architecture_compliance_suite"
+    ],
+    "failure_modes": [
+      "electromigration_voiding_in_submicron_aluminum_copper_lines",
+      "cosmic_ray_single_event_upsets_soft_errors",
+      "timing_race_conditions_and_hold_time_violations"
+    ],
+    "fallbacks": [
+      "bit_slice_TTL_discrete_logic_computers_minicomputers",
+      "ferrite_magnetic_core_memory_modules"
+    ],
+    "confidence": "verified",
+    "sources": ["Hennessy, J.L. & Patterson, D.A. (2018) Computer Architecture: A Quantitative Approach"],
+    "notes": "Creates the processing brains that power phones, server clusters, autopilot avionics, and scientific simulations."
+  },
+  {
+    "id": "tech_smartphones",
+    "name": "Integrated Smartphones and Mobile Computing Ecosystem",
+    "phase_window": [6, 6],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_cmos_microprocessors",
+      "tech_ac_transformer_and_power_grid"
+    ],
+    "prerequisites_any": [
+      ["resource_lithium_brine_spodumene"]
+    ],
+    "inputs": [
+      {"id": "low_power_arm_system_on_chip", "quantity": 1.0, "unit": "units"},
+      {"id": "high_density_lithium_ion_pouch_battery", "quantity": 1.0, "unit": "units"},
+      {"id": "capacitive_multi_touch_oled_display", "quantity": 1.0, "unit": "units"},
+      {"id": "multiband_cellular_rf_transceiver_and_gps_sensors", "quantity": 1.0, "unit": "units"},
+      {"id": "labour_embedded_systems_and_software_team", "quantity": 50.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_pocket_supercomputer_smartphone",
+      "capability_ubiquitous_real_time_multimedia_communication_and_sensing"
+    ],
+    "process_summary": "Assembling high-density multilayer printed circuit boards (HDI PCB) with microvias; surface-mounting ARM SoC, LPDDR5 RAM, UFS NAND flash, 5G RF front-end, CMOS image sensors, and MEMS gyroscopes; sealing behind chemically-strengthened aluminosilicate glass; powering with cobalt/nickel lithium-ion pouch cells governed by fuel-gauge ICs; loading Unix-kernel mobile operating systems with sandboxed security.",
+    "quality_tests": [
+      "radio_frequency_specific_absorption_rate_sar_compliance",
+      "battery_charge_discharge_cycle_life_and_thermal_protection",
+      "drop_and_water_ingress_ip68_environmental_testing"
+    ],
+    "failure_modes": [
+      "lithium_dendrite_internal_shorts_causing_thermal_runaway_fires",
+      "rf_antenna_detuning_and_hand_attenuation_call_drops",
+      "software_privilege_escalation_and_baseband_firmware_exploits"
+    ],
+    "fallbacks": [
+      "desktop_workstations_with_wired_ethernet",
+      "handheld_walkie_talkies_and_paper_maps"
+    ],
+    "confidence": "verified",
+    "sources": ["Balakrishnan, H. et al. (2001) Challenges to Pervasive Computing, IEEE"],
+    "notes": "The ultimate convergence of microelectronics, radio frequency engineering, battery electrochemistry, optics, and software."
+  },
+  {
+    "id": "tech_large_language_models",
+    "name": "Transformer Deep Neural Networks and Large Language Models (LLMs)",
+    "phase_window": [6, 6],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_cmos_microprocessors"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {"id": "datacenter_cluster_with_tens_of_thousands_of_gpus_tpus", "quantity": 1.0, "unit": "units"},
+      {"id": "high_bandwidth_memory_hbm3_and_nvlink_fabrics", "quantity": 10000.0, "unit": "units"},
+      {"id": "multi_terabyte_curated_multilingual_text_code_corpora", "quantity": 1.0, "unit": "units"},
+      {"id": "megawatt_scale_datacenter_electrical_power_and_cooling", "quantity": 50.0, "unit": "MW"},
+      {"id": "labour_machine_learning_researchers_and_infra_engineers", "quantity": 60.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_foundation_large_language_model_weights",
+      "capability_generative_reasoning_coding_and_scientific_synthesis",
+      "artifact_quantized_local_inference_runtimes"
+    ],
+    "process_summary": "Tokenizing text using byte-pair encoding (BPE); initializing deep multi-layer Transformer architectures featuring multi-head self-attention ($\text{Attention}(Q,K,V) = \text{softmax}(\\frac{QK^T}{\\sqrt{d_k}})V$) and feed-forward networks; running distributed synchronous stochastic gradient descent across GPU clusters with 3D parallelism (tensor, pipeline, data); training with FP8/BF16 mixed precision on trillions of tokens; aligning via Reinforcement Learning from Human Feedback (RLHF) and direct preference optimization.",
+    "quality_tests": [
+      "training_cross_entropy_loss_and_validation_perplexity",
+      "benchmark_evaluations_on_coding_reasoning_and_factual_accuracy",
+      "adversarial_jailbreak_robustness_and_safety_filtering_audits"
+    ],
+    "failure_modes": [
+      "loss_divergence_and_gradient_explosions_wasting_compute_weeks",
+      "hallucination_of_false_scientific_or_medical_facts",
+      "silent_silent_bit_flips_in_vram_corrupting_checkpoint_weights"
+    ],
+    "fallbacks": [
+      "symbolic_expert_systems_and_rule_based_ai",
+      "classical_relational_databases_and_manual_scientific_search"
+    ],
+    "confidence": "verified",
+    "sources": ["Vaswani, A. et al. (2017) Attention Is All You Need, NeurIPS"],
+    "notes": "Autonomous synthesis engine that can index, translate, optimize, and cross-reference the entire canon of human civilization knowledge."
+  },
+  {
+    "id": "tech_nuclear_fission_reactors",
+    "name": "Controlled Nuclear Fission Reactors and Fuel Cycle",
+    "phase_window": [6, 6],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_bessemer_and_open_hearth_steel",
+      "tech_precision_lead_screw_and_lathe",
+      "tech_condensing_steam_engine"
+    ],
+    "prerequisites_any": [
+      ["resource_uranium_ore_pitchblende"]
+    ],
+    "inputs": [
+      {"id": "enriched_uranium_fuel_assemblies_3_to_5_percent_u235", "quantity": 20.0, "unit": "tons"},
+      {"id": "zircaloy_cladding_tubes", "quantity": 5.0, "unit": "tons"},
+      {"id": "boron_carbide_and_cadmium_control_rods", "quantity": 50.0, "unit": "units"},
+      {"id": "forged_heavy_alloy_steel_reactor_pressure_vessel", "quantity": 1.0, "unit": "units"},
+      {"id": "post_tensioned_reinforced_concrete_containment_structure", "quantity": 1.0, "unit": "units"},
+      {"id": "labour_nuclear_physicists_and_licensed_operators", "quantity": 50.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_pressurized_water_nuclear_power_plant",
+      "capability_gigawatt_scale_zero_carbon_baseload_electricity",
+      "artifact_medical_radioisotopes_for_diagnostics"
+    ],
+    "process_summary": "Enriching uranium via gas centrifuges; pressing and sintering $UO_2$ ceramic pellets sealed in neutron-transparent zircaloy pins; assembling core submerged in high-purity water functioning as both neutron moderator and primary coolant at 155 bar (preventing boiling); sustaining critical neutron chain reaction ($k_{eff} = 1.0$) with negative void/temperature reactivity coefficients; transferring thermal fission energy via inverted U-tube steam generators to secondary closed steam turbines; housing all primary loops inside 1.2-meter thick containment domes.",
+    "quality_tests": [
+      "control_rod_drop_scram_timing_under_2_seconds",
+      "primary_pressure_boundary_volumetric_ultrasonic_weld_inspections",
+      "emergency_core_cooling_system_ecc_injection_flow_rates"
+    ],
+    "failure_modes": [
+      "loss_of_coolant_accident_loca_leading_to_zirconium_steam_hydrogen_explosions",
+      "core_meltdown_and_breach_of_reactor_pressure_vessel",
+      "unresolved_long_term_deep_geological_spent_fuel_isolation"
+    ],
+    "fallbacks": [
+      "coal_and_natural_gas_thermal_generation",
+      "hydroelectric_dam_cascade_power_plants"
+    ],
+    "confidence": "verified",
+    "sources": ["Glasstone, S. & Sesonske, A. (1994) Nuclear Reactor Engineering, Chapman & Hall"],
+    "notes": "Densest civilian energy source known to physics: 1 kg of uranium-235 yields as much energy as 2,700,000 kg of coal."
+  },
+  {
+    "id": "tech_liquid_propellant_rocketry",
+    "name": "Staged Liquid-Propellant Rocketry and Orbital Vehicles",
+    "phase_window": [6, 6],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_bessemer_and_open_hearth_steel",
+      "tech_cylinder_boring_mill",
+      "tech_cmos_microprocessors"
+    ],
+    "prerequisites_any": [
+      ["resource_petroleum_crude", "resource_natural_gas_methane"]
+    ],
+    "inputs": [
+      {"id": "cryogenic_liquid_oxygen_lox", "quantity": 300.0, "unit": "tons"},
+      {"id": "refined_rocket_propellant_rp1_or_liquid_methane", "quantity": 100.0, "unit": "tons"},
+      {"id": "inconel_and_copper_regeneratively_cooled_thrust_chambers", "quantity": 9.0, "unit": "units"},
+      {"id": "high_speed_turbopump_assemblies", "quantity": 9.0, "unit": "units"},
+      {"id": "ring_laser_gyro_inertial_guidance_system", "quantity": 1.0, "unit": "units"},
+      {"id": "labour_aerospace_propulsion_and_structures_team", "quantity": 60.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_multistage_orbital_launch_vehicle",
+      "capability_low_earth_orbit_orbital_insertion_delta_v_9500_m_s",
+      "artifact_satellite_deployment_fairings"
+    ],
+    "process_summary": "Employing the Tsiolkovsky rocket equation ($\\Delta v = v_e \\ln \\frac{m_0}{m_f}$) with multi-stage architecture; feeding liquid oxygen and kerosene/methane under hundreds of bars using gas-generator or staged-combustion turbopumps; routing cold fuel through microchannels surrounding the combustion chamber wall (regenerative cooling); expanding supersonic exhaust gas through de Laval nozzles ($I_{sp} > 300$ s); steering via electro-hydraulic gimbaled thrust vectoring under closed-loop autonomous inertial guidance.",
+    "quality_tests": [
+      "static_fire_full_duration_thrust_and_combustion_stability_test",
+      "cryogenic_proof_pressure_and_weld_eddy_current_testing_of_tanks",
+      "guidance_hardware_in_the_loop_hil_flight_simulation"
+    ],
+    "failure_modes": [
+      "combustion_instability_pogo_oscillations_shattering_plumbing",
+      "turbopump_bearing_or_seal_failure_in_pure_oxygen_environment",
+      "guidance_drift_causing_off_trajectory_aerodynamic_breakup"
+    ],
+    "fallbacks": [
+      "solid_fuel_propellant_motors_lower_specific_impulse",
+      "high_altitude_balloon_and_sounding_rocket_platforms"
+    ],
+    "confidence": "verified",
+    "sources": ["Sutton, G.P. & Biblarz, O. (2016) Rocket Propulsion Elements, Wiley"],
+    "notes": "Overcomes Earth's gravity well, opening space transport, satellite communications, and asteroid threat deflection."
+  },
+  {
+    "id": "tech_orbital_space_stations",
+    "name": "Orbital Stations (ISS) and Closed-Loop Life Support",
+    "phase_window": [6, 7],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_liquid_propellant_rocketry",
+      "tech_cmos_microprocessors",
+      "tech_smartphones"
+    ],
+    "prerequisites_any": [
+      ["resource_bauxite_aluminum"]
+    ],
+    "inputs": [
+      {"id": "aluminum_lithium_welded_isogrid_pressure_modules", "quantity": 4.0, "unit": "units"},
+      {"id": "androgynous_peripheral_docking_mechanisms", "quantity": 6.0, "unit": "units"},
+      {"id": "multi_junction_gallium_arsenide_solar_arrays", "quantity": 2000.0, "unit": "m2"},
+      {"id": "closed_loop_eclss_water_recovery_and_sabatier_reactors", "quantity": 2.0, "unit": "units"},
+      {"id": "whipple_micrometeoroid_and_orbital_debris_shields", "quantity": 500.0, "unit": "m2"},
+      {"id": "labour_astronautics_and_life_support_engineers", "quantity": 70.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_modular_permanent_orbital_space_station",
+      "capability_long_duration_human_space_habitability_in_microgravity",
+      "artifact_microgravity_science_laboratory"
+    ],
+    "process_summary": "Assembling pressurized modules in 400 km Low Earth Orbit via precision rendezvous and docking; maintaining atmospheric composition (78% $N_2$, 21% $O_2$ at 1 atm); condensing water vapor and recycling urine via vacuum distillation and catalytic oxidation (>93% water recovery); cracking water via electrolysis ($2H_2O \\to 2H_2 + O_2$) for crew breathing; reacting byproduct $CO_2$ with $H_2$ in Sabatier reactors ($CO_2 + 4H_2 \\to CH_4 + 2H_2O$); rejecting internal metabolic and electronics heat using pumped ammonia fluid external radiators.",
+    "quality_tests": [
+      "module_seal_helium_leak_rate_in_vacuum_chamber",
+      "life_support_trace_contaminant_scrubbing_ppm_validation",
+      "control_moment_gyroscope_cmg_momentum_unloading_simulation"
+    ],
+    "failure_modes": [
+      "ammonia_coolant_loop_rupture_toxic_cabin_contamination",
+      "hypervelocity_orbital_debris_penetration_of_pressure_hull",
+      "solar_flare_coronal_mass_ejection_ionizing_radiation_dose"
+    ],
+    "fallbacks": [
+      "uncrewed_automated_free_flying_capsules",
+      "suborbital_drop_towers_and_parabolic_aircraft"
+    ],
+    "confidence": "verified",
+    "sources": ["Eckart, P. (1996) Spaceflight Life Support and Biospherics, Microcosm Press"],
+    "notes": "Proves long-term multi-generational survival off the home planet surface."
+  },
+  {
+    "id": "tech_particle_accelerators_cern",
+    "name": "Superconducting Particle Accelerators and Colliders (CERN)",
+    "phase_window": [6, 7],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_ac_transformer_and_power_grid",
+      "tech_cmos_microprocessors",
+      "tech_optical_glass_and_instruments"
+    ],
+    "prerequisites_any": [
+      ["resource_niobium_and_titanium"]
+    ],
+    "inputs": [
+      {"id": "niobium_titanium_superconducting_dipole_magnets_8_tesla", "quantity": 1200.0, "unit": "units"},
+      {"id": "superfluid_liquid_helium_cryogenic_plant_1_9_kelvin", "quantity": 100.0, "unit": "tons"},
+      {"id": "ultra_high_vacuum_beam_screen_tubes_10_minus_10_mbar", "quantity": 27.0, "unit": "km"},
+      {"id": "superconducting_rf_acceleration_cavities_400_mhz", "quantity": 16.0, "unit": "units"},
+      {"id": "silicon_pixel_trackers_and_liquid_argon_calorimeters", "quantity": 4.0, "unit": "detectors"},
+      {"id": "labour_accelerator_physicists_and_cryogenic_engineers", "quantity": 80.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_large_hadron_collider_synchrotron",
+      "capability_tera_electron_volt_subatomic_particle_collisions",
+      "discovery_fundamental_physics_fields_higgs_quarks_dark_matter"
+    ],
+    "process_summary": "Injecting protons from linear accelerators (LINAC) into booster synchrotrons; accelerating beams in counter-rotating ultra-high vacuum pipes; bending relativistic beams using 8.3 Tesla NbTi dipole electromagnets maintained at 1.9 K via superfluid helium; boosting particle energy with superconducting radiofrequency (SRF) resonant cavities; crossing beams at collision interaction points surrounded by multi-layer hermetic detectors (pixel trackers, crystal calorimeters, muon spectrometers); filtering petabytes per second via multi-tiered FPGA/GPU hardware triggers.",
+    "quality_tests": [
+      "magnet_quench_protection_heater_response_under_20_milliseconds",
+      "beam_orbit_closed_loop_feedback_stability_to_sub_micron",
+      "vacuum_cold_bore_pressure_below_10_minus_10_torr"
+    ],
+    "failure_modes": [
+      "uncontrolled_magnet_quench_causing_superfluid_helium_overpressure_explosion",
+      "stray_beam_dump_misalignment_puncturing_cryostat_walls",
+      "cryogenic_vacuum_insulation_cold_leak"
+    ],
+    "fallbacks": [
+      "fixed_target_cyclotrons_and_betatrons_lower_energy",
+      "cosmic_ray_cloud_chambers_and_high_altitude_emulsions"
+    ],
+    "confidence": "verified",
+    "sources": ["Evans, L. (2009) The Large Hadron Collider: A Marvel of Technology, EPFL Press"],
+    "notes": "Pushes the extreme frontier of fundamental science, high vacuum, cryogenics, and distributed computing (origin of the World Wide Web)."
+  },
+  {
+    "id": "tech_robotics_and_automation",
+    "name": "Robotics, Closed-Loop Mechatronics, and Autonomous Systems",
+    "phase_window": [6, 7],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_cmos_microprocessors",
+      "tech_electromagnetic_dynamo_and_motor"
+    ],
+    "prerequisites_any": [
+      ["resource_rare_earth_neodymium"]
+    ],
+    "inputs": [
+      {"id": "brushless_dc_servomotors_with_neodymium_magnets", "quantity": 20.0, "unit": "units"},
+      {"id": "harmonic_drive_zero_backlash_strain_wave_gears", "quantity": 20.0, "unit": "units"},
+      {"id": "optical_absolute_encoders_and_force_torque_sensors", "quantity": 40.0, "unit": "units"},
+      {"id": "lidar_depth_cameras_and_inertial_measurement_units", "quantity": 4.0, "unit": "units"},
+      {"id": "real_time_deterministic_embedded_motion_controllers", "quantity": 1.0, "unit": "units"},
+      {"id": "labour_mechatronics_and_robotics_control_engineers", "quantity": 45.0, "unit": "person_days"}
+    ],
+    "outputs": [
+      "artifact_six_axis_articulated_industrial_robot_arm",
+      "artifact_dynamic_bipedal_quadrupedal_locomotion_robot",
+      "capability_autonomous_precision_manipulation_and_hostile_environment_intervention"
+    ],
+    "process_summary": "Coupling high-torque brushless permanent magnet motors to zero-backlash harmonic drive or cycloidal reducers; reading joint angles via 20-bit optical absolute encoders; running kilohertz real-time closed-loop PID and model-predictive control (MPC) loops for inverse kinematics ($q = f^{-1}(x)$) and impedance/admittance force compliance; integrating SLAM (Simultaneous Localization and Mapping) using fused LiDAR and stereoscopic camera data; navigating hazardous environments autonomously without exposing human workers.",
+    "quality_tests": [
+      "end_effector_position_repeatability_ISO_9283_under_0_02_mm",
+      "bipedal_push_recovery_disturbance_rejection_test",
+      "fail_safe_emergency_stop_torque_disable_response_time"
+    ],
+    "failure_modes": [
+      "harmonic_drive_flexspline_fatigue_shearing",
+      "encoder_signal_corruption_triggering_runaway_actuator_joint",
+      "computer_vision_depth_disparity_failure_in_fog_or_glare"
+    ],
+    "fallbacks": [
+      "hard_tooled_mechanical_cam_driven_automation",
+      "teleoperated_master_slave_cable_manipulators"
+    ],
+    "confidence": "verified",
+    "sources": ["Siciliano, B. & Khatib, O. (2016) Springer Handbook of Robotics"],
+    "notes": "Enables round-the-clock precision manufacturing and safe operations in radiation zones, deep sea, and planetary space."
+  }
+]
