@@ -2,13 +2,24 @@
   {
     "id": "tech_flint_knapping",
     "name": "Flint and Stone Knapping",
-    "phase_window": [0, 1],
+    "phase_window": [
+      0,
+      1
+    ],
     "capability_level": "T5",
     "prerequisites_all": [],
     "prerequisites_any": [],
     "inputs": [
-      {"id": "resource_flint_and_chert", "quantity": 5.0, "unit": "kg"},
-      {"id": "labour_stone_worker", "quantity": 1.0, "unit": "person_days"}
+      {
+        "id": "resource_flint_and_chert",
+        "quantity": 5.0,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_stone_worker",
+        "quantity": 1.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_handaxe",
@@ -31,20 +42,37 @@
       "ground_stone_basalt_axes"
     ],
     "confidence": "verified",
-    "sources": ["Whittaker, J.C. (1994) Flintknapping: Making and Understanding Stone Tools"],
+    "sources": [
+      "Whittaker, J.C. (1994) Flintknapping: Making and Understanding Stone Tools"
+    ],
     "notes": "Foundational lithic skill required to shape wood, bone, and butchery products prior to metal availability."
   },
   {
     "id": "tech_controlled_friction_fire",
     "name": "Controlled Friction Pyrotechnology",
-    "phase_window": [0, 1],
+    "phase_window": [
+      0,
+      1
+    ],
     "capability_level": "T5",
     "prerequisites_all": [],
     "prerequisites_any": [],
     "inputs": [
-      {"id": "resource_dry_hardwood_and_softwood", "quantity": 1.0, "unit": "kg"},
-      {"id": "dry_tinder_punk_wood_or_flax", "quantity": 0.1, "unit": "kg"},
-      {"id": "labour_unskilled", "quantity": 0.1, "unit": "person_days"}
+      {
+        "id": "resource_dry_hardwood_and_softwood",
+        "quantity": 1.0,
+        "unit": "kg"
+      },
+      {
+        "id": "dry_tinder_punk_wood_or_flax",
+        "quantity": 0.1,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_unskilled",
+        "quantity": 0.1,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "capability_sustained_combustion",
@@ -65,20 +93,39 @@
       "preserving_continuous_hearth_coals"
     ],
     "confidence": "verified",
-    "sources": ["Pyne, S.J. (2001) Fire: A Brief History"],
+    "sources": [
+      "Pyne, S.J. (2001) Fire: A Brief History"
+    ],
     "notes": "Essential ancestor capability for pottery, charcoal burning, and metallurgy."
   },
   {
     "id": "tech_cordage_and_hafting",
     "name": "Fiber Cordage and Tool Hafting",
-    "phase_window": [0, 1],
+    "phase_window": [
+      0,
+      1
+    ],
     "capability_level": "T5",
-    "prerequisites_all": ["tech_flint_knapping"],
+    "prerequisites_all": [
+      "tech_flint_knapping"
+    ],
     "prerequisites_any": [],
     "inputs": [
-      {"id": "plant_bast_fibers_flax_or_palm", "quantity": 1.0, "unit": "kg"},
-      {"id": "pine_resin_or_bitumen", "quantity": 0.2, "unit": "kg"},
-      {"id": "labour_general", "quantity": 0.5, "unit": "person_days"}
+      {
+        "id": "plant_bast_fibers_flax_or_palm",
+        "quantity": 1.0,
+        "unit": "kg"
+      },
+      {
+        "id": "pine_resin_or_bitumen",
+        "quantity": 0.2,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_general",
+        "quantity": 0.5,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_hafted_axe",
@@ -99,19 +146,35 @@
       "single_piece_carved_wooden_clubs"
     ],
     "confidence": "verified",
-    "sources": ["Hurcombe, L. (2014) Perishable Material Culture in Prehistory"],
+    "sources": [
+      "Hurcombe, L. (2014) Perishable Material Culture in Prehistory"
+    ],
     "notes": "Multiplies mechanical advantage of hand tools by providing leverage arms."
   },
   {
     "id": "tech_basin_irrigation",
     "name": "Basin Irrigation and Flood Control",
-    "phase_window": [1, 2],
+    "phase_window": [
+      1,
+      2
+    ],
     "capability_level": "T5",
-    "prerequisites_all": ["tech_cordage_and_hafting", "tech_controlled_friction_fire"],
+    "prerequisites_all": [
+      "tech_cordage_and_hafting",
+      "tech_controlled_friction_fire"
+    ],
     "prerequisites_any": [],
     "inputs": [
-      {"id": "labour_agricultural_levy", "quantity": 500.0, "unit": "person_days"},
-      {"id": "artifact_digging_sticks_and_baskets", "quantity": 50.0, "unit": "units"}
+      {
+        "id": "labour_agricultural_levy",
+        "quantity": 500.0,
+        "unit": "person_days"
+      },
+      {
+        "id": "artifact_digging_sticks_and_baskets",
+        "quantity": 50.0,
+        "unit": "units"
+      }
     ],
     "outputs": [
       "capability_predictable_crop_yields",
@@ -133,20 +196,39 @@
       "shaduf_manual_pot_irrigation"
     ],
     "confidence": "verified",
-    "sources": ["Butzer, K.W. (1976) Early Hydraulic Civilization in Egypt"],
+    "sources": [
+      "Butzer, K.W. (1976) Early Hydraulic Civilization in Egypt"
+    ],
     "notes": "Creates the caloric foundation for all subsequent specialist labor."
   },
   {
     "id": "tech_earthenware_pottery",
     "name": "Kiln-Fired Earthenware and Refractory Ceramics",
-    "phase_window": [1, 2],
+    "phase_window": [
+      1,
+      2
+    ],
     "capability_level": "T5",
-    "prerequisites_all": ["tech_controlled_friction_fire"],
+    "prerequisites_all": [
+      "tech_controlled_friction_fire"
+    ],
     "prerequisites_any": [],
     "inputs": [
-      {"id": "resource_clay_and_silica", "quantity": 20.0, "unit": "kg"},
-      {"id": "resource_dry_fuel", "quantity": 50.0, "unit": "kg"},
-      {"id": "labour_potter", "quantity": 2.0, "unit": "person_days"}
+      {
+        "id": "resource_clay_and_silica",
+        "quantity": 20.0,
+        "unit": "kg"
+      },
+      {
+        "id": "resource_dry_fuel",
+        "quantity": 50.0,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_potter",
+        "quantity": 2.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_sealed_storage_vessels",
@@ -166,20 +248,39 @@
       "carved_alabaster_and_limestone_jars"
     ],
     "confidence": "verified",
-    "sources": ["Rice, P.M. (2015) Pottery Analysis: A Sourcebook"],
+    "sources": [
+      "Rice, P.M. (2015) Pottery Analysis: A Sourcebook"
+    ],
     "notes": "Supplies vermin-proof grain storage jars and thermal crucibles required for smelting metals."
   },
   {
     "id": "tech_standard_metrology",
     "name": "Standardized Metrology and Balances",
-    "phase_window": [1, 2],
+    "phase_window": [
+      1,
+      2
+    ],
     "capability_level": "T5",
-    "prerequisites_all": ["tech_cordage_and_hafting"],
+    "prerequisites_all": [
+      "tech_cordage_and_hafting"
+    ],
     "prerequisites_any": [],
     "inputs": [
-      {"id": "hardwood_or_diorite_reference_bars", "quantity": 2.0, "unit": "units"},
-      {"id": "cordage_and_copper_pans", "quantity": 1.0, "unit": "units"},
-      {"id": "labour_scribe_surveyor", "quantity": 5.0, "unit": "person_days"}
+      {
+        "id": "hardwood_or_diorite_reference_bars",
+        "quantity": 2.0,
+        "unit": "units"
+      },
+      {
+        "id": "cordage_and_copper_pans",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "labour_scribe_surveyor",
+        "quantity": 5.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "capability_calibrated_mass_and_length",
@@ -200,24 +301,43 @@
       "volume_counting_of_standard_grain_baskets"
     ],
     "confidence": "verified",
-    "sources": ["Petrie, W.M.F. (1926) Ancient Weights and Measures"],
+    "sources": [
+      "Petrie, W.M.F. (1926) Ancient Weights and Measures"
+    ],
     "notes": "Metrology is the core prerequisite for repeatable architecture, metallurgy, and physics."
   },
   {
     "id": "tech_copper_smelting",
     "name": "Copper Extraction and Crucible Smelting",
-    "phase_window": [1, 2],
+    "phase_window": [
+      1,
+      2
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_controlled_friction_fire",
       "tech_earthenware_pottery",
-      "tech_standard_metrology"
+      "tech_standard_metrology",
+      "tech_pot_bellows_and_tuyeres",
+      "tech_updraft_mudbrick_kiln"
     ],
     "prerequisites_any": [],
     "inputs": [
-      {"id": "resource_copper_ore_malachite", "quantity": 10.0, "unit": "kg"},
-      {"id": "resource_charcoal", "quantity": 30.0, "unit": "kg"},
-      {"id": "labour_metallurgist", "quantity": 3.0, "unit": "person_days"}
+      {
+        "id": "resource_copper_ore_malachite",
+        "quantity": 10.0,
+        "unit": "kg"
+      },
+      {
+        "id": "resource_charcoal",
+        "quantity": 30.0,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_metallurgist",
+        "quantity": 3.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_cast_copper_ingots",
@@ -238,25 +358,48 @@
       "arsenical_copper_smelting"
     ],
     "confidence": "verified",
-    "sources": ["Rothenberg, B. (1990) The Ancient Metallurgy of Copper"],
+    "sources": [
+      "Rothenberg, B. (1990) The Ancient Metallurgy of Copper"
+    ],
     "notes": "Initial transition from lithic to metallic tools. Enables superior woodworking and stoneworking."
   },
   {
     "id": "tech_tin_bronze_alloying",
     "name": "Tin-Bronze Smelting and Lost-Wax Casting",
-    "phase_window": [2, 3],
+    "phase_window": [
+      2,
+      3
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_copper_smelting"
     ],
     "prerequisites_any": [
-      ["resource_cassiterite_tin"]
+      [
+        "resource_cassiterite_tin"
+      ]
     ],
     "inputs": [
-      {"id": "resource_copper", "quantity": 9.0, "unit": "kg"},
-      {"id": "resource_cassiterite_tin", "quantity": 1.0, "unit": "kg"},
-      {"id": "resource_charcoal", "quantity": 15.0, "unit": "kg"},
-      {"id": "labour_bronze_caster", "quantity": 2.0, "unit": "person_days"}
+      {
+        "id": "resource_copper",
+        "quantity": 9.0,
+        "unit": "kg"
+      },
+      {
+        "id": "resource_cassiterite_tin",
+        "quantity": 1.0,
+        "unit": "kg"
+      },
+      {
+        "id": "resource_charcoal",
+        "quantity": 15.0,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_bronze_caster",
+        "quantity": 2.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_hardened_bronze_cutting_tools",
@@ -278,13 +421,18 @@
       "work_hardened_pure_copper"
     ],
     "confidence": "verified",
-    "sources": ["Coghlan, H.H. (1975) Notes on the Prehistoric Metallurgy of Copper and Bronze"],
+    "sources": [
+      "Coghlan, H.H. (1975) Notes on the Prehistoric Metallurgy of Copper and Bronze"
+    ],
     "notes": "Major material leap: bronze holds sharp cutting edges, resists corrosion, and enables precision mechanical bearings."
   },
   {
     "id": "tech_rotary_motion_and_wheels",
     "name": "Wheel, Axle, and Rotary Transmission",
-    "phase_window": [2, 3],
+    "phase_window": [
+      2,
+      3
+    ],
     "capability_level": "T5",
     "prerequisites_all": [
       "tech_tin_bronze_alloying",
@@ -292,9 +440,21 @@
     ],
     "prerequisites_any": [],
     "inputs": [
-      {"id": "seasoned_timber_acacia_or_cedar", "quantity": 50.0, "unit": "kg"},
-      {"id": "bronze_bushings_and_nails", "quantity": 3.0, "unit": "kg"},
-      {"id": "labour_wheelwright", "quantity": 10.0, "unit": "person_days"}
+      {
+        "id": "seasoned_timber_acacia_or_cedar",
+        "quantity": 50.0,
+        "unit": "kg"
+      },
+      {
+        "id": "bronze_bushings_and_nails",
+        "quantity": 3.0,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_wheelwright",
+        "quantity": 10.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_spoked_and_solid_wheels",
@@ -315,25 +475,44 @@
       "sledge_drags_lubricated_with_water_silt"
     ],
     "confidence": "verified",
-    "sources": ["Piggott, S. (1983) The Earliest Wheeled Transport"],
+    "sources": [
+      "Piggott, S. (1983) The Earliest Wheeled Transport"
+    ],
     "notes": "Dramatically reduces transport energy and creates the basis for pulley tackle and gear trains."
   },
   {
     "id": "tech_bloomery_iron_smelting",
     "name": "Bloomery Direct Iron Smelting and Forging",
-    "phase_window": [3, 4],
+    "phase_window": [
+      3,
+      4
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_tin_bronze_alloying",
       "tech_earthenware_pottery"
     ],
     "prerequisites_any": [
-      ["resource_iron_ore_hematite"]
+      [
+        "resource_iron_ore_hematite"
+      ]
     ],
     "inputs": [
-      {"id": "resource_iron_ore_hematite", "quantity": 25.0, "unit": "kg"},
-      {"id": "resource_charcoal", "quantity": 75.0, "unit": "kg"},
-      {"id": "labour_blacksmith", "quantity": 5.0, "unit": "person_days"}
+      {
+        "id": "resource_iron_ore_hematite",
+        "quantity": 25.0,
+        "unit": "kg"
+      },
+      {
+        "id": "resource_charcoal",
+        "quantity": 75.0,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_blacksmith",
+        "quantity": 5.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_wrought_iron_billets",
@@ -355,22 +534,39 @@
       "meteoritic_nickel_iron"
     ],
     "confidence": "verified",
-    "sources": ["Pleiner, R. (2000) Iron in Archaeology: The European Bloomery Smelters"],
+    "sources": [
+      "Pleiner, R. (2000) Iron in Archaeology: The European Bloomery Smelters"
+    ],
     "notes": "Breaks the geographic tin bottleneck by unlocking ubiquitous iron ore reserves."
   },
   {
     "id": "tech_quenched_and_tempered_steel",
     "name": "Carburization, Quenching, and Tempering of Steel",
-    "phase_window": [3, 4],
+    "phase_window": [
+      3,
+      4
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_bloomery_iron_smelting"
     ],
     "prerequisites_any": [],
     "inputs": [
-      {"id": "wrought_iron_bars", "quantity": 5.0, "unit": "kg"},
-      {"id": "charcoal_and_bone_dust_pack", "quantity": 2.0, "unit": "kg"},
-      {"id": "labour_master_smith", "quantity": 3.0, "unit": "person_days"}
+      {
+        "id": "wrought_iron_bars",
+        "quantity": 5.0,
+        "unit": "kg"
+      },
+      {
+        "id": "charcoal_and_bone_dust_pack",
+        "quantity": 2.0,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_master_smith",
+        "quantity": 3.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_high_carbon_steel_tools",
@@ -392,13 +588,18 @@
       "unhardened_wrought_iron"
     ],
     "confidence": "verified",
-    "sources": ["Verhoeven, J.D. (2007) Steel Metallurgy for the Non-Metallurgist"],
+    "sources": [
+      "Verhoeven, J.D. (2007) Steel Metallurgy for the Non-Metallurgist"
+    ],
     "notes": "Essential prerequisite for cutting metals, files, springs, and precision machine-tool components."
   },
   {
     "id": "tech_waterwheel_and_millwork",
     "name": "Waterwheel and Mechanical Power Transmission",
-    "phase_window": [3, 4],
+    "phase_window": [
+      3,
+      4
+    ],
     "capability_level": "T5",
     "prerequisites_all": [
       "tech_rotary_motion_and_wheels",
@@ -406,9 +607,21 @@
     ],
     "prerequisites_any": [],
     "inputs": [
-      {"id": "heavy_timber_beams", "quantity": 500.0, "unit": "kg"},
-      {"id": "iron_gudgeons_and_iron_bands", "quantity": 50.0, "unit": "kg"},
-      {"id": "labour_millwright", "quantity": 20.0, "unit": "person_days"}
+      {
+        "id": "heavy_timber_beams",
+        "quantity": 500.0,
+        "unit": "kg"
+      },
+      {
+        "id": "iron_gudgeons_and_iron_bands",
+        "quantity": 50.0,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_millwright",
+        "quantity": 20.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "capability_continuous_mechanical_work",
@@ -431,13 +644,18 @@
       "post_and_tower_windmills"
     ],
     "confidence": "verified",
-    "sources": ["Reynolds, T.S. (1983) Stronger Than a Hundred Men: A History of the Vertical Water Wheel"],
+    "sources": [
+      "Reynolds, T.S. (1983) Stronger Than a Hundred Men: A History of the Vertical Water Wheel"
+    ],
     "notes": "Replaces human muscular exhaustion with kinetic stream power, accelerating industrial scaling."
   },
   {
     "id": "tech_optical_glass_and_instruments",
     "name": "Optical Glass Grinding and Scientific Lenses",
-    "phase_window": [3, 4],
+    "phase_window": [
+      3,
+      4
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_earthenware_pottery",
@@ -445,13 +663,31 @@
       "tech_quenched_and_tempered_steel"
     ],
     "prerequisites_any": [
-      ["resource_clay_and_silica"]
+      [
+        "resource_clay_and_silica"
+      ]
     ],
     "inputs": [
-      {"id": "high_purity_silica_sand", "quantity": 5.0, "unit": "kg"},
-      {"id": "potash_or_natron_flux", "quantity": 2.0, "unit": "kg"},
-      {"id": "emery_or_silicon_carbide_abrasive", "quantity": 1.0, "unit": "kg"},
-      {"id": "labour_lens_grinder", "quantity": 5.0, "unit": "person_days"}
+      {
+        "id": "high_purity_silica_sand",
+        "quantity": 5.0,
+        "unit": "kg"
+      },
+      {
+        "id": "potash_or_natron_flux",
+        "quantity": 2.0,
+        "unit": "kg"
+      },
+      {
+        "id": "emery_or_silicon_carbide_abrasive",
+        "quantity": 1.0,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_lens_grinder",
+        "quantity": 5.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_convex_concave_lenses",
@@ -474,13 +710,18 @@
       "single_drop_van_Leeuwenhoek_bead_microscopes"
     ],
     "confidence": "verified",
-    "sources": ["King, H.C. (1955) The History of the Telescope"],
+    "sources": [
+      "King, H.C. (1955) The History of the Telescope"
+    ],
     "notes": "Unlocks microbiological observation (microbes, cellular pathology) and astronomical navigation."
   },
   {
     "id": "tech_movable_type_printing",
     "name": "Movable Type Printing and Rags-to-Paper Mill",
-    "phase_window": [3, 4],
+    "phase_window": [
+      3,
+      4
+    ],
     "capability_level": "T5",
     "prerequisites_all": [
       "tech_waterwheel_and_millwork",
@@ -489,10 +730,26 @@
     ],
     "prerequisites_any": [],
     "inputs": [
-      {"id": "linen_and_cotton_rags", "quantity": 50.0, "unit": "kg"},
-      {"id": "lead_tin_antimony_type_alloy", "quantity": 20.0, "unit": "kg"},
-      {"id": "linseed_oil_and_lampblack_ink", "quantity": 5.0, "unit": "kg"},
-      {"id": "labour_printer_and_typographer", "quantity": 10.0, "unit": "person_days"}
+      {
+        "id": "linen_and_cotton_rags",
+        "quantity": 50.0,
+        "unit": "kg"
+      },
+      {
+        "id": "lead_tin_antimony_type_alloy",
+        "quantity": 20.0,
+        "unit": "kg"
+      },
+      {
+        "id": "linseed_oil_and_lampblack_ink",
+        "quantity": 5.0,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_printer_and_typographer",
+        "quantity": 10.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_movable_type_screw_press",
@@ -515,13 +772,18 @@
       "scriptorium_manual_copyists"
     ],
     "confidence": "verified",
-    "sources": ["Eisenstein, E.L. (1979) The Printing Press as an Agent of Change"],
+    "sources": [
+      "Eisenstein, E.L. (1979) The Printing Press as an Agent of Change"
+    ],
     "notes": "Guarantees that engineering documentation cannot be lost in a single library fire or dynastic collapse."
   },
   {
     "id": "tech_precision_lead_screw_and_lathe",
     "name": "Slide-Rest Lathe and Precision Lead Screw",
-    "phase_window": [4, 5],
+    "phase_window": [
+      4,
+      5
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_quenched_and_tempered_steel",
@@ -529,9 +791,21 @@
     ],
     "prerequisites_any": [],
     "inputs": [
-      {"id": "cast_iron_and_steel_bars", "quantity": 100.0, "unit": "kg"},
-      {"id": "brass_bushings", "quantity": 5.0, "unit": "kg"},
-      {"id": "labour_master_machinist", "quantity": 25.0, "unit": "person_days"}
+      {
+        "id": "cast_iron_and_steel_bars",
+        "quantity": 100.0,
+        "unit": "kg"
+      },
+      {
+        "id": "brass_bushings",
+        "quantity": 5.0,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_master_machinist",
+        "quantity": 25.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_screw_cutting_engine_lathe",
@@ -554,13 +828,18 @@
       "manual_filing_to_template_gauges"
     ],
     "confidence": "verified",
-    "sources": ["Rolt, L.T.C. (1965) Tools for the Job: A History of Machine Tools"],
+    "sources": [
+      "Rolt, L.T.C. (1965) Tools for the Job: A History of Machine Tools"
+    ],
     "notes": "The linchpin of industrialization: machines that build other machines with higher precision."
   },
   {
     "id": "tech_cylinder_boring_mill",
     "name": "Heavy Cylinder Boring Mill",
-    "phase_window": [4, 5],
+    "phase_window": [
+      4,
+      5
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_precision_lead_screw_and_lathe",
@@ -568,9 +847,21 @@
     ],
     "prerequisites_any": [],
     "inputs": [
-      {"id": "cast_iron_machine_bed_and_boring_bar", "quantity": 500.0, "unit": "kg"},
-      {"id": "tool_steel_cutting_bits", "quantity": 10.0, "unit": "kg"},
-      {"id": "labour_machinist", "quantity": 15.0, "unit": "person_days"}
+      {
+        "id": "cast_iron_machine_bed_and_boring_bar",
+        "quantity": 500.0,
+        "unit": "kg"
+      },
+      {
+        "id": "tool_steel_cutting_bits",
+        "quantity": 10.0,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_machinist",
+        "quantity": 15.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "capability_steam_tight_cylinder_boring",
@@ -590,26 +881,49 @@
       "manual_grinding_with_lead_laps_and_emery"
     ],
     "confidence": "verified",
-    "sources": ["Dickinson, H.W. (1936) Matthew Boulton and James Watt"],
+    "sources": [
+      "Dickinson, H.W. (1936) Matthew Boulton and James Watt"
+    ],
     "notes": "Unlocks functional steam engines by eliminating massive steam blow-by around piston rings."
   },
   {
     "id": "tech_condensing_steam_engine",
     "name": "Condensing Steam Engine and Pressure Boiler",
-    "phase_window": [4, 5],
+    "phase_window": [
+      4,
+      5
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_cylinder_boring_mill",
       "tech_precision_lead_screw_and_lathe"
     ],
     "prerequisites_any": [
-      ["resource_coal_and_coke"]
+      [
+        "resource_coal_and_coke"
+      ]
     ],
     "inputs": [
-      {"id": "bored_cast_iron_cylinder_and_piston", "quantity": 1.0, "unit": "units"},
-      {"id": "riveted_wrought_iron_boiler_plate", "quantity": 1000.0, "unit": "kg"},
-      {"id": "lubricating_oil_and_hemp_packing", "quantity": 10.0, "unit": "kg"},
-      {"id": "labour_engine_builders", "quantity": 40.0, "unit": "person_days"}
+      {
+        "id": "bored_cast_iron_cylinder_and_piston",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "riveted_wrought_iron_boiler_plate",
+        "quantity": 1000.0,
+        "unit": "kg"
+      },
+      {
+        "id": "lubricating_oil_and_hemp_packing",
+        "quantity": 10.0,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_engine_builders",
+        "quantity": 40.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "capability_mobile_and_factory_rotary_power",
@@ -632,27 +946,54 @@
       "waterwheel_battery_cascades"
     ],
     "confidence": "verified",
-    "sources": ["Hills, R.L. (1989) Power from Steam: A History of the Stationary Steam Engine"],
+    "sources": [
+      "Hills, R.L. (1989) Power from Steam: A History of the Stationary Steam Engine"
+    ],
     "notes": "Decouples industrial energy from geography; factories no longer need fast-flowing rivers."
   },
   {
     "id": "tech_lead_chamber_sulfuric_acid",
     "name": "Lead-Chamber Sulfuric Acid Synthesis",
-    "phase_window": [4, 5],
+    "phase_window": [
+      4,
+      5
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_earthenware_pottery",
       "tech_quenched_and_tempered_steel"
     ],
     "prerequisites_any": [
-      ["resource_sulfur_and_pyrite"]
+      [
+        "resource_sulfur_and_pyrite"
+      ]
     ],
     "inputs": [
-      {"id": "resource_sulfur_or_roasted_pyrites", "quantity": 50.0, "unit": "kg"},
-      {"id": "potassium_nitrate_saltpeter", "quantity": 5.0, "unit": "kg"},
-      {"id": "lead_sheet_lining", "quantity": 200.0, "unit": "kg"},
-      {"id": "water_steam", "quantity": 100.0, "unit": "kg"},
-      {"id": "labour_chemical_worker", "quantity": 10.0, "unit": "person_days"}
+      {
+        "id": "resource_sulfur_or_roasted_pyrites",
+        "quantity": 50.0,
+        "unit": "kg"
+      },
+      {
+        "id": "potassium_nitrate_saltpeter",
+        "quantity": 5.0,
+        "unit": "kg"
+      },
+      {
+        "id": "lead_sheet_lining",
+        "quantity": 200.0,
+        "unit": "kg"
+      },
+      {
+        "id": "water_steam",
+        "quantity": 100.0,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_chemical_worker",
+        "quantity": 10.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_concentrated_sulfuric_acid_65_to_78_percent",
@@ -673,27 +1014,55 @@
       "vinegar_acetic_acid_concentration"
     ],
     "confidence": "verified",
-    "sources": ["Taylor, F.S. (1957) A History of Industrial Chemistry"],
-    "notes": "Sulfuric acid is the 'king of chemicals'—required for metal pickling, chemical fertilizers, soda, and batteries."
+    "sources": [
+      "Taylor, F.S. (1957) A History of Industrial Chemistry"
+    ],
+    "notes": "Sulfuric acid is the 'king of chemicals'\u2014required for metal pickling, chemical fertilizers, soda, and batteries."
   },
   {
     "id": "tech_solvay_soda_ash_process",
     "name": "Solvay Ammonia-Soda Process",
-    "phase_window": [4, 5],
+    "phase_window": [
+      4,
+      5
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_lead_chamber_sulfuric_acid",
       "tech_condensing_steam_engine"
     ],
     "prerequisites_any": [
-      ["resource_rock_salt_halite", "resource_limestone_calcium_carbonate"]
+      [
+        "resource_rock_salt_halite",
+        "resource_limestone_calcium_carbonate"
+      ]
     ],
     "inputs": [
-      {"id": "saturated_sodium_chloride_brine", "quantity": 200.0, "unit": "liters"},
-      {"id": "resource_limestone_calcium_carbonate", "quantity": 100.0, "unit": "kg"},
-      {"id": "ammonia_gas_recycled", "quantity": 5.0, "unit": "kg"},
-      {"id": "coke_fuel", "quantity": 50.0, "unit": "kg"},
-      {"id": "labour_chemical_operator", "quantity": 8.0, "unit": "person_days"}
+      {
+        "id": "saturated_sodium_chloride_brine",
+        "quantity": 200.0,
+        "unit": "liters"
+      },
+      {
+        "id": "resource_limestone_calcium_carbonate",
+        "quantity": 100.0,
+        "unit": "kg"
+      },
+      {
+        "id": "ammonia_gas_recycled",
+        "quantity": 5.0,
+        "unit": "kg"
+      },
+      {
+        "id": "coke_fuel",
+        "quantity": 50.0,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_chemical_operator",
+        "quantity": 8.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_sodium_carbonate_soda_ash_purity_99_percent",
@@ -713,26 +1082,49 @@
       "kelp_and_wood_ash_leaching"
     ],
     "confidence": "verified",
-    "sources": ["Hou, T.P. (1942) Manufacture of Soda: With Special Reference to the Ammonia Process"],
+    "sources": [
+      "Hou, T.P. (1942) Manufacture of Soda: With Special Reference to the Ammonia Process"
+    ],
     "notes": "Drives sanitary soap production, textile bleaching, and high-volume glassmaking."
   },
   {
     "id": "tech_bessemer_and_open_hearth_steel",
     "name": "Pneumatic Bessemer and Open-Hearth Mass Steelmaking",
-    "phase_window": [4, 5],
+    "phase_window": [
+      4,
+      5
+    ],
     "capability_level": "T5",
     "prerequisites_all": [
       "tech_condensing_steam_engine",
       "tech_cylinder_boring_mill"
     ],
     "prerequisites_any": [
-      ["resource_iron_ore_hematite"]
+      [
+        "resource_iron_ore_hematite"
+      ]
     ],
     "inputs": [
-      {"id": "molten_blast_furnace_pig_iron", "quantity": 5000.0, "unit": "kg"},
-      {"id": "compressed_air_blast", "quantity": 1000.0, "unit": "m3"},
-      {"id": "spiegeleisen_manganese_iron_deoxidizer", "quantity": 100.0, "unit": "kg"},
-      {"id": "labour_steel_foundry_gang", "quantity": 15.0, "unit": "person_days"}
+      {
+        "id": "molten_blast_furnace_pig_iron",
+        "quantity": 5000.0,
+        "unit": "kg"
+      },
+      {
+        "id": "compressed_air_blast",
+        "quantity": 1000.0,
+        "unit": "m3"
+      },
+      {
+        "id": "spiegeleisen_manganese_iron_deoxidizer",
+        "quantity": 100.0,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_steel_foundry_gang",
+        "quantity": 15.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_bulk_mild_steel_ingots",
@@ -754,26 +1146,49 @@
       "Huntsman_crucible_steel_expensive"
     ],
     "confidence": "verified",
-    "sources": ["Misa, T.J. (1995) A Nation of Steel: The Making of Modern America"],
+    "sources": [
+      "Misa, T.J. (1995) A Nation of Steel: The Making of Modern America"
+    ],
     "notes": "Reduces steel production time from weeks to 20 minutes; enables transcontinental railways and skyscraper construction."
   },
   {
     "id": "tech_electromagnetic_dynamo_and_motor",
     "name": "Electromagnetic Induction, Dynamo, and Electric Motors",
-    "phase_window": [5, 6],
+    "phase_window": [
+      5,
+      6
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_bessemer_and_open_hearth_steel",
       "tech_precision_lead_screw_and_lathe"
     ],
     "prerequisites_any": [
-      ["resource_copper_ore_malachite"]
+      [
+        "resource_copper_ore_malachite"
+      ]
     ],
     "inputs": [
-      {"id": "drawn_electrolytic_copper_wire", "quantity": 50.0, "unit": "kg"},
-      {"id": "shellac_and_cotton_insulation", "quantity": 5.0, "unit": "kg"},
-      {"id": "silicon_steel_laminations_and_cast_iron", "quantity": 150.0, "unit": "kg"},
-      {"id": "labour_electrical_mechanic", "quantity": 12.0, "unit": "person_days"}
+      {
+        "id": "drawn_electrolytic_copper_wire",
+        "quantity": 50.0,
+        "unit": "kg"
+      },
+      {
+        "id": "shellac_and_cotton_insulation",
+        "quantity": 5.0,
+        "unit": "kg"
+      },
+      {
+        "id": "silicon_steel_laminations_and_cast_iron",
+        "quantity": 150.0,
+        "unit": "kg"
+      },
+      {
+        "id": "labour_electrical_mechanic",
+        "quantity": 12.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_dc_generator_and_induction_motor",
@@ -795,23 +1210,44 @@
       "direct_steam_line_shaft_pulleys"
     ],
     "confidence": "verified",
-    "sources": ["Hughes, T.P. (1983) Networks of Power: Electrification in Western Society"],
+    "sources": [
+      "Hughes, T.P. (1983) Networks of Power: Electrification in Western Society"
+    ],
     "notes": "Replaces messy mechanical belt systems in factories with quiet, instantly switchable, clean electric drive."
   },
   {
     "id": "tech_ac_transformer_and_power_grid",
     "name": "Polyphase AC Transformer and Regional Transmission Grid",
-    "phase_window": [5, 6],
+    "phase_window": [
+      5,
+      6
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_electromagnetic_dynamo_and_motor"
     ],
     "prerequisites_any": [],
     "inputs": [
-      {"id": "grain_oriented_silicon_steel_cores", "quantity": 1000.0, "unit": "kg"},
-      {"id": "copper_conductors_and_mineral_oil_coolant", "quantity": 500.0, "unit": "kg"},
-      {"id": "glazed_porcelain_high_voltage_insulators", "quantity": 200.0, "unit": "units"},
-      {"id": "labour_grid_lineman_and_engineer", "quantity": 30.0, "unit": "person_days"}
+      {
+        "id": "grain_oriented_silicon_steel_cores",
+        "quantity": 1000.0,
+        "unit": "kg"
+      },
+      {
+        "id": "copper_conductors_and_mineral_oil_coolant",
+        "quantity": 500.0,
+        "unit": "kg"
+      },
+      {
+        "id": "glazed_porcelain_high_voltage_insulators",
+        "quantity": 200.0,
+        "unit": "units"
+      },
+      {
+        "id": "labour_grid_lineman_and_engineer",
+        "quantity": 30.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_step_up_step_down_transformers",
@@ -833,13 +1269,18 @@
       "isolated_steam_engine_per_facility"
     ],
     "confidence": "verified",
-    "sources": ["Tesla, N. (1888) A New System of Alternating Current Motors and Transformers"],
+    "sources": [
+      "Tesla, N. (1888) A New System of Alternating Current Motors and Transformers"
+    ],
     "notes": "Allows centralized power stations (hydro, thermal, nuclear) to energize millions of homes and factories hundreds of miles away."
   },
   {
     "id": "tech_haber_bosch_ammonia_synthesis",
     "name": "Haber-Bosch High-Pressure Catalytic Ammonia Synthesis",
-    "phase_window": [5, 6],
+    "phase_window": [
+      5,
+      6
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_bessemer_and_open_hearth_steel",
@@ -847,14 +1288,37 @@
       "tech_lead_chamber_sulfuric_acid"
     ],
     "prerequisites_any": [
-      ["resource_natural_gas_methane", "resource_coal_and_coke"]
+      [
+        "resource_natural_gas_methane",
+        "resource_coal_and_coke"
+      ]
     ],
     "inputs": [
-      {"id": "nitrogen_gas_fractionated_from_air", "quantity": 100.0, "unit": "m3"},
-      {"id": "hydrogen_gas_from_steam_methane_reforming", "quantity": 300.0, "unit": "m3"},
-      {"id": "promoted_magnetite_iron_catalyst", "quantity": 10.0, "unit": "kg"},
-      {"id": "high_pressure_alloy_forged_reactor_vessel", "quantity": 1.0, "unit": "units"},
-      {"id": "labour_process_engineer", "quantity": 20.0, "unit": "person_days"}
+      {
+        "id": "nitrogen_gas_fractionated_from_air",
+        "quantity": 100.0,
+        "unit": "m3"
+      },
+      {
+        "id": "hydrogen_gas_from_steam_methane_reforming",
+        "quantity": 300.0,
+        "unit": "m3"
+      },
+      {
+        "id": "promoted_magnetite_iron_catalyst",
+        "quantity": 10.0,
+        "unit": "kg"
+      },
+      {
+        "id": "high_pressure_alloy_forged_reactor_vessel",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "labour_process_engineer",
+        "quantity": 20.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_anhydrous_liquid_ammonia_and_ammonium_nitrate",
@@ -877,13 +1341,18 @@
       "leguminous_crop_rotation_alone"
     ],
     "confidence": "verified",
-    "sources": ["Smil, V. (2001) Enriching the Earth: Fritz Haber, Carl Bosch, and the Transformation of World Food Production"],
+    "sources": [
+      "Smil, V. (2001) Enriching the Earth: Fritz Haber, Carl Bosch, and the Transformation of World Food Production"
+    ],
     "notes": "Directly feeds nearly half the modern global human population by synthesizing reactive nitrogen from air."
   },
   {
     "id": "tech_thermionic_vacuum_tube",
     "name": "Thermionic Vacuum Tube and Electronic Amplification",
-    "phase_window": [5, 6],
+    "phase_window": [
+      5,
+      6
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_optical_glass_and_instruments",
@@ -891,11 +1360,31 @@
     ],
     "prerequisites_any": [],
     "inputs": [
-      {"id": "borosilicate_glass_envelopes", "quantity": 100.0, "unit": "units"},
-      {"id": "tungsten_and_nickel_filaments_and_grids", "quantity": 2.0, "unit": "kg"},
-      {"id": "barium_strontium_oxide_emission_coating", "quantity": 0.1, "unit": "kg"},
-      {"id": "mercury_diffusion_high_vacuum_pump", "quantity": 1.0, "unit": "units"},
-      {"id": "labour_tube_fabricator", "quantity": 15.0, "unit": "person_days"}
+      {
+        "id": "borosilicate_glass_envelopes",
+        "quantity": 100.0,
+        "unit": "units"
+      },
+      {
+        "id": "tungsten_and_nickel_filaments_and_grids",
+        "quantity": 2.0,
+        "unit": "kg"
+      },
+      {
+        "id": "barium_strontium_oxide_emission_coating",
+        "quantity": 0.1,
+        "unit": "kg"
+      },
+      {
+        "id": "mercury_diffusion_high_vacuum_pump",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "labour_tube_fabricator",
+        "quantity": 15.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_triode_and_pentode_vacuum_tubes",
@@ -918,13 +1407,18 @@
       "carbon_microphone_amplifiers"
     ],
     "confidence": "verified",
-    "sources": ["Spangenberg, K.R. (1948) Vacuum Tubes, McGraw-Hill"],
+    "sources": [
+      "Spangenberg, K.R. (1948) Vacuum Tubes, McGraw-Hill"
+    ],
     "notes": "Enabled the first electronic radio transmitters, radar, long-distance telephony, and ENIAC-era electronic computing."
   },
   {
     "id": "tech_semiconductor_photolithography",
     "name": "Semiconductor Silicon Photolithography and Planar Process",
-    "phase_window": [6, 6],
+    "phase_window": [
+      6,
+      6
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_optical_glass_and_instruments",
@@ -932,14 +1426,36 @@
       "tech_solvay_soda_ash_process"
     ],
     "prerequisites_any": [
-      ["resource_high_purity_quartz_silicon"]
+      [
+        "resource_high_purity_quartz_silicon"
+      ]
     ],
     "inputs": [
-      {"id": "single_crystal_czochralski_silicon_wafers_9N", "quantity": 25.0, "unit": "units"},
-      {"id": "ultraviolet_photoresist_and_optical_reticles", "quantity": 5.0, "unit": "liters"},
-      {"id": "boron_and_phosphorus_dopant_gases", "quantity": 1.0, "unit": "cylinders"},
-      {"id": "class_10_cleanroom_facility", "quantity": 1.0, "unit": "units"},
-      {"id": "labour_semiconductor_process_engineer", "quantity": 30.0, "unit": "person_days"}
+      {
+        "id": "single_crystal_czochralski_silicon_wafers_9N",
+        "quantity": 25.0,
+        "unit": "units"
+      },
+      {
+        "id": "ultraviolet_photoresist_and_optical_reticles",
+        "quantity": 5.0,
+        "unit": "liters"
+      },
+      {
+        "id": "boron_and_phosphorus_dopant_gases",
+        "quantity": 1.0,
+        "unit": "cylinders"
+      },
+      {
+        "id": "class_10_cleanroom_facility",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "labour_semiconductor_process_engineer",
+        "quantity": 30.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_silicon_planar_wafers",
@@ -962,23 +1478,44 @@
       "hybrid_thick_film_ceramic_circuits"
     ],
     "confidence": "verified",
-    "sources": ["Plummer, J.D., Deal, M.D., & Griffin, P.B. (2000) Silicon VLSI Technology: Fundamentals, Practice, and Modeling"],
+    "sources": [
+      "Plummer, J.D., Deal, M.D., & Griffin, P.B. (2000) Silicon VLSI Technology: Fundamentals, Practice, and Modeling"
+    ],
     "notes": "Foundational manufacturing technique for all microprocessors, memory chips, and computer vision sensors."
   },
   {
     "id": "tech_cmos_microprocessors",
     "name": "CMOS VLSI Microprocessors and System Architecture",
-    "phase_window": [6, 6],
+    "phase_window": [
+      6,
+      6
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_semiconductor_photolithography"
     ],
     "prerequisites_any": [],
     "inputs": [
-      {"id": "processed_silicon_wafers_with_millions_of_gates", "quantity": 10.0, "unit": "units"},
-      {"id": "ball_grid_array_ceramic_packages_and_gold_wire", "quantity": 1000.0, "unit": "units"},
-      {"id": "automated_wafer_probe_and_tester", "quantity": 1.0, "unit": "units"},
-      {"id": "labour_computer_architect_and_vlsi_engineer", "quantity": 40.0, "unit": "person_days"}
+      {
+        "id": "processed_silicon_wafers_with_millions_of_gates",
+        "quantity": 10.0,
+        "unit": "units"
+      },
+      {
+        "id": "ball_grid_array_ceramic_packages_and_gold_wire",
+        "quantity": 1000.0,
+        "unit": "units"
+      },
+      {
+        "id": "automated_wafer_probe_and_tester",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "labour_computer_architect_and_vlsi_engineer",
+        "quantity": 40.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_32_and_64_bit_cmos_microprocessors",
@@ -1001,27 +1538,54 @@
       "ferrite_magnetic_core_memory_modules"
     ],
     "confidence": "verified",
-    "sources": ["Hennessy, J.L. & Patterson, D.A. (2018) Computer Architecture: A Quantitative Approach"],
+    "sources": [
+      "Hennessy, J.L. & Patterson, D.A. (2018) Computer Architecture: A Quantitative Approach"
+    ],
     "notes": "Creates the processing brains that power phones, server clusters, autopilot avionics, and scientific simulations."
   },
   {
     "id": "tech_smartphones",
     "name": "Integrated Smartphones and Mobile Computing Ecosystem",
-    "phase_window": [6, 6],
+    "phase_window": [
+      6,
+      6
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_cmos_microprocessors",
       "tech_ac_transformer_and_power_grid"
     ],
     "prerequisites_any": [
-      ["resource_lithium_brine_spodumene"]
+      [
+        "resource_lithium_brine_spodumene"
+      ]
     ],
     "inputs": [
-      {"id": "low_power_arm_system_on_chip", "quantity": 1.0, "unit": "units"},
-      {"id": "high_density_lithium_ion_pouch_battery", "quantity": 1.0, "unit": "units"},
-      {"id": "capacitive_multi_touch_oled_display", "quantity": 1.0, "unit": "units"},
-      {"id": "multiband_cellular_rf_transceiver_and_gps_sensors", "quantity": 1.0, "unit": "units"},
-      {"id": "labour_embedded_systems_and_software_team", "quantity": 50.0, "unit": "person_days"}
+      {
+        "id": "low_power_arm_system_on_chip",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "high_density_lithium_ion_pouch_battery",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "capacitive_multi_touch_oled_display",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "multiband_cellular_rf_transceiver_and_gps_sensors",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "labour_embedded_systems_and_software_team",
+        "quantity": 50.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_pocket_supercomputer_smartphone",
@@ -1043,24 +1607,49 @@
       "handheld_walkie_talkies_and_paper_maps"
     ],
     "confidence": "verified",
-    "sources": ["Balakrishnan, H. et al. (2001) Challenges to Pervasive Computing, IEEE"],
+    "sources": [
+      "Balakrishnan, H. et al. (2001) Challenges to Pervasive Computing, IEEE"
+    ],
     "notes": "The ultimate convergence of microelectronics, radio frequency engineering, battery electrochemistry, optics, and software."
   },
   {
     "id": "tech_large_language_models",
     "name": "Transformer Deep Neural Networks and Large Language Models (LLMs)",
-    "phase_window": [6, 6],
+    "phase_window": [
+      6,
+      6
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_cmos_microprocessors"
     ],
     "prerequisites_any": [],
     "inputs": [
-      {"id": "datacenter_cluster_with_tens_of_thousands_of_gpus_tpus", "quantity": 1.0, "unit": "units"},
-      {"id": "high_bandwidth_memory_hbm3_and_nvlink_fabrics", "quantity": 10000.0, "unit": "units"},
-      {"id": "multi_terabyte_curated_multilingual_text_code_corpora", "quantity": 1.0, "unit": "units"},
-      {"id": "megawatt_scale_datacenter_electrical_power_and_cooling", "quantity": 50.0, "unit": "MW"},
-      {"id": "labour_machine_learning_researchers_and_infra_engineers", "quantity": 60.0, "unit": "person_days"}
+      {
+        "id": "datacenter_cluster_with_tens_of_thousands_of_gpus_tpus",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "high_bandwidth_memory_hbm3_and_nvlink_fabrics",
+        "quantity": 10000.0,
+        "unit": "units"
+      },
+      {
+        "id": "multi_terabyte_curated_multilingual_text_code_corpora",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "megawatt_scale_datacenter_electrical_power_and_cooling",
+        "quantity": 50.0,
+        "unit": "MW"
+      },
+      {
+        "id": "labour_machine_learning_researchers_and_infra_engineers",
+        "quantity": 60.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_foundation_large_language_model_weights",
@@ -1083,13 +1672,18 @@
       "classical_relational_databases_and_manual_scientific_search"
     ],
     "confidence": "verified",
-    "sources": ["Vaswani, A. et al. (2017) Attention Is All You Need, NeurIPS"],
+    "sources": [
+      "Vaswani, A. et al. (2017) Attention Is All You Need, NeurIPS"
+    ],
     "notes": "Autonomous synthesis engine that can index, translate, optimize, and cross-reference the entire canon of human civilization knowledge."
   },
   {
     "id": "tech_nuclear_fission_reactors",
     "name": "Controlled Nuclear Fission Reactors and Fuel Cycle",
-    "phase_window": [6, 6],
+    "phase_window": [
+      6,
+      6
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_bessemer_and_open_hearth_steel",
@@ -1097,15 +1691,41 @@
       "tech_condensing_steam_engine"
     ],
     "prerequisites_any": [
-      ["resource_uranium_ore_pitchblende"]
+      [
+        "resource_uranium_ore_pitchblende"
+      ]
     ],
     "inputs": [
-      {"id": "enriched_uranium_fuel_assemblies_3_to_5_percent_u235", "quantity": 20.0, "unit": "tons"},
-      {"id": "zircaloy_cladding_tubes", "quantity": 5.0, "unit": "tons"},
-      {"id": "boron_carbide_and_cadmium_control_rods", "quantity": 50.0, "unit": "units"},
-      {"id": "forged_heavy_alloy_steel_reactor_pressure_vessel", "quantity": 1.0, "unit": "units"},
-      {"id": "post_tensioned_reinforced_concrete_containment_structure", "quantity": 1.0, "unit": "units"},
-      {"id": "labour_nuclear_physicists_and_licensed_operators", "quantity": 50.0, "unit": "person_days"}
+      {
+        "id": "enriched_uranium_fuel_assemblies_3_to_5_percent_u235",
+        "quantity": 20.0,
+        "unit": "tons"
+      },
+      {
+        "id": "zircaloy_cladding_tubes",
+        "quantity": 5.0,
+        "unit": "tons"
+      },
+      {
+        "id": "boron_carbide_and_cadmium_control_rods",
+        "quantity": 50.0,
+        "unit": "units"
+      },
+      {
+        "id": "forged_heavy_alloy_steel_reactor_pressure_vessel",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "post_tensioned_reinforced_concrete_containment_structure",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "labour_nuclear_physicists_and_licensed_operators",
+        "quantity": 50.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_pressurized_water_nuclear_power_plant",
@@ -1128,13 +1748,18 @@
       "hydroelectric_dam_cascade_power_plants"
     ],
     "confidence": "verified",
-    "sources": ["Glasstone, S. & Sesonske, A. (1994) Nuclear Reactor Engineering, Chapman & Hall"],
+    "sources": [
+      "Glasstone, S. & Sesonske, A. (1994) Nuclear Reactor Engineering, Chapman & Hall"
+    ],
     "notes": "Densest civilian energy source known to physics: 1 kg of uranium-235 yields as much energy as 2,700,000 kg of coal."
   },
   {
     "id": "tech_liquid_propellant_rocketry",
     "name": "Staged Liquid-Propellant Rocketry and Orbital Vehicles",
-    "phase_window": [6, 6],
+    "phase_window": [
+      6,
+      6
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_bessemer_and_open_hearth_steel",
@@ -1142,15 +1767,42 @@
       "tech_cmos_microprocessors"
     ],
     "prerequisites_any": [
-      ["resource_petroleum_crude", "resource_natural_gas_methane"]
+      [
+        "resource_petroleum_crude",
+        "resource_natural_gas_methane"
+      ]
     ],
     "inputs": [
-      {"id": "cryogenic_liquid_oxygen_lox", "quantity": 300.0, "unit": "tons"},
-      {"id": "refined_rocket_propellant_rp1_or_liquid_methane", "quantity": 100.0, "unit": "tons"},
-      {"id": "inconel_and_copper_regeneratively_cooled_thrust_chambers", "quantity": 9.0, "unit": "units"},
-      {"id": "high_speed_turbopump_assemblies", "quantity": 9.0, "unit": "units"},
-      {"id": "ring_laser_gyro_inertial_guidance_system", "quantity": 1.0, "unit": "units"},
-      {"id": "labour_aerospace_propulsion_and_structures_team", "quantity": 60.0, "unit": "person_days"}
+      {
+        "id": "cryogenic_liquid_oxygen_lox",
+        "quantity": 300.0,
+        "unit": "tons"
+      },
+      {
+        "id": "refined_rocket_propellant_rp1_or_liquid_methane",
+        "quantity": 100.0,
+        "unit": "tons"
+      },
+      {
+        "id": "inconel_and_copper_regeneratively_cooled_thrust_chambers",
+        "quantity": 9.0,
+        "unit": "units"
+      },
+      {
+        "id": "high_speed_turbopump_assemblies",
+        "quantity": 9.0,
+        "unit": "units"
+      },
+      {
+        "id": "ring_laser_gyro_inertial_guidance_system",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "labour_aerospace_propulsion_and_structures_team",
+        "quantity": 60.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_multistage_orbital_launch_vehicle",
@@ -1173,13 +1825,18 @@
       "high_altitude_balloon_and_sounding_rocket_platforms"
     ],
     "confidence": "verified",
-    "sources": ["Sutton, G.P. & Biblarz, O. (2016) Rocket Propulsion Elements, Wiley"],
+    "sources": [
+      "Sutton, G.P. & Biblarz, O. (2016) Rocket Propulsion Elements, Wiley"
+    ],
     "notes": "Overcomes Earth's gravity well, opening space transport, satellite communications, and asteroid threat deflection."
   },
   {
     "id": "tech_orbital_space_stations",
     "name": "Orbital Stations (ISS) and Closed-Loop Life Support",
-    "phase_window": [6, 7],
+    "phase_window": [
+      6,
+      7
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_liquid_propellant_rocketry",
@@ -1187,15 +1844,41 @@
       "tech_smartphones"
     ],
     "prerequisites_any": [
-      ["resource_bauxite_aluminum"]
+      [
+        "resource_bauxite_aluminum"
+      ]
     ],
     "inputs": [
-      {"id": "aluminum_lithium_welded_isogrid_pressure_modules", "quantity": 4.0, "unit": "units"},
-      {"id": "androgynous_peripheral_docking_mechanisms", "quantity": 6.0, "unit": "units"},
-      {"id": "multi_junction_gallium_arsenide_solar_arrays", "quantity": 2000.0, "unit": "m2"},
-      {"id": "closed_loop_eclss_water_recovery_and_sabatier_reactors", "quantity": 2.0, "unit": "units"},
-      {"id": "whipple_micrometeoroid_and_orbital_debris_shields", "quantity": 500.0, "unit": "m2"},
-      {"id": "labour_astronautics_and_life_support_engineers", "quantity": 70.0, "unit": "person_days"}
+      {
+        "id": "aluminum_lithium_welded_isogrid_pressure_modules",
+        "quantity": 4.0,
+        "unit": "units"
+      },
+      {
+        "id": "androgynous_peripheral_docking_mechanisms",
+        "quantity": 6.0,
+        "unit": "units"
+      },
+      {
+        "id": "multi_junction_gallium_arsenide_solar_arrays",
+        "quantity": 2000.0,
+        "unit": "m2"
+      },
+      {
+        "id": "closed_loop_eclss_water_recovery_and_sabatier_reactors",
+        "quantity": 2.0,
+        "unit": "units"
+      },
+      {
+        "id": "whipple_micrometeoroid_and_orbital_debris_shields",
+        "quantity": 500.0,
+        "unit": "m2"
+      },
+      {
+        "id": "labour_astronautics_and_life_support_engineers",
+        "quantity": 70.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_modular_permanent_orbital_space_station",
@@ -1218,13 +1901,18 @@
       "suborbital_drop_towers_and_parabolic_aircraft"
     ],
     "confidence": "verified",
-    "sources": ["Eckart, P. (1996) Spaceflight Life Support and Biospherics, Microcosm Press"],
+    "sources": [
+      "Eckart, P. (1996) Spaceflight Life Support and Biospherics, Microcosm Press"
+    ],
     "notes": "Proves long-term multi-generational survival off the home planet surface."
   },
   {
     "id": "tech_particle_accelerators_cern",
     "name": "Superconducting Particle Accelerators and Colliders (CERN)",
-    "phase_window": [6, 7],
+    "phase_window": [
+      6,
+      7
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_ac_transformer_and_power_grid",
@@ -1232,15 +1920,41 @@
       "tech_optical_glass_and_instruments"
     ],
     "prerequisites_any": [
-      ["resource_niobium_and_titanium"]
+      [
+        "resource_niobium_and_titanium"
+      ]
     ],
     "inputs": [
-      {"id": "niobium_titanium_superconducting_dipole_magnets_8_tesla", "quantity": 1200.0, "unit": "units"},
-      {"id": "superfluid_liquid_helium_cryogenic_plant_1_9_kelvin", "quantity": 100.0, "unit": "tons"},
-      {"id": "ultra_high_vacuum_beam_screen_tubes_10_minus_10_mbar", "quantity": 27.0, "unit": "km"},
-      {"id": "superconducting_rf_acceleration_cavities_400_mhz", "quantity": 16.0, "unit": "units"},
-      {"id": "silicon_pixel_trackers_and_liquid_argon_calorimeters", "quantity": 4.0, "unit": "detectors"},
-      {"id": "labour_accelerator_physicists_and_cryogenic_engineers", "quantity": 80.0, "unit": "person_days"}
+      {
+        "id": "niobium_titanium_superconducting_dipole_magnets_8_tesla",
+        "quantity": 1200.0,
+        "unit": "units"
+      },
+      {
+        "id": "superfluid_liquid_helium_cryogenic_plant_1_9_kelvin",
+        "quantity": 100.0,
+        "unit": "tons"
+      },
+      {
+        "id": "ultra_high_vacuum_beam_screen_tubes_10_minus_10_mbar",
+        "quantity": 27.0,
+        "unit": "km"
+      },
+      {
+        "id": "superconducting_rf_acceleration_cavities_400_mhz",
+        "quantity": 16.0,
+        "unit": "units"
+      },
+      {
+        "id": "silicon_pixel_trackers_and_liquid_argon_calorimeters",
+        "quantity": 4.0,
+        "unit": "detectors"
+      },
+      {
+        "id": "labour_accelerator_physicists_and_cryogenic_engineers",
+        "quantity": 80.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_large_hadron_collider_synchrotron",
@@ -1263,28 +1977,59 @@
       "cosmic_ray_cloud_chambers_and_high_altitude_emulsions"
     ],
     "confidence": "verified",
-    "sources": ["Evans, L. (2009) The Large Hadron Collider: A Marvel of Technology, EPFL Press"],
+    "sources": [
+      "Evans, L. (2009) The Large Hadron Collider: A Marvel of Technology, EPFL Press"
+    ],
     "notes": "Pushes the extreme frontier of fundamental science, high vacuum, cryogenics, and distributed computing (origin of the World Wide Web)."
   },
   {
     "id": "tech_robotics_and_automation",
     "name": "Robotics, Closed-Loop Mechatronics, and Autonomous Systems",
-    "phase_window": [6, 7],
+    "phase_window": [
+      6,
+      7
+    ],
     "capability_level": "T4",
     "prerequisites_all": [
       "tech_cmos_microprocessors",
       "tech_electromagnetic_dynamo_and_motor"
     ],
     "prerequisites_any": [
-      ["resource_rare_earth_neodymium"]
+      [
+        "resource_rare_earth_neodymium"
+      ]
     ],
     "inputs": [
-      {"id": "brushless_dc_servomotors_with_neodymium_magnets", "quantity": 20.0, "unit": "units"},
-      {"id": "harmonic_drive_zero_backlash_strain_wave_gears", "quantity": 20.0, "unit": "units"},
-      {"id": "optical_absolute_encoders_and_force_torque_sensors", "quantity": 40.0, "unit": "units"},
-      {"id": "lidar_depth_cameras_and_inertial_measurement_units", "quantity": 4.0, "unit": "units"},
-      {"id": "real_time_deterministic_embedded_motion_controllers", "quantity": 1.0, "unit": "units"},
-      {"id": "labour_mechatronics_and_robotics_control_engineers", "quantity": 45.0, "unit": "person_days"}
+      {
+        "id": "brushless_dc_servomotors_with_neodymium_magnets",
+        "quantity": 20.0,
+        "unit": "units"
+      },
+      {
+        "id": "harmonic_drive_zero_backlash_strain_wave_gears",
+        "quantity": 20.0,
+        "unit": "units"
+      },
+      {
+        "id": "optical_absolute_encoders_and_force_torque_sensors",
+        "quantity": 40.0,
+        "unit": "units"
+      },
+      {
+        "id": "lidar_depth_cameras_and_inertial_measurement_units",
+        "quantity": 4.0,
+        "unit": "units"
+      },
+      {
+        "id": "real_time_deterministic_embedded_motion_controllers",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "labour_mechatronics_and_robotics_control_engineers",
+        "quantity": 45.0,
+        "unit": "person_days"
+      }
     ],
     "outputs": [
       "artifact_six_axis_articulated_industrial_robot_arm",
@@ -1307,7 +2052,624 @@
       "teleoperated_master_slave_cable_manipulators"
     ],
     "confidence": "verified",
-    "sources": ["Siciliano, B. & Khatib, O. (2016) Springer Handbook of Robotics"],
+    "sources": [
+      "Siciliano, B. & Khatib, O. (2016) Springer Handbook of Robotics"
+    ],
     "notes": "Enables round-the-clock precision manufacturing and safe operations in radiation zones, deep sea, and planetary space."
+  },
+  {
+    "id": "tech_pyrite_percussion_fire",
+    "name": "Iron Pyrite and Flint Percussion Fire Striking",
+    "phase_window": [
+      0,
+      1
+    ],
+    "capability_level": "T5",
+    "prerequisites_all": [
+      "tech_flint_knapping"
+    ],
+    "prerequisites_any": [
+      [
+        "resource_flint_and_chert",
+        "resource_sulfur_and_pyrite"
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "resource_flint_and_chert",
+        "quantity": 1.0,
+        "unit": "kg"
+      },
+      {
+        "id": "resource_sulfur_and_pyrite",
+        "quantity": 1.0,
+        "unit": "kg"
+      },
+      {
+        "id": "charred_linen_or_amadou_tinder",
+        "quantity": 0.05,
+        "unit": "kg"
+      }
+    ],
+    "outputs": [
+      "capability_instant_percussion_fire_striking",
+      "pyrophoric_sparks_800C"
+    ],
+    "process_summary": "Striking sharp flint ridge at a 45-degree angle against iron pyrite crystals to shave off pyrophoric iron-sulfur micro-particles burning at 800-1000 C onto prepared char-cloth.",
+    "quality_tests": [
+      "strikes_to_ember_count_under_five",
+      "spark_shower_density_and_temperature"
+    ],
+    "failure_modes": [
+      "wet_or_damp_tinder",
+      "dull_flint_edge_crushing_pyrite_without_shaving",
+      "cracked_pyrite_nodule_disintegrating"
+    ],
+    "fallbacks": [
+      "bow_drill_friction_fire",
+      "charcoal_brazier_hearth_coals_preservation"
+    ],
+    "confidence": "verified",
+    "sources": [
+      "Stapert, D. & Johansen, L. (1999) Flint and pyrite: making fire in the Stone Age"
+    ],
+    "notes": "Instant ignition capability independent of friction wood dryness."
+  },
+  {
+    "id": "tech_char_cloth_pyrolysis",
+    "name": "Char-Cloth and Tinder Pyrolysis",
+    "phase_window": [
+      0,
+      1
+    ],
+    "capability_level": "T5",
+    "prerequisites_all": [
+      "tech_controlled_friction_fire"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {
+        "id": "woven_plant_fiber_linen_or_cotton",
+        "quantity": 0.5,
+        "unit": "kg"
+      },
+      {
+        "id": "clay_sealed_char_pot_with_pinhole",
+        "quantity": 1.0,
+        "unit": "units"
+      }
+    ],
+    "outputs": [
+      "artifact_pyrolyzed_char_cloth",
+      "capability_low_ignition_temperature_spark_capture"
+    ],
+    "process_summary": "Heating plant cellulose in a sealed clay or metal container with a single gas vent pinhole over hot coals for 15 minutes in absence of oxygen, yielding amorphous carbon cloth.",
+    "quality_tests": [
+      "instant_glow_upon_spark_contact",
+      "flexibility_and_absence_of_unpyrolyzed_brown_fibers"
+    ],
+    "failure_modes": [
+      "air_leakage_causing_complete_combustion_to_white_ash",
+      "under_cooking_leaving_unreactive_raw_cellulose"
+    ],
+    "fallbacks": [
+      "boiled_and_pounded_amadou_bracket_fungus",
+      "punk_wood_dry_dry_rot"
+    ],
+    "confidence": "verified",
+    "sources": [
+      "Weiner, J. (2003) Fire-making in Prehistory"
+    ],
+    "notes": "Prerequisite for capturing low-energy percussion sparks."
+  },
+  {
+    "id": "tech_pot_bellows_and_tuyeres",
+    "name": "Double-Acting Pot Bellows and Refractory Tuyeres",
+    "phase_window": [
+      1,
+      2
+    ],
+    "capability_level": "T5",
+    "prerequisites_all": [
+      "tech_earthenware_pottery",
+      "tech_cordage_and_hafting"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {
+        "id": "fired_clay_pot_basins",
+        "quantity": 2.0,
+        "unit": "units"
+      },
+      {
+        "id": "supple_oiled_goat_skins",
+        "quantity": 2.0,
+        "unit": "units"
+      },
+      {
+        "id": "refractory_ceramic_pipes_tuyeres",
+        "quantity": 2.0,
+        "unit": "units"
+      }
+    ],
+    "outputs": [
+      "capability_continuous_forced_draft_air_blast",
+      "artifact_double_pot_bellows"
+    ],
+    "process_summary": "Mounting flexible leather diaphragms with central flapper intake valves over dual clay pots; alternately plunging by foot/hand through refractory tuyeres to inject continuous oxygen at 1200+ C.",
+    "quality_tests": [
+      "continuous_static_air_pressure_gauge",
+      "tuyere_thermal_spalling_resistance_at_1200C"
+    ],
+    "failure_modes": [
+      "leather_diaphragm_charring_from_furnace_backdraft",
+      "slag_freezing_over_tuyere_tip",
+      "operator_heat_exhaustion"
+    ],
+    "fallbacks": [
+      "reed_blowpipes_with_clay_tips_limited_volume",
+      "natural_hillside_wind_funnels"
+    ],
+    "confidence": "verified",
+    "sources": [
+      "Davey, C.J. (1979) The Egyptian Bag-Bellows, Journal of Egyptian Archaeology"
+    ],
+    "notes": "Unlocks high-temperature metallurgy and blast furnace operations."
+  },
+  {
+    "id": "tech_updraft_mudbrick_kiln",
+    "name": "Dual-Chamber Updraft Refractory Mudbrick Kiln",
+    "phase_window": [
+      1,
+      2
+    ],
+    "capability_level": "T5",
+    "prerequisites_all": [
+      "tech_earthenware_pottery",
+      "tech_standard_metrology"
+    ],
+    "prerequisites_any": [
+      [
+        "resource_clay_and_silica",
+        "resource_limestone_calcium_carbonate"
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "sun_dried_refractory_mudbricks",
+        "quantity": 500.0,
+        "unit": "units"
+      },
+      {
+        "id": "sand_and_grog_refractory_mortar",
+        "quantity": 200.0,
+        "unit": "kg"
+      },
+      {
+        "id": "hardwood_acacia_logs",
+        "quantity": 1000.0,
+        "unit": "kg"
+      }
+    ],
+    "outputs": [
+      "artifact_updraft_firing_kiln",
+      "capability_sustained_1050C_soaking_heat",
+      "artifact_calcined_quicklime_powder"
+    ],
+    "process_summary": "Constructing subterranean firebox, perforated refractory clay hearth floor, and cylindrical upper firing chamber with tapered exhaust flue; firing ceramics and limestone to 1000-1050 C.",
+    "quality_tests": [
+      "firing_temperature_pyrometric_cone_equivalent",
+      "lime_slaking_exothermic_boiling_test"
+    ],
+    "failure_modes": [
+      "corbeled_arch_collapse_under_charge_weight",
+      "insufficient_convective_chimney_draft",
+      "thermal_shock_cracking_from_rapid_cooling"
+    ],
+    "fallbacks": [
+      "bonfire_and_pit_clamp_firing",
+      "reverberatory_earth_trenches"
+    ],
+    "confidence": "verified",
+    "sources": [
+      "Arnold, D. (1993) Techniques and Traditions of Ancient Egyptian Ceramics"
+    ],
+    "notes": "Supplies refractory crucibles for metallurgy and quicklime for building mortar and soap."
+  },
+  {
+    "id": "tech_tripartite_wooden_wheel",
+    "name": "Tripartite Solid Wooden Wheel and Fixed Axle",
+    "phase_window": [
+      2,
+      3
+    ],
+    "capability_level": "T5",
+    "prerequisites_all": [
+      "tech_rotary_motion_and_wheels",
+      "tech_copper_smelting"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {
+        "id": "seasoned_acacia_planks",
+        "quantity": 3.0,
+        "unit": "units"
+      },
+      {
+        "id": "hardwood_tenons_and_dowel_pins",
+        "quantity": 12.0,
+        "unit": "units"
+      },
+      {
+        "id": "cast_bronze_sleeve_bushings",
+        "quantity": 2.0,
+        "unit": "units"
+      },
+      {
+        "id": "rendered_tallow_lubricant",
+        "quantity": 2.0,
+        "unit": "kg"
+      }
+    ],
+    "outputs": [
+      "artifact_tripartite_heavy_wheels",
+      "capability_low_friction_heavy_wagon_freight",
+      "artifact_linchpin_retained_axle"
+    ],
+    "process_summary": "Joining three seasoned hardwood planks edge-to-edge via pinned mortise-and-tenon joints; scribing circle; boring 10-cm hub; inserting cast bronze sleeve bushings; greasing fixed axle spindles with tallow.",
+    "quality_tests": [
+      "wobble_runout_under_load_below_5_mm",
+      "frictional_drawbar_pull_reduction_ratio_10x"
+    ],
+    "failure_modes": [
+      "tenon_shear_under_heavy_pothole_shock",
+      "bushing_seizure_from_dry_friction",
+      "linchpin_shearing_releasing_wheel"
+    ],
+    "fallbacks": [
+      "timber_log_skids",
+      "sledge_on_wet_clay"
+    ],
+    "confidence": "verified",
+    "sources": [
+      "Piggott, S. (1983) The Earliest Wheeled Transport, Thames and Hudson"
+    ],
+    "notes": "Essential transport revolution reducing freight energy by 80%."
+  },
+  {
+    "id": "tech_soap_saponification",
+    "name": "Caustic Lye Saponification and Antibacterial Soap",
+    "phase_window": [
+      1,
+      2
+    ],
+    "capability_level": "T5",
+    "prerequisites_all": [
+      "tech_updraft_mudbrick_kiln",
+      "tech_standard_metrology"
+    ],
+    "prerequisites_any": [
+      [
+        "resource_rock_salt_halite",
+        "resource_limestone_calcium_carbonate"
+      ]
+    ],
+    "inputs": [
+      {
+        "id": "animal_tallow_or_olive_oil",
+        "quantity": 10.0,
+        "unit": "kg"
+      },
+      {
+        "id": "resource_rock_salt_halite",
+        "quantity": 5.0,
+        "unit": "kg"
+      },
+      {
+        "id": "calcined_quicklime_cao",
+        "quantity": 3.0,
+        "unit": "kg"
+      }
+    ],
+    "outputs": [
+      "artifact_hard_antibacterial_soap_bars",
+      "capability_mass_sanitation_and_bacterial_decontamination",
+      "artifact_glycerol_sweet_liquor"
+    ],
+    "process_summary": "Reacting natron with slaked quicklime to precipitate chalk mud and generate caustic sodium hydroxide lye; boiling with tallow triglycerides; salting out with brine; molding and curing hard soap bars.",
+    "quality_tests": [
+      "free_alkali_tongue_bite_test_neutral_ph",
+      "lather_volume_in_freshwater",
+      "grease_emulsification_efficiency"
+    ],
+    "failure_modes": [
+      "excess_free_caustic_causing_skin_chemical_burns",
+      "incomplete_saponification_leaving_rancid_fat",
+      "soft_greasy_soap_failing_to_harden"
+    ],
+    "fallbacks": [
+      "raw_natron_powder_scouring",
+      "wood_ash_lye_liquid_soft_soap"
+    ],
+    "confidence": "verified",
+    "sources": [
+      "Partington, J.R. (1960) A History of Greek Fire and Gunpowder (Early Alkalis)"
+    ],
+    "notes": "Cuts worker skin infections, infant mortality, and enteric diseases by 80%."
+  },
+  {
+    "id": "tech_pot_still_alcohol_rectification",
+    "name": "Fractional Alembic Distillation and Medicinal Ethanol",
+    "phase_window": [
+      2,
+      3
+    ],
+    "capability_level": "T5",
+    "prerequisites_all": [
+      "tech_copper_smelting",
+      "tech_earthenware_pottery"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {
+        "id": "fermented_date_or_barley_mash_10_percent",
+        "quantity": 100.0,
+        "unit": "liters"
+      },
+      {
+        "id": "hammered_copper_alembic_and_worm_condenser",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "calcined_quicklime_desiccant",
+        "quantity": 5.0,
+        "unit": "kg"
+      }
+    ],
+    "outputs": [
+      "artifact_rectified_medicinal_ethanol_95_percent",
+      "capability_antiseptic_solvent_and_surgical_disinfection"
+    ],
+    "process_summary": "Boiling fermented beer/wine mash at 78.5-82 C; condensing vapors through water-cooled copper coiled worm; re-distilling over quicklime to remove residual water, yielding 95% pure medicinal ethanol.",
+    "quality_tests": [
+      "gunpowder_combustion_proof_test",
+      "specific_gravity_hydrometer_below_0_816"
+    ],
+    "failure_modes": [
+      "still_head_overpressure_explosion",
+      "alcohol_vapor_catch_fire_at_receiver",
+      "copper_verdigris_poisoning_from_uncleaned_condenser"
+    ],
+    "fallbacks": [
+      "strong_unboiled_vinegar_acetic_acid",
+      "myrrh_and_frankincense_resinous_antiseptic_washes"
+    ],
+    "confidence": "verified",
+    "sources": [
+      "Forbes, R.J. (1970) A Short History of the Art of Distillation"
+    ],
+    "notes": "Surgical disinfectant, botanical tincture solvent, and chemical intermediate."
+  },
+  {
+    "id": "tech_dilution_refrigeration_and_cryogenics",
+    "name": "Cryogenic Dilution Refrigeration and Helium Liquefaction",
+    "phase_window": [
+      6,
+      7
+    ],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_precision_lead_screw_and_lathe",
+      "tech_ac_transformer_and_power_grid"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {
+        "id": "helium_3_and_helium_4_gas_mixtures",
+        "quantity": 10.0,
+        "unit": "liters"
+      },
+      {
+        "id": "ofhc_copper_braided_thermal_straps",
+        "quantity": 5.0,
+        "unit": "kg"
+      },
+      {
+        "id": "turbomolecular_high_vacuum_pumps",
+        "quantity": 2.0,
+        "unit": "units"
+      }
+    ],
+    "outputs": [
+      "artifact_15_millikelvin_cryostat_platform",
+      "capability_sub_kelvin_thermal_noise_elimination"
+    ],
+    "process_summary": "Pumping He-3 across He-3/He-4 phase boundary in mixing chamber at 0.87 K to absorb latent heat of mixing, driving temperatures down to 10-15 milliKelvin inside high-vacuum shielded cryostats.",
+    "quality_tests": [
+      "ruthenium_oxide_cryogenic_resistance_thermometry_15mK",
+      "cryostat_vacuum_leak_rate_below_10_minus_9_mbar"
+    ],
+    "failure_modes": [
+      "helium_3_gas_line_clog_by_frozen_air_impurities",
+      "superfluid_film_creep_thermal_short_circuits",
+      "room_temperature_infrared_blackbody_radiative_leakage"
+    ],
+    "fallbacks": [
+      "adiabatic_demagnetization_refrigeration_adr",
+      "liquid_helium_4_evaporative_cooling_1_kelvin"
+    ],
+    "confidence": "verified",
+    "sources": [
+      "Pobell, F. (2007) Matter and Methods at Low Temperatures, Springer"
+    ],
+    "notes": "Absolute physical prerequisite for superconducting quantum computing."
+  },
+  {
+    "id": "tech_quantum_transmon_qubits",
+    "name": "Superconducting Transmon Qubits and Quantum Processors",
+    "phase_window": [
+      6,
+      7
+    ],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_semiconductor_photolithography",
+      "tech_dilution_refrigeration_and_cryogenics"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {
+        "id": "high_resistivity_silicon_sapphire_wafers",
+        "quantity": 5.0,
+        "unit": "units"
+      },
+      {
+        "id": "electron_beam_lithography_writer",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "5ghz_microwave_pulse_control_lines",
+        "quantity": 64.0,
+        "unit": "lines"
+      }
+    ],
+    "outputs": [
+      "artifact_superconducting_quantum_processor_chip",
+      "capability_hilbert_space_quantum_superposition_and_entanglement",
+      "artifact_surface_code_logical_qubits"
+    ],
+    "process_summary": "Fabricating Al/AlOx/Al Josephson tunnel junctions via Dolan bridge double-angle shadow evaporation; shunting with large coplanar capacitors (transmon regime Ej/Ec >> 50); coupling to microwave coplanar waveguide resonators at 15 mK; executing Clifford gates via 5 GHz Gaussian pulses.",
+    "quality_tests": [
+      "qubit_energy_relaxation_time_t1_above_100_microseconds",
+      "dephasing_coherence_time_t2_echo_measurement",
+      "two_qubit_cross_resonance_gate_fidelity_above_99_5_percent"
+    ],
+    "failure_modes": [
+      "two_level_system_tls_dielectric_defect_loss",
+      "quasiparticle_poisoning_breaking_cooper_pairs",
+      "stray_magnetic_flux_vortices_pinning_in_superconducting_films"
+    ],
+    "fallbacks": [
+      "trapped_ion_quantum_computing_ytterbium",
+      "classical_fpga_tensor_network_emulators"
+    ],
+    "confidence": "verified",
+    "sources": [
+      "Koch, J. et al. (2007) Charge-insensitive qubit design derived from the Cooper pair box, Phys. Rev. A"
+    ],
+    "notes": "The apex of quantum physics, enabling exponential-speedup chemical simulation and cryptography."
+  },
+  {
+    "id": "tech_pcr_thermocyclers_and_recombinant_dna",
+    "name": "PCR Thermocyclers, Recombinant Enzymes, and Gene Cloning",
+    "phase_window": [
+      6,
+      7
+    ],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_cmos_microprocessors",
+      "tech_optical_glass_and_instruments"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {
+        "id": "taq_dna_polymerase_enzyme_and_dntps",
+        "quantity": 1.0,
+        "unit": "vials"
+      },
+      {
+        "id": "peltier_solid_state_thermal_cycler",
+        "quantity": 1.0,
+        "unit": "units"
+      },
+      {
+        "id": "agarose_gel_electrophoresis_tank_and_uv_lamp",
+        "quantity": 1.0,
+        "unit": "units"
+      }
+    ],
+    "outputs": [
+      "capability_in_vitro_exponential_dna_amplification",
+      "artifact_recombinant_plasmid_cloning_vectors",
+      "capability_agarose_gel_nucleic_acid_sizing"
+    ],
+    "process_summary": "Cycling DNA template through 95 C denaturation, 55 C annealing, and 72 C extension over 35 cycles using thermostable Taq polymerase; separating fragments by size in electric field through agarose gel matrix; ligating into plasmids using T4 DNA ligase.",
+    "quality_tests": [
+      "pcr_amplicon_single_band_uv_fluorescence",
+      "sanger_dideoxy_sequencing_fidelity",
+      "bacterial_transformation_efficiency_colonies_per_microgram"
+    ],
+    "failure_modes": [
+      "aerosol_cross_contamination_yielding_false_positive_amplification",
+      "primer_dimer_amplification_depleting_reagents",
+      "dnase_contamination_degrading_template"
+    ],
+    "fallbacks": [
+      "bacterial_in_vivo_bacteriophage_lambda_cloning",
+      "chemical_organic_nucleotide_synthesis_alone"
+    ],
+    "confidence": "verified",
+    "sources": [
+      "Mullis, K. et al. (1986) Specific Enzymatic Amplification of DNA In Vitro: The Polymerase Chain Reaction"
+    ],
+    "notes": "The foundation of all modern genetic engineering and pathogen diagnostics."
+  },
+  {
+    "id": "tech_crispr_gene_editing",
+    "name": "CRISPR-Cas9 Programmable Endonuclease and Gene Editing",
+    "phase_window": [
+      6,
+      7
+    ],
+    "capability_level": "T4",
+    "prerequisites_all": [
+      "tech_pcr_thermocyclers_and_recombinant_dna"
+    ],
+    "prerequisites_any": [],
+    "inputs": [
+      {
+        "id": "recombinant_purified_cas9_protein",
+        "quantity": 1.0,
+        "unit": "vials"
+      },
+      {
+        "id": "synthetic_single_guide_rna_sgrna",
+        "quantity": 1.0,
+        "unit": "vials"
+      },
+      {
+        "id": "sterile_electroporation_cuvettes_and_cells",
+        "quantity": 10.0,
+        "unit": "units"
+      }
+    ],
+    "outputs": [
+      "capability_targeted_genomic_double_strand_dna_cleavage",
+      "capability_hereditary_disease_correction_and_crop_gene_editing",
+      "artifact_base_editor_and_prime_editor_molecular_machines"
+    ],
+    "process_summary": "Complexing recombinant Cas9 endonuclease with synthetic 100-nt guide RNA matching target 20-nt genomic DNA with 5'-NGG PAM; delivering into cells via electroporation; Cas9 induces targeted double-strand break resolved by host non-homologous end joining or homology-directed repair.",
+    "quality_tests": [
+      "t7_endonuclease_i_cleavage_mismatch_assay",
+      "next_generation_sequencing_indel_frequency_percentage",
+      "off_target_cleavage_whole_genome_sequencing_audit"
+    ],
+    "failure_modes": [
+      "off_target_cleavage_disrupting_essential_tumor_suppressor_genes",
+      "cellular_innate_immune_rejection_of_bacterial_cas9_protein",
+      "inefficient_homology_directed_repair_in_non_dividing_cells"
+    ],
+    "fallbacks": [
+      "zinc_finger_nucleases_zfn",
+      "transcription_activator_like_effector_nucleases_talen"
+    ],
+    "confidence": "verified",
+    "sources": [
+      "Jinek, M. et al. (2012) A Programmable Dual-RNA-Guided DNA Endonuclease in Adaptive Bacterial Immunity, Science"
+    ],
+    "notes": "The apex of biotechnology: programmable molecular surgery on living biological genomes."
   }
 ]

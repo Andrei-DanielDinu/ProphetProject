@@ -54,22 +54,20 @@ nav:
       - Uomo Universale: uomo-universale.md
       - Technology Roadmap: technology-roadmap.md
       - Civilization Playbook: civilization-playbook.md
-  - Lore & Narrative:
-      - The Prophet: lore/the-prophet.md
-      - The Machine: lore/the-machine.md
-      - The Threat: lore/the-danger.md
-      - Temporal Assumptions: lore/temporal-assumptions.md
-  - Methodology:
-      - Dependency Model: methodology/dependency-model.md
-      - Evidence Standard: methodology/evidence-standard.md
-      - Resource Accounting: methodology/resource-accounting.md
-      - Manpower & Caloric Model: methodology/manpower-model.md
-      - Knowledge Transfer: methodology/knowledge-transfer.md
-      - Ethics & Governance: methodology/ethics-and-governance.md
-  - Baseline (c. 2975 BCE):
-      - Egypt c. 2975 BCE: baseline/egypt-c2975-bce.md
-      - Ancient Near East: baseline/ancient-near-east.md
-      - Baseline Uncertainties: baseline/baseline-uncertainties.md
+  - The Prophet's Strategy:
+      - Divine Mandate & Pharaoh: playbook/divine-mandate-and-pharaoh.md
+      - The Benevolent Tyrant: playbook/the-benevolent-tyrant.md
+      - The Acceleration Formula: playbook/the-acceleration-timeline.md
+  - Operational Field Manuals:
+      - 01. Fire & Sparks (Striking Stones): manuals/01-fire-sparks-pyrotechnology.md
+      - 02. Prospecting & Mining Atlas: manuals/02-geological-prospecting-mining-atlas.md
+      - 03. Kilns, Furnaces & Refractories: manuals/03-kilns-furnaces-refractories.md
+      - 04. Carpentry, Wheels & Bearings: manuals/04-carpentry-wheels-mechanics.md
+      - 05. Chemical Recipes & Distillation: manuals/05-prophets-chemical-recipes.md
+  - The Backtracking Tree:
+      - The Master Backtracking Tree: backtracking/the-backtracking-tree.md
+      - Quantum Computers: backtracking/quantum-computers.md
+      - Gene Editing & Biotechnology: backtracking/gene-editing-biotech.md
   - Master Roadmap Phases:
       - Phase 0 - Arrival: phases/phase-0-arrival.md
       - Phase 1 - Food & Health: phases/phase-1-food-health-records.md
@@ -106,6 +104,22 @@ nav:
       - Workshops & Guilds: institutions/workshops-and-guilds.md
       - Public Health Service: institutions/public-health-service.md
       - Standards & Inspection: institutions/standards-and-inspection.md
+  - Systems Methodology:
+      - Dependency Model: methodology/dependency-model.md
+      - Evidence Standard: methodology/evidence-standard.md
+      - Resource Accounting: methodology/resource-accounting.md
+      - Manpower & Caloric Model: methodology/manpower-model.md
+      - Knowledge Transfer: methodology/knowledge-transfer.md
+      - Ethics & Governance: methodology/ethics-and-governance.md
+  - Baseline (c. 2975 BCE):
+      - Egypt c. 2975 BCE: baseline/egypt-c2975-bce.md
+      - Ancient Near East: baseline/ancient-near-east.md
+      - Baseline Uncertainties: baseline/baseline-uncertainties.md
+  - Lore & Narrative:
+      - The Prophet: lore/the-prophet.md
+      - The Machine: lore/the-machine.md
+      - The Threat: lore/the-danger.md
+      - Temporal Assumptions: lore/temporal-assumptions.md
   - Risk & Resilience:
       - Failure Modes: risk/failure-modes.md
       - Early Warning Indicators: risk/early-warning-indicators.md
