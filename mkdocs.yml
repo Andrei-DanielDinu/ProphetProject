@@ -68,6 +68,57 @@ nav:
       - The Master Backtracking Tree: backtracking/the-backtracking-tree.md
       - Quantum Computers: backtracking/quantum-computers.md
       - Gene Editing & Biotechnology: backtracking/gene-editing-biotech.md
+  - Recursive Recipes (Sticks to Supercomputers):
+      - Recipe Library Overview: recipes/README.md
+      - 'Tier 0: Raw Earth & Primitive Tools':
+          - 'R000: Raw Earth Resources Atlas': recipes/R000-raw-earth-resources.md
+          - 'R001: Quartzite Hammer & Maul': recipes/R001-quartzite-hammerstone-and-maul.md
+          - 'R002: Granite Anvil Stone': recipes/R002-granite-anvil-stone.md
+          - 'R003: Geological Prospecting & Mining': recipes/R003-geological-prospecting-and-mining-sites.md
+          - 'R004: Antler & Hardwood Mining Picks': recipes/R004-antler-and-hardwood-mining-picks.md
+          - 'R005: Flint Knapping & Chisels': recipes/R005-flint-knapping-blades-and-chisels.md
+          - 'R006: Plant Fiber Cordage & Rope': recipes/R006-cordage-and-rope-making.md
+          - 'R007: Hafted Ground Stone Axe': recipes/R007-hafted-stone-axe-and-adze.md
+      - 'Tier 1: Pyrotechnology & Kilns':
+          - 'R010: Fire by Percussion': recipes/R010-fire-by-percussion.md
+          - 'R011: Char Cloth Pyrolysis': recipes/R011-char-cloth.md
+          - 'R012: Dry Tinder Bundle': recipes/R012-dry-tinder-bundle.md
+          - 'R013: Bow Drill Friction Fire': recipes/R013-fire-by-friction-bow-drill.md
+          - 'R020: Basic Clay Pottery': recipes/R020-basic-clay-pottery.md
+          - 'R021: Updraft Mudbrick Kiln': recipes/R021-updraft-mudbrick-kiln.md
+          - 'R022: Sun-Dried Mudbrick': recipes/R022-mudbrick.md
+          - 'R023: Refractory Clay Lining': recipes/R023-refractory-clay-mix.md
+          - 'R024: Wooden Brick Mould': recipes/R024-wooden-brick-mould.md
+          - 'R025: Charcoal Earth Clamp': recipes/R025-charcoal-production.md
+          - 'R026: Double-Acting Pot Bellows': recipes/R026-pot-bellows.md
+          - 'R027: Calcined Quicklime (CaO)': recipes/R027-calcined-limestone.md
+      - 'Tier 2: Non-Ferrous & Early Chemistry':
+          - 'R030: Copper Smelting': recipes/R030-copper-smelting.md
+          - 'R031: Tin Bronze Alloy (88Cu:12Sn)': recipes/R031-bronze-alloy.md
+          - 'R032: Cassiterite Tin Smelting': recipes/R032-tin-smelting.md
+          - 'R033: Refractory Clay Crucible': recipes/R033-refractory-crucible.md
+          - 'R050: Hard Saponified Soap': recipes/R050-soap.md
+          - 'R051: Rendered Animal Tallow': recipes/R051-rendered-tallow.md
+          - 'R052: Sodium Hydroxide Lye': recipes/R052-sodium-hydroxide-lye.md
+      - 'Tier 3: Ferrous Metallurgy & Forge Tools':
+          - 'R040: Bloomery Wrought Iron': recipes/R040-bloomery-iron.md
+          - 'R041: Tool Steel Carburisation': recipes/R041-tool-steel.md
+          - 'R042: Ore Pre-Roasting & Bone Char': recipes/R042-ore-prep-and-bone-char.md
+          - 'R043: Bloomery Shaft Furnace': recipes/R043-bloomery-furnace.md
+          - 'R044: Hardwood Forge Tongs': recipes/R044-hardwood-tongs.md
+          - 'R045: Wrought Iron Blacksmith Tongs': recipes/R045-iron-blacksmith-tongs.md
+          - 'R046: Forged Blacksmith Hammer': recipes/R046-iron-blacksmith-hammer.md
+          - 'R047: Hardened Steel Chisel': recipes/R047-hardened-steel-chisel.md
+      - 'Tier 4: Optics & Steam Engines':
+          - 'R060: Soda-Lime Glass Batch': recipes/R060-glass-batch.md
+          - 'R061: Optical Plano-Convex Lens': recipes/R061-optical-lens.md
+          - 'R070: Reciprocating Steam Engine': recipes/R070-steam-engine.md
+      - 'Tier 5: Electricity & Electronics':
+          - 'R080: Electrical DC Dynamo': recipes/R080-electrical-dynamo.md
+          - 'R084: Copper Wire Drawing': recipes/R084-copper-wire-drawing.md
+          - 'R090: Vacuum Tube Triode': recipes/R090-vacuum-tube-triode.md
+          - 'R091: Tungsten Cathode Wire': recipes/R091-tungsten-wire.md
+          - 'R092: Piston Vacuum Pump': recipes/R092-piston-vacuum-pump.md
   - Master Roadmap Phases:
       - Phase 0 - Arrival: phases/phase-0-arrival.md
       - Phase 1 - Food & Health: phases/phase-1-food-health-records.md
