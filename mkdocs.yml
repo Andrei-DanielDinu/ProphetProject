@@ -92,11 +92,17 @@ nav:
           - 'R025: Charcoal Earth Clamp': recipes/R025-charcoal-production.md
           - 'R026: Double-Acting Pot Bellows': recipes/R026-pot-bellows.md
           - 'R027: Calcined Quicklime (CaO)': recipes/R027-calcined-limestone.md
+          - 'R028: Synthetic NPK Fertilizers': recipes/R028-synthetic-npk-fertilizers.md
+          - 'R029: Food Canning & Autoclave': recipes/R029-food-canning-and-retort-autoclave.md
       - 'Vol 3: Non-Ferrous Metallurgy':
           - 'R030: Copper Smelting': recipes/R030-copper-smelting.md
           - 'R031: Tin Bronze Alloy (88Cu:12Sn)': recipes/R031-bronze-alloy.md
           - 'R032: Cassiterite Tin Smelting': recipes/R032-tin-smelting.md
           - 'R033: Refractory Clay Crucible': recipes/R033-refractory-crucible.md
+          - 'R034: Hall-Héroult Aluminium': recipes/R034-hall-heroult-aluminium-smelting.md
+          - 'R035: Titanium Kroll Process': recipes/R035-kroll-process-titanium.md
+          - 'R036: Austenitic Stainless Steel': recipes/R036-austenitic-stainless-steel.md
+          - 'R037: Sintered Tungsten Carbide': recipes/R037-sintered-tungsten-carbide.md
           - 'R050: Hard Saponified Soap': recipes/R050-soap.md
           - 'R051: Rendered Animal Tallow': recipes/R051-rendered-tallow.md
           - 'R052: Sodium Hydroxide Lye': recipes/R052-sodium-hydroxide-lye.md
@@ -121,6 +127,10 @@ nav:
           - 'R055: Haber-Bosch Ammonia Reactor': recipes/R055-haber-bosch-ammonia-reactor.md
           - 'R163: Plastics (Bakelite & Nylon)': recipes/R163-synthetic-plastics-bakelite-and-nylon.md
           - 'R164: Vulcanized Rubber & Tires': recipes/R164-vulcanized-natural-rubber-and-pneumatic-tires.md
+          - 'R165: Polyethylene & Polypropylene': recipes/R165-polyethylene-and-polypropylene.md
+          - 'R166: PTFE (Teflon)': recipes/R166-polytetrafluoroethylene-teflon.md
+          - 'R167: Carbon Fiber Precursor': recipes/R167-carbon-fiber-precursor-and-pyrolysis.md
+          - 'R168: Silicones & PDMS': recipes/R168-silicones-and-pdms.md
       - 'Vol 7: Civil & Hydro Infrastructure':
           - 'R160: Portland Cement Rotary Kiln': recipes/R160-portland-cement-and-rotary-kiln.md
           - 'R161: Reinforced Concrete Skyscrapers': recipes/R161-reinforced-concrete-and-skyscrapers.md
@@ -130,18 +140,30 @@ nav:
           - 'R080: Electrical DC Dynamo': recipes/R080-electrical-dynamo.md
           - 'R081: Lead-Acid Storage Battery': recipes/R081-lead-acid-storage-battery.md
           - 'R082: AC Transformer & Alternator': recipes/R082-ac-transformer-and-alternator.md
+          - 'R083: HVDC Power Transmission': recipes/R083-high-voltage-direct-current-transmission.md
           - 'R084: Copper Wire Drawing': recipes/R084-copper-wire-drawing.md
+          - 'R085: Monocrystalline Solar Cell': recipes/R085-photovoltaic-monocrystalline-solar-cell.md
+          - 'R086: 2.5 MW Wind Turbine': recipes/R086-utility-scale-wind-turbine.md
           - 'R284: Induction Motor & Servos': recipes/R284-squirrel-cage-induction-motor-and-servos.md
       - 'Vol 9: Transportation & Mobility':
           - 'R240: Four-Stroke Petrol Engine': recipes/R240-internal-combustion-four-stroke-engine.md
           - 'R241: Duralumin Aircraft Airframe': recipes/R241-duralumin-aircraft-and-aerodynamics.md
           - 'R242: Marine Diesel Cargo Ship': recipes/R242-marine-diesel-cargo-ship.md
           - 'R243: Drivetrain, Differential & Brakes': recipes/R243-automotive-drivetrain-and-differential.md
+          - 'R244: LiDAR 3D Scanner': recipes/R244-lidar-pulsed-time-of-flight-scanner.md
+          - 'R245: Electronic Fuel Injection & ECU': recipes/R245-electronic-fuel-injection-and-ecu.md
+          - 'R246: Turbojet Gas Turbine Engine': recipes/R246-turbojet-gas-turbine-engine.md
+          - 'R247: Ring Laser Gyro & INS': recipes/R247-inertial-navigation-and-ring-laser-gyro.md
       - 'Vol 10: Medicine & Public Health':
           - 'R200: Antibiotic Penicillin Fermentation': recipes/R200-antibiotic-penicillin-fermentation.md
           - 'R201: General Anesthetic Ether': recipes/R201-general-anesthetic-diethyl-ether.md
           - 'R202: Coolidge X-Ray Tube': recipes/R202-coolidge-x-ray-tube-and-radiography.md
           - 'R203: Vaccine Attenuation & Immunology': recipes/R203-vaccine-attenuation-and-immunology.md
+          - 'R204: Antiseptic Phenol & Iodine': recipes/R204-antiseptic-phenol-and-iodine.md
+          - 'R205: Broad-Spectrum Antibiotics': recipes/R205-broad-spectrum-antibiotics-fermentation.md
+          - 'R206: Synthetic Sulfa Drugs': recipes/R206-synthetic-sulfa-drugs.md
+          - 'R207: Recombinant Human Insulin': recipes/R207-recombinant-human-insulin.md
+          - 'R208: Hemodialysis Artificial Kidney': recipes/R208-hemodialysis-artificial-kidney.md
       - 'Vol 11: Telecommunications & Radar':
           - 'R090: Vacuum Tube Triode': recipes/R090-vacuum-tube-triode.md
           - 'R091: Tungsten Cathode Wire': recipes/R091-tungsten-wire.md
@@ -154,6 +176,11 @@ nav:
           - 'R100: Semiconductor Silicon (Czochralski)': recipes/R100-semiconductor-silicon-czochralski.md
           - 'R101: Planar Silicon Transistor': recipes/R101-planar-silicon-transistor-photolithography.md
           - 'R130: CMOS Microprocessor & ALU': recipes/R130-cmos-microprocessor-logic-alu.md
+          - 'R131: Dynamic RAM (DRAM 1T1C)': recipes/R131-dynamic-random-access-memory-dram.md
+          - 'R132: Flash Memory & 3D NAND': recipes/R132-flash-memory-and-3d-nand.md
+          - 'R133: Silica Optical Fiber': recipes/R133-fiber-optic-preform-and-drawing.md
+          - 'R134: Gigabit Ethernet Switch': recipes/R134-ethernet-packet-switching-transceiver.md
+          - 'R135: Laser Diode & Photodetector': recipes/R135-semiconductor-laser-diode-and-detector.md
           - 'R320: Lithium-Ion Battery (18650)': recipes/R320-lithium-ion-battery-cell.md
           - 'R321: Capacitive Touchscreen Display': recipes/R321-capacitive-touchscreen-and-display.md
           - 'R322: Six-Axis Industrial Robot Arm': recipes/R322-articulated-robotics-and-closed-loop-actuation.md

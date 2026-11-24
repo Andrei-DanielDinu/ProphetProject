@@ -16,23 +16,23 @@ Every recipe is written as an **atomic, fully quantified procedure** (materials,
                                         │
            ┌────────────────────────────┼────────────────────────────┐
            ▼                            ▼                            ▼
-  [Vol 1: Primordials]        [Vol 2: Pyrotechnology]      [Vol 10: Medicine & Health]
-  Mining, Flint, Hammers      Kilns, Refractories, Bellows  Penicillin, Ether, Vaccines
+  [Vol 1: Primordials]        [Vol 2: Pyrotechnology & Agri] [Vol 10: Medicine & Health]
+  Mining, Flint, Hammers      Kilns, Quicklime, NPK, Canning  Penicillin, Insulin, Dialysis
            │                            │                            │
            ├────────────────────────────┴─────────────┬──────────────┘
            ▼                                          ▼
-  [Vol 3: Non-Ferrous Metals]               [Vol 4: Iron & Steel]
-  Copper, Tin Bronze, Smelting              Bloomeries, Hammers, Chisels
+  [Vol 3: Metallurgy & Alloys]              [Vol 4: Iron & Blacksmithing]
+  Copper, Bronze, Al, Ti, Stainless Steel   Bloomeries, Tool Steel, Hammers
            │                                          │
            ├────────────────────────────┬─────────────┘
            ▼                            ▼
   [Vol 5: Machine Tools & Steam]  [Vol 6: Heavy Chemistry & Polymers]
-  Surface Plates, Lathes, Steam   H2SO4, Haber-Bosch, Nylon, Rubber
+  Surface Plates, Lathes, Steam   H2SO4, Haber-Bosch, HDPE, Teflon, Carbon Fiber
            │                            │
            ├────────────────────────────┴─────────────┬──────────────┐
            ▼                                          ▼              ▼
-  [Vol 7: Civil Infrastructure]             [Vol 8: Power Grid]   [Vol 9: Mobility]
-  Dams, Concrete, Highways, Towers          Dynamos, Batteries    Diesel Ships, Aviation
+  [Vol 7: Civil Infrastructure]             [Vol 8: Power Grid]   [Vol 9: Mobility & Aero]
+  Dams, Concrete, Highways, Towers          Dynamos, Solar, HVDC  Jets, EFI, INS, LiDAR
            │                                          │              │
            ├──────────────────────────────────────────┴──────────────┘
            ▼
@@ -40,8 +40,8 @@ Every recipe is written as an **atomic, fully quantified procedure** (materials,
   Telephones, Radios, Cavity Magnetrons, Sensors
            │
            ▼
-  [Vol 12: Microelectronics & Robotics]
-  Silicon, Planar Transistors, Microprocessors, 6-DOF Robots, Smartphones
+  [Vol 12: Microelectronics, Computing & Optoelectronics]
+  Silicon, Transistors, DRAM, NAND, Fiber Optics, Microprocessors, Robots
            │
            ▼
   [Vol 13: Apex Frontiers]
@@ -60,7 +60,7 @@ Every recipe is written as an **atomic, fully quantified procedure** (materials,
 * **[R006: Plant Fiber Cordage & Heavy Rope](R006-cordage-and-rope-making.md)** — Retting, scutching, and reverse-twist 2-ply spinning.
 * **[R007: Hafted Ground Stone Axe & Adze](R007-hafted-stone-axe-and-adze.md)** — Pecked, ground, and polished basalt/diorite celts for felling timber.
 
-### Volume 2: Pyrotechnology, Ceramics, Kilns & Refractories
+### Volume 2: Pyrotechnology, Ceramics, Kilns, Agriculture & Food Preservation
 * **[R010: Fire by Percussion (Pyrite + Flint)](R010-fire-by-percussion.md)** — 30-second ignition protocol using iron disulfide and chert.
 * **[R011: Char Cloth Pyrolysis](R011-char-cloth.md)** — Anaerobic low-temperature fabric carbonization in vented vessels.
 * **[R012: Dry Tinder Bundle](R012-dry-tinder-bundle.md)** — High-surface-area fibrous nests for blowing coals into flames.
@@ -73,12 +73,18 @@ Every recipe is written as an **atomic, fully quantified procedure** (materials,
 * **[R025: Charcoal Production (Earth Clamp)](R025-charcoal-production.md)** — 72-hour controlled pyrolysis of dense hardwoods.
 * **[R026: Double-Acting Pot Bellows](R026-pot-bellows.md)** — Continuous forced-draft air system for metallurgy.
 * **[R027: Calcined Limestone (Quicklime / CaO)](R027-calcined-limestone.md)** — 900°C limestone calcination for smelting flux and causticization.
+* **[R028: Synthetic NPK Fertilizer Formulation](R028-synthetic-npk-fertilizers.md)** — Granulated balanced 15-15-15 fertilizer via ammonium nitrate, MAP, and sylvite.
+* **[R029: Hermetic Food Canning & Autoclave Retort](R029-food-canning-and-retort-autoclave.md)** — Sanitary 5-fold double seaming and 12-D pressure steam sterilization.
 
-### Volume 3: Non-Ferrous Metallurgy & Early Chemistry
+### Volume 3: Non-Ferrous, Strategic & Advanced Metallurgy
 * **[R030: Copper Smelting (Malachite Reduction)](R030-copper-smelting.md)** — Carbonate ore reduction in forced-draft blast furnaces.
 * **[R031: Tin Bronze Alloy (88Cu : 12Sn)](R031-bronze-alloy.md)** — High-hardness structural and tool alloy casting.
 * **[R032: Cassiterite Tin Smelting](R032-tin-smelting.md)** — Tin oxide reduction and trade logistics.
 * **[R033: Refractory Clay Crucible](R033-refractory-crucible.md)** — Thermal shock-resistant ceramic melting vessels.
+* **[R034: Hall-Héroult Electrolytic Aluminium Smelting](R034-hall-heroult-aluminium-smelting.md)** — Bayer alumina extraction and 960°C cryolite bath molten electrolysis.
+* **[R035: Titanium Extraction via Kroll Process](R035-kroll-process-titanium.md)** — Rutile carbochlorination to TiCl₄ and molten magnesium reduction under argon.
+* **[R036: Austenitic Stainless Steel (18/8 AISI 304)](R036-austenitic-stainless-steel.md)** — Electric arc furnace melting and Argon-Oxygen Decarburization (AOD) refining.
+* **[R037: Sintered Tungsten Carbide Tooling](R037-sintered-tungsten-carbide.md)** — WC synthesis, cobalt binder ball milling, and liquid-phase vacuum sintering.
 * **[R050: Hard Soap (Saponification)](R050-soap.md)** — Chemical hygiene revolution via tallow triglycerides and sodium hydroxide.
 * **[R051: Rendered Animal Tallow](R051-rendered-tallow.md)** — Wet rendering of suet for lubricants and soap feedstock.
 * **[R052: Sodium Hydroxide Lye](R052-sodium-hydroxide-lye.md)** — Natron causticization via slaked lime slurry.
@@ -100,12 +106,16 @@ Every recipe is written as an **atomic, fully quantified procedure** (materials,
 * **[R071: Master Surface Plates & Hand Scraping](R071-surface-plate-and-hand-scraping.md)** — Whitworth three-plate convergence generating sub-2.5 μm datum planes.
 * **[R072: Slide-Rest Screw-Cutting Engine Lathe](R072-precision-lead-screw-and-lathe.md)** — Prismatic ways, master lead screw, and change gear train.
 
-### Volume 6: Heavy Industrial Chemistry & Synthetics
+### Volume 6: Heavy Industrial Chemistry, Polymers & Advanced Materials
 * **[R053: Sulfuric Acid (Lead Chamber Process)](R053-sulfuric-acid-lead-chamber.md)** — Catalytic oxidation of SO₂ to 78% H₂SO₄ in sheet-lead chambers.
 * **[R054: Petroleum Fractional Distillation](R054-petroleum-fractional-distillation.md)** — Fractionating crude into gasoline, kerosene (RP-1), diesel, and lube oils.
 * **[R055: Haber-Bosch Ammonia Synthesis](R055-haber-bosch-ammonia-reactor.md)** — 200 bar high-pressure catalytic synthesis of NH₃ fertilizer.
 * **[R163: Synthetic Plastics: Bakelite & Nylon 6,6](R163-synthetic-plastics-bakelite-and-nylon.md)** — Phenol-formaldehyde thermosetting resins and polyamide fiber melt-spinning.
 * **[R164: Vulcanized Rubber & Pneumatic Tires](R164-vulcanized-natural-rubber-and-pneumatic-tires.md)** — Sulfur cross-linking of polyisoprene and radial steel-belted tire molding.
+* **[R165: Polyethylene (HDPE) & Polypropylene](R165-polyethylene-and-polypropylene.md)** — Slurry coordination polymerization with Ziegler-Natta titanium catalysts.
+* **[R166: Polytetrafluoroethylene (PTFE / Teflon)](R166-polytetrafluoroethylene-teflon.md)** — Freon pyrolysis to TFE monomer and free-radical emulsion polymerization.
+* **[R167: High-Strength Carbon Fiber (T700)](R167-carbon-fiber-precursor-and-pyrolysis.md)** — Polyacrylonitrile (PAN) wet-spinning, oxidative stabilization, and 1,400°C carbonization.
+* **[R168: Silicones & Polydimethylsiloxane (PDMS)](R168-silicones-and-pdms.md)** — Müller-Rochow direct process and ring-opening polymerization for heat-resistant fluids/rubbers.
 
 ### Volume 7: Civil Engineering, Mega-Dams & Modern Infrastructure
 * **[R160: Portland Cement & Rotary Kiln](R160-portland-cement-and-rotary-kiln.md)** — 1,450°C clinkering of limestone and clay into hydraulic binder.
@@ -113,24 +123,36 @@ Every recipe is written as an **atomic, fully quantified procedure** (materials,
 * **[R162: Asphalt Macadam Highway Paving](R162-asphalt-macadam-highway-paving.md)** — Graded angular stone aggregate and hot bitumen tandem roller compaction.
 * **[R170: Gravity Mega-Dam & Francis Hydro Turbine](R170-gravity-mega-dam-and-hydroelectric-plant.md)** — Monolithic concrete gravity dam and 50 MW mixed-flow hydraulic turbines.
 
-### Volume 8: Electromagnetism, Grid Power & Electrical Storage
+### Volume 8: Electromagnetism, Grid Power & Renewable Energy
 * **[R080: Electrical DC Dynamo Generator](R080-electrical-dynamo.md)** — Laminated iron armature, commutator, and field coil electromagnetic power.
 * **[R081: Lead-Acid Storage Battery](R081-lead-acid-storage-battery.md)** — Planté formed lead plates and 30% H₂SO₄ yielding 12V 60Ah storage.
 * **[R082: AC Alternator & High-Voltage Transformer](R082-ac-transformer-and-alternator.md)** — Silicon-steel core stepping 240V to 2,400V for low-loss grid transmission.
+* **[R083: High-Voltage Direct Current (HVDC) Transmission](R083-high-voltage-direct-current-transmission.md)** — 500 kV 1,000 MW 12-pulse thyristor converter station for bulk transmission.
 * **[R084: Copper Wire Drawing](R084-copper-wire-drawing.md)** — Progressive drawing plates, tallow lubrication, and inter-stage annealing.
+* **[R085: Photovoltaic Monocrystalline Silicon Solar Cell](R085-photovoltaic-monocrystalline-solar-cell.md)** — Alkaline pyramid texturing, POCl₃ emitter diffusion, and SiNₓ passivation (22% efficiency).
+* **[R086: Utility-Scale 2.5 MW Wind Turbine](R086-utility-scale-wind-turbine.md)** — 110-meter carbon/glass rotor, planetary gearbox, and doubly-fed induction generator.
 * **[R284: AC Induction Motor & Precision Servos](R284-squirrel-cage-induction-motor-and-servos.md)** — Tesla brushless 3-phase squirrel-cage motors and closed-loop optical servos.
 
-### Volume 9: Transportation, Internal Combustion, Maritime & Aeronautics
+### Volume 9: Transportation, Internal Combustion, Autonomous Mobility & Aerospace
 * **[R240: Four-Stroke Internal Combustion Petrol Engine](R240-internal-combustion-four-stroke-engine.md)** — Otto cycle 50 kW inline-4 engine with OHC valves and carburetor.
 * **[R241: Duralumin Aircraft & Aerodynamics](R241-duralumin-aircraft-and-aerodynamics.md)** — 450 MPa precipitation-hardened aluminum airframe, airfoil wings, and 3-axis controls.
 * **[R242: Marine Diesel Cargo Ship](R242-marine-diesel-cargo-ship.md)** — Welded steel 2,500-tonne hull and 50% thermal efficiency 2-stroke diesel engine.
 * **[R243: Automotive Drivetrain, Differential & Brakes](R243-automotive-drivetrain-and-differential.md)** — Bevel-gear open differential, 4-speed synchromesh transmission, and hydraulic disc brakes.
+* **[R244: Pulsed 3D Time-of-Flight LiDAR Scanner](R244-lidar-pulsed-time-of-flight-scanner.md)** — 32-beam 905 nm pulsed laser scanner with avalanche photodiode timing.
+* **[R245: Electronic Fuel Injection & Closed-Loop ECU](R245-electronic-fuel-injection-and-ecu.md)** — Microcontroller speed-density fueling, zirconia oxygen sensor, and real-time ignition.
+* **[R246: Axial-Flow Gas Turbine Jet Engine (Turbojet)](R246-turbojet-gas-turbine-engine.md)** — 50 kN thrust engine with titanium compressor and single-crystal film-cooled turbine.
+* **[R247: Ring Laser Gyro & Inertial Navigation (INS)](R247-inertial-navigation-and-ring-laser-gyro.md)** — Sagnac optical cavity, piezoceramic dither, and strapdown direction cosine matrix.
 
 ### Volume 10: Medicine, Public Health & Biomedical Technology
 * **[R200: Antibiotic Penicillin Fermentation](R200-antibiotic-penicillin-fermentation.md)** — Deep-tank submerged aerobic fermentation of *P. chrysogenum* yielding pure crystals.
 * **[R201: General Anesthetic Diethyl Ether](R201-general-anesthetic-diethyl-ether.md)** — Continuous acid-catalyzed dehydration of ethanol at 140°C.
 * **[R202: Coolidge X-Ray Tube & Diagnostic Radiography](R202-coolidge-x-ray-tube-and-radiography.md)** — 100 kV vacuum tube, tungsten Bremsstrahlung target, and radiographic film.
 * **[R203: Vaccine Attenuation & Immunology](R203-vaccine-attenuation-and-immunology.md)** — Egg passage, formalin cross-linking inactivation, and aluminum hydroxide adjuvant.
+* **[R204: Antiseptic Phenol & Povidone-Iodine](R204-antiseptic-phenol-and-iodine.md)** — Coal tar carbolic acid extraction and non-stinging PVP-iodophor complexes.
+* **[R205: Broad-Spectrum Antibiotics (Tetracycline & Streptomycin)](R205-broad-spectrum-antibiotics-fermentation.md)** — Submerged actinobacteria fermentation, calcium complexation, and HCl salt crystallization.
+* **[R206: Sulfa Antimicrobials (Sulfanilamide Synthesis)](R206-synthetic-sulfa-drugs.md)** — Aniline chlorosulfonation, amidation, and deprotective acid cleavage.
+* **[R207: Recombinant Human Insulin Biomanufacturing](R207-recombinant-human-insulin.md)** — *E. coli* proinsulin inclusion bodies, oxidative refolding, and zinc hexamer crystallization.
+* **[R208: Hemodialysis Artificial Kidney System](R208-hemodialysis-artificial-kidney.md)** — Asymmetric polysulfone hollow-fiber dialyzer and proportional bicarbonate mixing.
 
 ### Volume 11: Telecommunications, Radar, Sensors & Audio
 * **[R090: Vacuum Tube Triode](R090-vacuum-tube-triode.md)** — Sealed glass envelope thermionic amplifier with control grid.
@@ -141,10 +163,15 @@ Every recipe is written as an **atomic, fully quantified procedure** (materials,
 * **[R282: Cavity Magnetron & Microwave Radar](R282-cavity-magnetron-and-microwave-radar.md)** — 3 GHz (10 cm) S-band 500 kW pulsed cavity magnetron with PPI display.
 * **[R283: Industrial Sensors & Transducers](R283-sensors-and-transducers.md)** — Piezoelectric quartz, Type-K thermocouples, PIN photodiodes, and MEMS accelerometers.
 
-### Volume 12: Microelectronics, Robotics & Mobile Ecosystems
+### Volume 12: Microelectronics, Computing, Networking & Robotics
 * **[R100: Semiconductor Silicon & Czochralski Ingot](R100-semiconductor-silicon-czochralski.md)** — 9N hyper-pure polycrystalline silicon pulled into <100> single crystals.
 * **[R101: Planar Silicon Transistor & Photolithography](R101-planar-silicon-transistor-photolithography.md)** — 4-mask planar process, thermal SiO₂, POCl₃ diffusion, and aluminum interconnects.
 * **[R130: CMOS Microprocessor & 8-Bit ALU](R130-cmos-microprocessor-logic-alu.md)** — Full adder arithmetic logic unit, register files, and stored-program execution.
+* **[R131: Dynamic Random-Access Memory (DRAM 1T1C)](R131-dynamic-random-access-memory-dram.md)** — High-aspect trench capacitor cell with ALD ZrO₂ high-k dielectric.
+* **[R132: Flash Memory & 3D NAND Solid-State Storage](R132-flash-memory-and-3d-nand.md)** — 96-layer oxide-nitride stack, Fowler-Nordheim quantum tunneling, and TLC storage.
+* **[R133: Low-Loss Single-Mode Optical Fiber (SMF-28)](R133-fiber-optic-preform-and-drawing.md)** — MCVD preform vapor deposition, draw tower pulling, and 0.185 dB/km transmission.
+* **[R134: Gigabit Ethernet Switch & 1000BASE-T PHY](R134-ethernet-packet-switching-transceiver.md)** — 5-level PAM-5 transceiver, galvanic pulse transformers, and MAC packet switch.
+* **[R135: Semiconductor Laser Diode & InGaAs Photodetector](R135-semiconductor-laser-diode-and-detector.md)** — MOCVD InGaAsP multiple quantum well DFB laser emitting at 1,550 nm.
 * **[R320: Lithium-Ion Battery (18650 Cell)](R320-lithium-ion-battery-cell.md)** — Intercalated LiCoO₂ cathode, graphite anode, LiPF₆ electrolyte, and microporous separator.
 * **[R321: Capacitive Touchscreen & AMOLED Display](R321-capacitive-touchscreen-and-display.md)** — Indium Tin Oxide (ITO) sputtering, ion-exchanged chemically strengthened glass, and organic LEDs.
 * **[R322: Six-Axis Articulated Industrial Robot](R322-articulated-robotics-and-closed-loop-actuation.md)** — Zero-backlash Harmonic Drive gearboxes, optical encoders, and 20 μm precision PID kinematics.
