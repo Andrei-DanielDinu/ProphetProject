@@ -94,6 +94,8 @@ nav:
           - 'R027: Calcined Quicklime (CaO)': recipes/R027-calcined-limestone.md
           - 'R028: Synthetic NPK Fertilizers': recipes/R028-synthetic-npk-fertilizers.md
           - 'R029: Food Canning & Autoclave': recipes/R029-food-canning-and-retort-autoclave.md
+          - 'R066: Combine Harvester': recipes/R066-mechanized-combine-harvester.md
+          - 'R067: Watershed Reforestation': recipes/R067-watershed-reforestation-and-contour-terracing.md
       - 'Vol 3: Non-Ferrous Metallurgy':
           - 'R030: Copper Smelting': recipes/R030-copper-smelting.md
           - 'R031: Tin Bronze Alloy (88Cu:12Sn)': recipes/R031-bronze-alloy.md
@@ -103,6 +105,7 @@ nav:
           - 'R035: Titanium Kroll Process': recipes/R035-kroll-process-titanium.md
           - 'R036: Austenitic Stainless Steel': recipes/R036-austenitic-stainless-steel.md
           - 'R037: Sintered Tungsten Carbide': recipes/R037-sintered-tungsten-carbide.md
+          - 'R038: Froth Flotation Beneficiation': recipes/R038-froth-flotation-ore-beneficiation.md
           - 'R050: Hard Saponified Soap': recipes/R050-soap.md
           - 'R051: Rendered Animal Tallow': recipes/R051-rendered-tallow.md
           - 'R052: Sodium Hydroxide Lye': recipes/R052-sodium-hydroxide-lye.md
@@ -118,13 +121,20 @@ nav:
       - 'Vol 5: Machine Tools & Steam':
           - 'R060: Soda-Lime Glass Batch': recipes/R060-glass-batch.md
           - 'R061: Optical Plano-Convex Lens': recipes/R061-optical-lens.md
+          - 'R062: Transmission Electron Microscope': recipes/R062-transmission-electron-microscope.md
+          - 'R063: Reflecting Telescope & Mirror': recipes/R063-astronomical-reflecting-telescope.md
+          - 'R064: Mass Spectrometer': recipes/R064-magnetic-sector-mass-spectrometer.md
+          - 'R065: Medical Ultrasound Scanner': recipes/R065-medical-ultrasound-transducer-scanner.md
           - 'R070: Reciprocating Steam Engine': recipes/R070-steam-engine.md
           - 'R071: Master Surface Plates & Scraping': recipes/R071-surface-plate-and-hand-scraping.md
           - 'R072: Slide-Rest Screw Lathe': recipes/R072-precision-lead-screw-and-lathe.md
       - 'Vol 6: Heavy Chemistry & Polymers':
+          - 'R039: Offshore Drilling Platform': recipes/R039-offshore-petroleum-drilling-platform.md
           - 'R053: Sulfuric Acid Lead Chamber': recipes/R053-sulfuric-acid-lead-chamber.md
           - 'R054: Petroleum Distillation': recipes/R054-petroleum-fractional-distillation.md
           - 'R055: Haber-Bosch Ammonia Reactor': recipes/R055-haber-bosch-ammonia-reactor.md
+          - 'R056: Chlor-Alkali Membrane Cell': recipes/R056-chlor-alkali-membrane-electrolysis.md
+          - 'R057: Cryogenic Noble Gas Fractionation': recipes/R057-cryogenic-noble-gas-fractionation.md
           - 'R163: Plastics (Bakelite & Nylon)': recipes/R163-synthetic-plastics-bakelite-and-nylon.md
           - 'R164: Vulcanized Rubber & Tires': recipes/R164-vulcanized-natural-rubber-and-pneumatic-tires.md
           - 'R165: Polyethylene & Polypropylene': recipes/R165-polyethylene-and-polypropylene.md
@@ -136,6 +146,10 @@ nav:
           - 'R161: Reinforced Concrete Skyscrapers': recipes/R161-reinforced-concrete-and-skyscrapers.md
           - 'R162: Asphalt Highway Paving': recipes/R162-asphalt-macadam-highway-paving.md
           - 'R170: Gravity Mega-Dam & Turbine': recipes/R170-gravity-mega-dam-and-hydroelectric-plant.md
+          - 'R171: Municipal Water Treatment': recipes/R171-municipal-water-treatment-and-piped-network.md
+          - 'R172: Sanitary Sewer & Activated Sludge': recipes/R172-sanitary-sewer-and-activated-sludge-plant.md
+          - 'R173: Long-Span Suspension Bridge': recipes/R173-long-span-suspension-bridge.md
+          - 'R174: Tunnel Boring Machine (TBM)': recipes/R174-tunnel-boring-machine-and-tunneling.md
       - 'Vol 8: Electromagnetism & Grid':
           - 'R080: Electrical DC Dynamo': recipes/R080-electrical-dynamo.md
           - 'R081: Lead-Acid Storage Battery': recipes/R081-lead-acid-storage-battery.md
@@ -181,6 +195,10 @@ nav:
           - 'R133: Silica Optical Fiber': recipes/R133-fiber-optic-preform-and-drawing.md
           - 'R134: Gigabit Ethernet Switch': recipes/R134-ethernet-packet-switching-transceiver.md
           - 'R135: Laser Diode & Photodetector': recipes/R135-semiconductor-laser-diode-and-detector.md
+          - 'R136: Self-Hosting Compiler & OS Kernel': recipes/R136-self-hosting-compiler-and-os-kernel.md
+          - 'R137: Relational Database (RDBMS)': recipes/R137-relational-database-acid-engine.md
+          - 'R138: Public-Key Cryptography & TLS': recipes/R138-public-key-cryptography-and-tls.md
+          - 'R139: GNSS / GPS Satellite Constellation': recipes/R139-global-navigation-satellite-constellation.md
           - 'R320: Lithium-Ion Battery (18650)': recipes/R320-lithium-ion-battery-cell.md
           - 'R321: Capacitive Touchscreen Display': recipes/R321-capacitive-touchscreen-and-display.md
           - 'R322: Six-Axis Industrial Robot Arm': recipes/R322-articulated-robotics-and-closed-loop-actuation.md
@@ -190,6 +208,12 @@ nav:
           - 'R120: Natural Uranium Critical Reactor': recipes/R120-natural-uranium-graphite-reactor.md
           - 'R140: Transformer LLM Tensor Engine': recipes/R140-transformer-llm-matrix-engine.md
           - 'R150: PCR & CRISPR-Cas9 Gene Editing': recipes/R150-pcr-thermocycler-and-crispr-cas9.md
+      - 'Vol 14: Social Technologies & Law':
+          - 'R400: Metric System & Metrology': recipes/R400-decimal-metric-system-and-national-metrology.md
+          - 'R401: Double-Entry Bookkeeping & Banking': recipes/R401-double-entry-bookkeeping-and-banking-clearinghouse.md
+          - 'R402: Universal Schools & Polytechnics': recipes/R402-universal-literacy-and-vocational-polytechnic.md
+          - 'R403: Land Cadastre, Survey & Census': recipes/R403-land-cadastre-geodetic-survey-and-census.md
+          - 'R404: Scientific Academy & Peer Review': recipes/R404-scientific-peer-review-and-research-academy.md
   - Master Roadmap Phases:
       - Phase 0 - Arrival: phases/phase-0-arrival.md
       - Phase 1 - Food & Health: phases/phase-1-food-health-records.md
