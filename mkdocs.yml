@@ -70,7 +70,7 @@ nav:
       - Gene Editing & Biotechnology: backtracking/gene-editing-biotech.md
   - Recursive Recipes (Sticks to Supercomputers):
       - Recipe Library Overview: recipes/README.md
-      - 'Tier 0: Raw Earth & Primitive Tools':
+      - 'Vol 1: Primordials & Mining':
           - 'R000: Raw Earth Resources Atlas': recipes/R000-raw-earth-resources.md
           - 'R001: Quartzite Hammer & Maul': recipes/R001-quartzite-hammerstone-and-maul.md
           - 'R002: Granite Anvil Stone': recipes/R002-granite-anvil-stone.md
@@ -79,7 +79,7 @@ nav:
           - 'R005: Flint Knapping & Chisels': recipes/R005-flint-knapping-blades-and-chisels.md
           - 'R006: Plant Fiber Cordage & Rope': recipes/R006-cordage-and-rope-making.md
           - 'R007: Hafted Ground Stone Axe': recipes/R007-hafted-stone-axe-and-adze.md
-      - 'Tier 1: Pyrotechnology & Kilns':
+      - 'Vol 2: Pyrotechnology & Kilns':
           - 'R010: Fire by Percussion': recipes/R010-fire-by-percussion.md
           - 'R011: Char Cloth Pyrolysis': recipes/R011-char-cloth.md
           - 'R012: Dry Tinder Bundle': recipes/R012-dry-tinder-bundle.md
@@ -92,7 +92,7 @@ nav:
           - 'R025: Charcoal Earth Clamp': recipes/R025-charcoal-production.md
           - 'R026: Double-Acting Pot Bellows': recipes/R026-pot-bellows.md
           - 'R027: Calcined Quicklime (CaO)': recipes/R027-calcined-limestone.md
-      - 'Tier 2: Non-Ferrous & Early Chemistry':
+      - 'Vol 3: Non-Ferrous Metallurgy':
           - 'R030: Copper Smelting': recipes/R030-copper-smelting.md
           - 'R031: Tin Bronze Alloy (88Cu:12Sn)': recipes/R031-bronze-alloy.md
           - 'R032: Cassiterite Tin Smelting': recipes/R032-tin-smelting.md
@@ -100,7 +100,7 @@ nav:
           - 'R050: Hard Saponified Soap': recipes/R050-soap.md
           - 'R051: Rendered Animal Tallow': recipes/R051-rendered-tallow.md
           - 'R052: Sodium Hydroxide Lye': recipes/R052-sodium-hydroxide-lye.md
-      - 'Tier 3: Ferrous Metallurgy & Forge Tools':
+      - 'Vol 4: Iron & Blacksmithing':
           - 'R040: Bloomery Wrought Iron': recipes/R040-bloomery-iron.md
           - 'R041: Tool Steel Carburisation': recipes/R041-tool-steel.md
           - 'R042: Ore Pre-Roasting & Bone Char': recipes/R042-ore-prep-and-bone-char.md
@@ -109,32 +109,59 @@ nav:
           - 'R045: Wrought Iron Blacksmith Tongs': recipes/R045-iron-blacksmith-tongs.md
           - 'R046: Forged Blacksmith Hammer': recipes/R046-iron-blacksmith-hammer.md
           - 'R047: Hardened Steel Chisel': recipes/R047-hardened-steel-chisel.md
-      - 'Tier 4: Precision Machining, Steam & Chemistry':
+      - 'Vol 5: Machine Tools & Steam':
           - 'R060: Soda-Lime Glass Batch': recipes/R060-glass-batch.md
           - 'R061: Optical Plano-Convex Lens': recipes/R061-optical-lens.md
           - 'R070: Reciprocating Steam Engine': recipes/R070-steam-engine.md
           - 'R071: Master Surface Plates & Scraping': recipes/R071-surface-plate-and-hand-scraping.md
           - 'R072: Slide-Rest Screw Lathe': recipes/R072-precision-lead-screw-and-lathe.md
+      - 'Vol 6: Heavy Chemistry & Polymers':
           - 'R053: Sulfuric Acid Lead Chamber': recipes/R053-sulfuric-acid-lead-chamber.md
           - 'R054: Petroleum Distillation': recipes/R054-petroleum-fractional-distillation.md
           - 'R055: Haber-Bosch Ammonia Reactor': recipes/R055-haber-bosch-ammonia-reactor.md
-      - 'Tier 5: Electricity, Grid & Storage':
+          - 'R163: Plastics (Bakelite & Nylon)': recipes/R163-synthetic-plastics-bakelite-and-nylon.md
+          - 'R164: Vulcanized Rubber & Tires': recipes/R164-vulcanized-natural-rubber-and-pneumatic-tires.md
+      - 'Vol 7: Civil & Hydro Infrastructure':
+          - 'R160: Portland Cement Rotary Kiln': recipes/R160-portland-cement-and-rotary-kiln.md
+          - 'R161: Reinforced Concrete Skyscrapers': recipes/R161-reinforced-concrete-and-skyscrapers.md
+          - 'R162: Asphalt Highway Paving': recipes/R162-asphalt-macadam-highway-paving.md
+          - 'R170: Gravity Mega-Dam & Turbine': recipes/R170-gravity-mega-dam-and-hydroelectric-plant.md
+      - 'Vol 8: Electromagnetism & Grid':
           - 'R080: Electrical DC Dynamo': recipes/R080-electrical-dynamo.md
           - 'R081: Lead-Acid Storage Battery': recipes/R081-lead-acid-storage-battery.md
           - 'R082: AC Transformer & Alternator': recipes/R082-ac-transformer-and-alternator.md
           - 'R084: Copper Wire Drawing': recipes/R084-copper-wire-drawing.md
+          - 'R284: Induction Motor & Servos': recipes/R284-squirrel-cage-induction-motor-and-servos.md
+      - 'Vol 9: Transportation & Mobility':
+          - 'R240: Four-Stroke Petrol Engine': recipes/R240-internal-combustion-four-stroke-engine.md
+          - 'R241: Duralumin Aircraft Airframe': recipes/R241-duralumin-aircraft-and-aerodynamics.md
+          - 'R242: Marine Diesel Cargo Ship': recipes/R242-marine-diesel-cargo-ship.md
+          - 'R243: Drivetrain, Differential & Brakes': recipes/R243-automotive-drivetrain-and-differential.md
+      - 'Vol 10: Medicine & Public Health':
+          - 'R200: Antibiotic Penicillin Fermentation': recipes/R200-antibiotic-penicillin-fermentation.md
+          - 'R201: General Anesthetic Ether': recipes/R201-general-anesthetic-diethyl-ether.md
+          - 'R202: Coolidge X-Ray Tube': recipes/R202-coolidge-x-ray-tube-and-radiography.md
+          - 'R203: Vaccine Attenuation & Immunology': recipes/R203-vaccine-attenuation-and-immunology.md
+      - 'Vol 11: Telecommunications & Radar':
           - 'R090: Vacuum Tube Triode': recipes/R090-vacuum-tube-triode.md
           - 'R091: Tungsten Cathode Wire': recipes/R091-tungsten-wire.md
           - 'R092: Piston Vacuum Pump': recipes/R092-piston-vacuum-pump.md
-      - 'Tier 6: Silicon, Microprocessors & Computing':
+          - 'R280: Telephone & Crossbar Exchange': recipes/R280-telephone-and-automated-crossbar-exchange.md
+          - 'R281: Superheterodyne Radio': recipes/R281-superheterodyne-radio-transceiver.md
+          - 'R282: Cavity Magnetron Microwave Radar': recipes/R282-cavity-magnetron-and-microwave-radar.md
+          - 'R283: Industrial Sensors & Transducers': recipes/R283-sensors-and-transducers.md
+      - 'Vol 12: Microelectronics & Robotics':
           - 'R100: Semiconductor Silicon (Czochralski)': recipes/R100-semiconductor-silicon-czochralski.md
           - 'R101: Planar Silicon Transistor': recipes/R101-planar-silicon-transistor-photolithography.md
           - 'R130: CMOS Microprocessor & ALU': recipes/R130-cmos-microprocessor-logic-alu.md
-          - 'R140: Transformer LLM Tensor Engine': recipes/R140-transformer-llm-matrix-engine.md
-      - 'Tier 7: Aerospace, Nuclear & Biotechnology':
+          - 'R320: Lithium-Ion Battery (18650)': recipes/R320-lithium-ion-battery-cell.md
+          - 'R321: Capacitive Touchscreen Display': recipes/R321-capacitive-touchscreen-and-display.md
+          - 'R322: Six-Axis Industrial Robot Arm': recipes/R322-articulated-robotics-and-closed-loop-actuation.md
+      - 'Vol 13: Apex Frontiers':
           - 'R110: Cryogenic LOX Oxygen Plant': recipes/R110-cryogenic-liquid-oxygen-plant.md
           - 'R111: Staged Liquid Rocket Engine': recipes/R111-staged-liquid-rocket-engine.md
           - 'R120: Natural Uranium Critical Reactor': recipes/R120-natural-uranium-graphite-reactor.md
+          - 'R140: Transformer LLM Tensor Engine': recipes/R140-transformer-llm-matrix-engine.md
           - 'R150: PCR & CRISPR-Cas9 Gene Editing': recipes/R150-pcr-thermocycler-and-crispr-cas9.md
   - Master Roadmap Phases:
       - Phase 0 - Arrival: phases/phase-0-arrival.md
