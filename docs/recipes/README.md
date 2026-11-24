@@ -8,7 +8,7 @@ This library contains the operational knowledge base of civilization decomposed 
 
 Just like a culinary recipe, every technological artifact is broken down into:
 1. **End Product & Specifications** — Dimensions, mass, tolerances, hardness, chemical purity.
-2. **Ingredients & Proportions** — Exact quantities with units (kg, L, g, °C).
+2. **Ingredients & Proportions** — Exact quantities with units (kg, L, g, °C, bar, V, A).
 3. **Required Tools** — Every tool used is itself linked to its own production recipe.
 4. **Physical & Chemical Conditions** — Operating temperatures, atmospheric conditions, reaction durations.
 5. **Step-by-Step Procedure** — Numbered, deterministic instructions with zero hand-waving.
@@ -62,14 +62,33 @@ Just like a culinary recipe, every technological artifact is broken down into:
 * [R046: Forged Iron Blacksmith Hammer](R046-iron-blacksmith-hammer.md) — 1.5 kg cross-peen hand hammer with hourglass punched eye.
 * [R047: Hardened & Tempered Steel Chisel](R047-hardened-steel-chisel.md) — Differentially tempered cold chisel for metal cutting and stone carving.
 
-### Tier 4: Optics, Steam Power & Industrial Foundations
+### Tier 4: Precision Machining, Steam & Heavy Chemistry
 * [R060: Soda-Lime Glass Batch Melting](R060-glass-batch.md) — Sand-natron-lime fusion at 1,200°C with fining protocols.
 * [R061: Optical Plano-Convex Lens](R061-optical-lens.md) — Spherically ground and pitch-polished lenses for telescopes and microscopes.
 * [R070: Reciprocating Steam Beam Engine](R070-steam-engine.md) — 5 kW atmospheric engine with cast iron cylinder, boiler, and centrifugal governor.
+* [R071: Master Surface Plates & Hand Scraping](R071-surface-plate-and-hand-scraping.md) — Whitworth three-plate convergence generating sub-2.5 μm datum planes.
+* [R072: Slide-Rest Screw-Cutting Engine Lathe](R072-precision-lead-screw-and-lathe.md) — Prismatic ways, master lead screw, and change gear train.
+* [R053: Sulfuric Acid (Lead Chamber Process)](R053-sulfuric-acid-lead-chamber.md) — Catalytic oxidation of SO₂ to 78% H₂SO₄ in sheet-lead chambers.
+* [R054: Petroleum Fractional Distillation](R054-petroleum-fractional-distillation.md) — Fractionating crude into gasoline, kerosene (RP-1), diesel, and lube oils.
+* [R055: Haber-Bosch Ammonia Synthesis](R055-haber-bosch-ammonia-reactor.md) — 200 bar high-pressure catalytic synthesis of NH₃ fertilizer.
 
-### Tier 5: Electromagnetism & Frontier Electronics
+### Tier 5: Electromagnetism, Grid & Chemical Storage
 * [R080: Electrical DC Dynamo Generator](R080-electrical-dynamo.md) — Laminated iron armature, commutator, and field coil electromagnetic power.
+* [R081: Lead-Acid Storage Battery](R081-lead-acid-storage-battery.md) — Planté formed lead plates and 30% H₂SO₄ yielding 12V 60Ah storage.
+* [R082: AC Alternator & High-Voltage Transformer](R082-ac-transformer-and-alternator.md) — Silicon-steel core stepping 240V to 2,400V for low-loss grid transmission.
 * [R084: Copper Wire Drawing](R084-copper-wire-drawing.md) — Progressive drawing plates, tallow lubrication, and inter-stage annealing.
 * [R090: Vacuum Tube Triode](R090-vacuum-tube-triode.md) — Sealed glass envelope thermionic amplifier with control grid.
 * [R091: Tungsten Wire Cathode](R091-tungsten-wire.md) — Coolidge powder metallurgy, hydrogen reduction, and hot drawing.
 * [R092: Reciprocating Piston Vacuum Pump](R092-piston-vacuum-pump.md) — Dual-stage oil-submerged pump achieving 10⁻³ mbar.
+
+### Tier 6: Silicon, Microprocessors & Computing
+* [R100: Semiconductor Silicon & Czochralski Ingot](R100-semiconductor-silicon-czochralski.md) — 9N hyper-pure polycrystalline silicon pulled into <100> single crystals.
+* [R101: Planar Silicon Transistor & Photolithography](R101-planar-silicon-transistor-photolithography.md) — 4-mask planar process, thermal SiO₂, POCl₃ diffusion, and aluminum interconnects.
+* [R130: CMOS Microprocessor & 8-Bit ALU](R130-cmos-microprocessor-logic-alu.md) — Full adder arithmetic logic unit, register files, and stored-program execution.
+* [R140: Transformer LLM Matrix Multiply Engine](R140-transformer-llm-matrix-engine.md) — 128×128 systolic array tensor processor for multi-head self-attention.
+
+### Tier 7: Aerospace, Nuclear Fission & Biotechnology
+* [R110: Cryogenic Air Fractionation (LOX Plant)](R110-cryogenic-liquid-oxygen-plant.md) — Linde-Claude cycle liquefying air to -183°C pure liquid oxygen.
+* [R111: Regenerative Staged Liquid Rocket Engine](R111-staged-liquid-rocket-engine.md) — 500 kN LOX/RP-1 engine with milled copper jacket and pintle injector.
+* [R120: Natural Uranium Graphite Critical Reactor](R120-natural-uranium-graphite-reactor.md) — CP-1 Fermi-type critical pile operating without isotope enrichment.
+* [R150: PCR Thermocycler & CRISPR-Cas9 Gene Editing](R150-pcr-thermocycler-and-crispr-cas9.md) — Peltier thermal amplification and programmable Cas9 endonuclease cleavage.

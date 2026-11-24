@@ -109,16 +109,33 @@ nav:
           - 'R045: Wrought Iron Blacksmith Tongs': recipes/R045-iron-blacksmith-tongs.md
           - 'R046: Forged Blacksmith Hammer': recipes/R046-iron-blacksmith-hammer.md
           - 'R047: Hardened Steel Chisel': recipes/R047-hardened-steel-chisel.md
-      - 'Tier 4: Optics & Steam Engines':
+      - 'Tier 4: Precision Machining, Steam & Chemistry':
           - 'R060: Soda-Lime Glass Batch': recipes/R060-glass-batch.md
           - 'R061: Optical Plano-Convex Lens': recipes/R061-optical-lens.md
           - 'R070: Reciprocating Steam Engine': recipes/R070-steam-engine.md
-      - 'Tier 5: Electricity & Electronics':
+          - 'R071: Master Surface Plates & Scraping': recipes/R071-surface-plate-and-hand-scraping.md
+          - 'R072: Slide-Rest Screw Lathe': recipes/R072-precision-lead-screw-and-lathe.md
+          - 'R053: Sulfuric Acid Lead Chamber': recipes/R053-sulfuric-acid-lead-chamber.md
+          - 'R054: Petroleum Distillation': recipes/R054-petroleum-fractional-distillation.md
+          - 'R055: Haber-Bosch Ammonia Reactor': recipes/R055-haber-bosch-ammonia-reactor.md
+      - 'Tier 5: Electricity, Grid & Storage':
           - 'R080: Electrical DC Dynamo': recipes/R080-electrical-dynamo.md
+          - 'R081: Lead-Acid Storage Battery': recipes/R081-lead-acid-storage-battery.md
+          - 'R082: AC Transformer & Alternator': recipes/R082-ac-transformer-and-alternator.md
           - 'R084: Copper Wire Drawing': recipes/R084-copper-wire-drawing.md
           - 'R090: Vacuum Tube Triode': recipes/R090-vacuum-tube-triode.md
           - 'R091: Tungsten Cathode Wire': recipes/R091-tungsten-wire.md
           - 'R092: Piston Vacuum Pump': recipes/R092-piston-vacuum-pump.md
+      - 'Tier 6: Silicon, Microprocessors & Computing':
+          - 'R100: Semiconductor Silicon (Czochralski)': recipes/R100-semiconductor-silicon-czochralski.md
+          - 'R101: Planar Silicon Transistor': recipes/R101-planar-silicon-transistor-photolithography.md
+          - 'R130: CMOS Microprocessor & ALU': recipes/R130-cmos-microprocessor-logic-alu.md
+          - 'R140: Transformer LLM Tensor Engine': recipes/R140-transformer-llm-matrix-engine.md
+      - 'Tier 7: Aerospace, Nuclear & Biotechnology':
+          - 'R110: Cryogenic LOX Oxygen Plant': recipes/R110-cryogenic-liquid-oxygen-plant.md
+          - 'R111: Staged Liquid Rocket Engine': recipes/R111-staged-liquid-rocket-engine.md
+          - 'R120: Natural Uranium Critical Reactor': recipes/R120-natural-uranium-graphite-reactor.md
+          - 'R150: PCR & CRISPR-Cas9 Gene Editing': recipes/R150-pcr-thermocycler-and-crispr-cas9.md
   - Master Roadmap Phases:
       - Phase 0 - Arrival: phases/phase-0-arrival.md
       - Phase 1 - Food & Health: phases/phase-1-food-health-records.md
